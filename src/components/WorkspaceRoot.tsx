@@ -1,1 +1,45 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCcKaW1wb3J0IHsgcGFyc2VIYXNoUGFyYW1zLCBjbGVhckhhc2hQYXJhbXMgfSBmcm9tICdAL2xpYi91cmwtcGFyYW1zJwppbXBvcnQgeyBHYXRld2F5UHJvdmlkZXIsIHVzZUdhdGV3YXkgfSBmcm9tICdAL2NvbnRleHQvR2F0ZXdheUNvbnRleHQnCmltcG9ydCB7IEFwcFNoZWxsIH0gZnJvbSAnLi9BcHBTaGVsbCcKaW1wb3J0IHsgRXJyb3JTY3JlZW4gfSBmcm9tICcuL0Vycm9yU2NyZWVuJwoKZnVuY3Rpb24gU2hlbGwoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgewogIGNvbnN0IHsgc3RhdHVzIH0gPSB1c2VHYXRld2F5KCkKICByZXR1cm4gPEFwcFNoZWxsIHN0YXR1cz17c3RhdHVzfT57Y2hpbGRyZW59PC9BcHBTaGVsbD4KfQoKZXhwb3J0IGZ1bmN0aW9uIFdvcmtzcGFjZVJvb3QoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgewogIGNvbnN0IFtwYXJhbXMsIHNldFBhcmFtc10gPSB1c2VTdGF0ZTx7IGdhdGV3YXlVcmw6IHN0cmluZyB8IG51bGw7IHRva2VuOiBzdHJpbmcgfCBudWxsIH0gfCBudWxsPihudWxsKQoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgcGFyc2VkID0gcGFyc2VIYXNoUGFyYW1zKHdpbmRvdy5sb2NhdGlvbi5oYXNoKQogICAgY2xlYXJIYXNoUGFyYW1zKCkKICAgIHNldFBhcmFtcyhwYXJzZWQpCiAgfSwgW10pCgogIGlmICghcGFyYW1zKSB7cmV0dXJuIG51bGx9IC8vIGZpcnN0IHJlbmRlciDigJQgaGFzaCBub3QgeWV0IHJlYWQKCiAgaWYgKCFwYXJhbXMuZ2F0ZXdheVVybCkgewogICAgcmV0dXJuIDxFcnJvclNjcmVlbiBtZXNzYWdlPSJObyB3b3Jrc3BhY2UgVVJMIGZvdW5kIGluIHlvdXIgbGluay4iIC8+CiAgfQoKICByZXR1cm4gKAogICAgPEdhdGV3YXlQcm92aWRlciBnYXRld2F5VXJsPXtwYXJhbXMuZ2F0ZXdheVVybH0gdG9rZW49e3BhcmFtcy50b2tlbiA/PyB1bmRlZmluZWR9PgogICAgICA8U2hlbGw+e2NoaWxkcmVufTwvU2hlbGw+CiAgICA8L0dhdGV3YXlQcm92aWRlcj4KICApCn0K"}
+'use client'
+import { useEffect, useState } from 'react'
+import { parseHashParams, clearHashParams } from '@/lib/url-params'
+import { GatewayProvider, useGateway } from '@/context/GatewayContext'
+import { AppShell } from './AppShell'
+import { ErrorScreen } from './ErrorScreen'
+
+function Shell({ children }: { children: React.ReactNode }) {
+  const { status } = useGateway()
+  return <AppShell status={status}>{children}</AppShell>
+}
+
+export function WorkspaceRoot({ children }: { children: React.ReactNode }) {
+  const [params, setParams] = useState<{ gatewayUrl: string | null; token: string | null } | null>(null)
+
+  useEffect(() => {
+    const parsed = parseHashParams(window.location.hash)
+    if (parsed.gatewayUrl) {
+      // Persist to localStorage so tab navigation doesn't lose the params
+      localStorage.setItem('oc_gateway_url', parsed.gatewayUrl)
+      if (parsed.token) {
+        localStorage.setItem('oc_gateway_token', parsed.token)
+      }
+      clearHashParams()
+      setParams(parsed)
+    } else {
+      // No hash params — fall back to localStorage
+      const gatewayUrl = localStorage.getItem('oc_gateway_url')
+      const token = localStorage.getItem('oc_gateway_token')
+      setParams({ gatewayUrl, token })
+    }
+  }, [])
+
+  if (!params) {return null} // first render — hash not yet read
+
+  if (!params.gatewayUrl) {
+    return <ErrorScreen message="No workspace URL found in your link." />
+  }
+
+  return (
+    <GatewayProvider gatewayUrl={params.gatewayUrl} token={params.token ?? undefined}>
+      <Shell>{children}</Shell>
+    </GatewayProvider>
+  )
+}

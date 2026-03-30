@@ -1,1 +1,278 @@
-{"data":"aW1wb3J0IHR5cGUgeyBHYXRld2F5RXZlbnRGcmFtZSwgR2F0ZXdheVJlc3BvbnNlRnJhbWUsIEdhdGV3YXlIZWxsb09rLCBHYXRld2F5RXJyb3JJbmZvLCBDb25uZWN0aW9uU3RhdHVzIH0gZnJvbSAnLi90eXBlcycKaW1wb3J0IHsgbG9hZE9yQ3JlYXRlRGV2aWNlSWRlbnRpdHksIHNpZ25EZXZpY2VQYXlsb2FkLCBidWlsZERldmljZUF1dGhQYXlsb2FkIH0gZnJvbSAnLi9kZXZpY2UtaWRlbnRpdHknCmltcG9ydCB7IGxvYWREZXZpY2VBdXRoVG9rZW4sIHN0b3JlRGV2aWNlQXV0aFRva2VuIH0gZnJvbSAnLi9kZXZpY2UtYXV0aCcKCmNvbnN0IE5PTl9SRUNPVkVSQUJMRV9DT0RFUyA9IG5ldyBTZXQoWwogICdBVVRIX1RPS0VOX01JU1NJTkcnLAogICdBVVRIX0JPT1RTVFJBUF9UT0tFTl9JTlZBTElEJywKICAnQVVUSF9QQVNTV09SRF9NSVNTSU5HJywKICAnQVVUSF9QQVNTV09SRF9NSVNNQVRDSCcsCiAgJ0FVVEhfUkFURV9MSU1JVEVEJywKICAnQ09OVFJPTF9VSV9ERVZJQ0VfSURFTlRJVFlfUkVRVUlSRUQnLAogICdERVZJQ0VfSURFTlRJVFlfUkVRVUlSRUQnLApdKQoKZXhwb3J0IGZ1bmN0aW9uIGlzTm9uUmVjb3ZlcmFibGVFcnJvcihlcnI6IEdhdGV3YXlFcnJvckluZm8gfCBudWxsKTogYm9vbGVhbiB7CiAgaWYgKCFlcnIpIHtyZXR1cm4gZmFsc2V9CiAgcmV0dXJuIE5PTl9SRUNPVkVSQUJMRV9DT0RFUy5oYXMoZXJyLmNvZGUpCn0KCmV4cG9ydCBmdW5jdGlvbiBjbGFzc2lmeUNsb3NlRXJyb3IoZGV0YWlsczogeyBjb2RlOiBzdHJpbmcgfSB8IG51bGwpOiBDb25uZWN0aW9uU3RhdHVzIHsKICBpZiAoIWRldGFpbHMpIHtyZXR1cm4gJ3JlY29ubmVjdGluZyd9CiAgaWYgKGRldGFpbHMuY29kZSA9PT0gJ1BBSVJJTkdfUkVRVUlSRUQnKSB7cmV0dXJuICdwYWlyaW5nJ30KICBpZiAoTk9OX1JFQ09WRVJBQkxFX0NPREVTLmhhcyhkZXRhaWxzLmNvZGUpKSB7cmV0dXJuICdhdXRoLWVycm9yJ30KICByZXR1cm4gJ3JlY29ubmVjdGluZycKfQoKdHlwZSBQZW5kaW5nID0geyByZXNvbHZlOiAodjogdW5rbm93bikgPT4gdm9pZDsgcmVqZWN0OiAoZTogdW5rbm93bikgPT4gdm9pZCB9CgpleHBvcnQgdHlwZSBHYXRld2F5Q2xpZW50T3B0aW9ucyA9IHsKICB1cmw6IHN0cmluZwogIHRva2VuPzogc3RyaW5nCiAgb25TdGF0dXM/OiAoczogQ29ubmVjdGlvblN0YXR1cykgPT4gdm9pZAogIG9uSGVsbG8/OiAoaGVsbG86IEdhdGV3YXlIZWxsb09rKSA9PiB2b2lkCiAgb25FdmVudD86IChldnQ6IEdhdGV3YXlFdmVudEZyYW1lKSA9PiB2b2lkCn0KCmV4cG9ydCBjbGFzcyBHYXRld2F5Q2xpZW50IHsKICBwcml2YXRlIHdzOiBXZWJTb2NrZXQgfCBudWxsID0gbnVsbAogIHByaXZhdGUgcGVuZGluZyA9IG5ldyBNYXA8c3RyaW5nLCBQZW5kaW5nPigpCiAgcHJpdmF0ZSBjbG9zZWQgPSBmYWxzZQogIHByaXZhdGUgY29ubmVjdE5vbmNlOiBzdHJpbmcgfCBudWxsID0gbnVsbAogIHByaXZhdGUgY29ubmVjdFNlbnQgPSBmYWxzZQogIHByaXZhdGUgYmFja29mZk1zID0gODAwCiAgcHJpdmF0ZSBsYXN0RXJyb3I6IEdhdGV3YXlFcnJvckluZm8gfCB1bmRlZmluZWQKCiAgY29uc3RydWN0b3IocHJpdmF0ZSBvcHRzOiBHYXRld2F5Q2xpZW50T3B0aW9ucykge30KCiAgc3RhcnQoKSB7CiAgICB0aGlzLmNsb3NlZCA9IGZhbHNlCiAgICB0aGlzLm9wdHMub25TdGF0dXM/LignY29ubmVjdGluZycpCiAgICB0aGlzLmNvbm5lY3QoKQogIH0KCiAgc3RvcCgpIHsKICAgIHRoaXMuY2xvc2VkID0gdHJ1ZQogICAgdGhpcy53cz8uY2xvc2UoKQogICAgdGhpcy53cyA9IG51bGwKICAgIHRoaXMuZmx1c2hQZW5kaW5nKG5ldyBFcnJvcignY2xpZW50IHN0b3BwZWQnKSkKICB9CgogIGdldCBjb25uZWN0ZWQoKSB7CiAgICByZXR1cm4gdGhpcy53cz8ucmVhZHlTdGF0ZSA9PT0gV2ViU29ja2V0Lk9QRU4KICB9CgogIHByaXZhdGUgY29ubmVjdCgpIHsKICAgIGlmICh0aGlzLmNsb3NlZCkge3JldHVybn0KICAgIHRoaXMud3MgPSBuZXcgV2ViU29ja2V0KHRoaXMub3B0cy51cmwpCiAgICB0aGlzLndzLmFkZEV2ZW50TGlzdGVuZXIoJ29wZW4nLCAoKSA9PiB7CiAgICAgIHRoaXMuY29ubmVjdE5vbmNlID0gbnVsbAogICAgICB0aGlzLmNvbm5lY3RTZW50ID0gZmFsc2UKICAgICAgLy8gR2F0ZXdheSBzZW5kcyBjb25uZWN0LmNoYWxsZW5nZSBmaXJzdDsgZmFsbGJhY2sgaWYgaXQgZG9lc24ndCBhcnJpdmUKICAgICAgc2V0VGltZW91dCgoKSA9PiB7IGlmICghdGhpcy5jb25uZWN0U2VudCkge3ZvaWQgdGhpcy5zZW5kQ29ubmVjdCgpfSB9LCA3NTApCiAgICB9KQogICAgdGhpcy53cy5hZGRFdmVudExpc3RlbmVyKCdtZXNzYWdlJywgKGV2KSA9PiB0aGlzLmhhbmRsZU1lc3NhZ2UoU3RyaW5nKChldikuZGF0YSA/PyAnJykpKQogICAgdGhpcy53cy5hZGRFdmVudExpc3RlbmVyKCdjbG9zZScsICgpID0+IHsKICAgICAgY29uc3QgZXJyID0gdGhpcy5sYXN0RXJyb3IKICAgICAgdGhpcy5sYXN0RXJyb3IgPSB1bmRlZmluZWQKICAgICAgdGhpcy53cyA9IG51bGwKICAgICAgdGhpcy5mbHVzaFBlbmRpbmcobmV3IEVycm9yKCdnYXRld2F5IGNsb3NlZCcpKQogICAgICBjb25zdCBzdGF0dXMgPSBjbGFzc2lmeUNsb3NlRXJyb3IoZXJyID8geyBjb2RlOiBlcnIuY29kZSB9IDogbnVsbCkKICAgICAgdGhpcy5vcHRzLm9uU3RhdHVzPy4oc3RhdHVzKQogICAgICBpZiAoIWlzTm9uUmVjb3ZlcmFibGVFcnJvcihlcnIgPz8gbnVsbCkpIHsKICAgICAgICB0aGlzLnNjaGVkdWxlUmVjb25uZWN0KCkKICAgICAgfQogICAgfSkKICAgIHRoaXMud3MuYWRkRXZlbnRMaXN0ZW5lcignZXJyb3InLCAoKSA9PiB7CiAgICAgIC8vIGNsb3NlIGhhbmRsZXIgZmlyZXMgYWZ0ZXIgZXJyb3IKICAgIH0pCiAgfQoKICBwcml2YXRlIHNjaGVkdWxlUmVjb25uZWN0KCkgewogICAgaWYgKHRoaXMuY2xvc2VkKSB7cmV0dXJufQogICAgY29uc3QgZGVsYXkgPSB0aGlzLmJhY2tvZmZNcwogICAgdGhpcy5iYWNrb2ZmTXMgPSBNYXRoLm1pbih0aGlzLmJhY2tvZmZNcyAqIDEuNywgMTVfMDAwKQogICAgc2V0VGltZW91dCgoKSA9PiB0aGlzLmNvbm5lY3QoKSwgZGVsYXkpCiAgfQoKICBwcml2YXRlIGZsdXNoUGVuZGluZyhlcnI6IEVycm9yKSB7CiAgICBmb3IgKGNvbnN0IFssIHBdIG9mIHRoaXMucGVuZGluZykge3AucmVqZWN0KGVycil9CiAgICB0aGlzLnBlbmRpbmcuY2xlYXIoKQogIH0KCiAgcHJpdmF0ZSBhc3luYyBzZW5kQ29ubmVjdCgpIHsKICAgIGlmICh0aGlzLmNvbm5lY3RTZW50KSB7cmV0dXJufQogICAgdGhpcy5jb25uZWN0U2VudCA9IHRydWUKCiAgICBjb25zdCBpc1NlY3VyZSA9IHR5cGVvZiBjcnlwdG8gIT09ICd1bmRlZmluZWQnICYmICEhY3J5cHRvLnN1YnRsZQogICAgY29uc3QgdG9rZW4gPSB0aGlzLm9wdHMudG9rZW4/LnRyaW0oKSB8fCB1bmRlZmluZWQKICAgIGNvbnN0IHJvbGUgPSAnb3BlcmF0b3InCiAgICBjb25zdCBzY29wZXMgPSBbJ29wZXJhdG9yLmFkbWluJywgJ29wZXJhdG9yLmFwcHJvdmFscycsICdvcGVyYXRvci5wYWlyaW5nJ10KCiAgICBpZiAoaXNTZWN1cmUpIHsKICAgICAgY29uc3QgaWRlbnRpdHkgPSBhd2FpdCBsb2FkT3JDcmVhdGVEZXZpY2VJZGVudGl0eSgpCiAgICAgIGNvbnN0IHNpZ25lZEF0TXMgPSBEYXRlLm5vdygpCiAgICAgIGNvbnN0IG5vbmNlID0gdGhpcy5jb25uZWN0Tm9uY2UgPz8gJycKICAgICAgY29uc3QgcGF5bG9hZCA9IGJ1aWxkRGV2aWNlQXV0aFBheWxvYWQoewogICAgICAgIGRldmljZUlkOiBpZGVudGl0eS5kZXZpY2VJZCwKICAgICAgICBjbGllbnRJZDogJ2Jyb2tlci1kYXNoYm9hcmQnLAogICAgICAgIHJvbGUsCiAgICAgICAgc2NvcGVzLAogICAgICAgIHNpZ25lZEF0TXMsCiAgICAgICAgdG9rZW46IHRva2VuID8/IG51bGwsCiAgICAgICAgbm9uY2UsCiAgICAgIH0pCiAgICAgIGNvbnN0IHNpZ25hdHVyZSA9IGF3YWl0IHNpZ25EZXZpY2VQYXlsb2FkKGlkZW50aXR5LnByaXZhdGVLZXksIHBheWxvYWQpCiAgICAgIGNvbnN0IGRldmljZSA9IHsKICAgICAgICBpZDogaWRlbnRpdHkuZGV2aWNlSWQsCiAgICAgICAgcHVibGljS2V5OiBpZGVudGl0eS5wdWJsaWNLZXksCiAgICAgICAgc2lnbmF0dXJlLAogICAgICAgIHNpZ25lZEF0OiBzaWduZWRBdE1zLAogICAgICAgIG5vbmNlLAogICAgICB9CgogICAgICAvLyBVc2UgY2FjaGVkIGRldmljZSB0b2tlbiBpZiBubyBleHBsaWNpdCB0b2tlbiBwcm92aWRlZAogICAgICBjb25zdCBjYWNoZWQgPSBsb2FkRGV2aWNlQXV0aFRva2VuKHsgZGV2aWNlSWQ6IGlkZW50aXR5LmRldmljZUlkLCByb2xlIH0pCiAgICAgIGNvbnN0IHJlc29sdmVkVG9rZW4gPSB0b2tlbiA/PyBjYWNoZWQ/LnRva2VuCgogICAgICB2b2lkIHRoaXMucmVxdWVzdDxHYXRld2F5SGVsbG9Paz4oJ2Nvbm5lY3QnLCB7CiAgICAgICAgbWluUHJvdG9jb2w6IDMsCiAgICAgICAgbWF4UHJvdG9jb2w6IDMsCiAgICAgICAgY2xpZW50OiB7CiAgICAgICAgICBpZDogJ2Jyb2tlci1kYXNoYm9hcmQnLAogICAgICAgICAgdmVyc2lvbjogJzEuMC4wJywKICAgICAgICAgIHBsYXRmb3JtOiB0eXBlb2YgbmF2aWdhdG9yICE9PSAndW5kZWZpbmVkJyA/IChuYXZpZ2F0b3IucGxhdGZvcm0gPz8gJ3dlYicpIDogJ3dlYicsCiAgICAgICAgICBtb2RlOiAnd2ViY2hhdCcsCiAgICAgICAgfSwKICAgICAgICByb2xlLAogICAgICAgIHNjb3BlcywKICAgICAgICBjYXBzOiBbJ3Rvb2wtZXZlbnRzJ10sCiAgICAgICAgYXV0aDogcmVzb2x2ZWRUb2tlbiA/IHsgdG9rZW46IHJlc29sdmVkVG9rZW4gfSA6IHVuZGVmaW5lZCwKICAgICAgICBkZXZpY2UsCiAgICAgICAgdXNlckFnZW50OiB0eXBlb2YgbmF2aWdhdG9yICE9PSAndW5kZWZpbmVkJyA/IG5hdmlnYXRvci51c2VyQWdlbnQgOiAnYnJva2VyLWRhc2hib2FyZCcsCiAgICAgICAgbG9jYWxlOiB0eXBlb2YgbmF2aWdhdG9yICE9PSAndW5kZWZpbmVkJyA/IG5hdmlnYXRvci5sYW5ndWFnZSA6ICdlbicsCiAgICAgIH0pLnRoZW4oKGhlbGxvKSA9PiB7CiAgICAgICAgdGhpcy5iYWNrb2ZmTXMgPSA4MDAKICAgICAgICBpZiAoaGVsbG8/LmF1dGg/LmRldmljZVRva2VuKSB7CiAgICAgICAgICBzdG9yZURldmljZUF1dGhUb2tlbih7CiAgICAgICAgICAgIGRldmljZUlkOiBpZGVudGl0eS5kZXZpY2VJZCwKICAgICAgICAgICAgcm9sZSwKICAgICAgICAgICAgdG9rZW46IGhlbGxvLmF1dGguZGV2aWNlVG9rZW4sCiAgICAgICAgICAgIHNjb3BlczogaGVsbG8uYXV0aC5zY29wZXMgPz8gW10sCiAgICAgICAgICB9KQogICAgICAgIH0KICAgICAgICB0aGlzLm9wdHMub25TdGF0dXM/LignY29ubmVjdGVkJykKICAgICAgICB0aGlzLm9wdHMub25IZWxsbz8uKGhlbGxvKQogICAgICB9KS5jYXRjaCgoZXJyOiB1bmtub3duKSA9PiB7CiAgICAgICAgaWYgKGVyciBpbnN0YW5jZW9mIEdhdGV3YXlSZXF1ZXN0RXJyb3IpIHsKICAgICAgICAgIHRoaXMubGFzdEVycm9yID0geyBjb2RlOiBlcnIuY29kZSwgbWVzc2FnZTogZXJyLm1lc3NhZ2UgfQogICAgICAgIH0KICAgICAgICB0aGlzLndzPy5jbG9zZSg0MDA4LCAnY29ubmVjdCBmYWlsZWQnKQogICAgICB9KQogICAgfSBlbHNlIHsKICAgICAgLy8gTm9uLXNlY3VyZSBjb250ZXh0IChwbGFpbiBIVFRQKSDigJQgbm8gZGV2aWNlIGlkZW50aXR5CiAgICAgIHZvaWQgdGhpcy5yZXF1ZXN0PEdhdGV3YXlIZWxsb09rPignY29ubmVjdCcsIHsKICAgICAgICBtaW5Qcm90b2NvbDogMywKICAgICAgICBtYXhQcm90b2NvbDogMywKICAgICAgICBjbGllbnQ6IHsKICAgICAgICAgIGlkOiAnYnJva2VyLWRhc2hib2FyZCcsCiAgICAgICAgICB2ZXJzaW9uOiAnMS4wLjAnLAogICAgICAgICAgcGxhdGZvcm06ICd3ZWInLAogICAgICAgICAgbW9kZTogJ3dlYmNoYXQnLAogICAgICAgIH0sCiAgICAgICAgcm9sZSwKICAgICAgICBzY29wZXMsCiAgICAgICAgY2FwczogW10sCiAgICAgICAgYXV0aDogdG9rZW4gPyB7IHRva2VuIH0gOiB1bmRlZmluZWQsCiAgICAgICAgdXNlckFnZW50OiB0eXBlb2YgbmF2aWdhdG9yICE9PSAndW5kZWZpbmVkJyA/IG5hdmlnYXRvci51c2VyQWdlbnQgOiAnYnJva2VyLWRhc2hib2FyZCcsCiAgICAgICAgbG9jYWxlOiAnZW4nLAogICAgICB9KS50aGVuKChoZWxsbykgPT4gewogICAgICAgIHRoaXMuYmFja29mZk1zID0gODAwCiAgICAgICAgdGhpcy5vcHRzLm9uU3RhdHVzPy4oJ2Nvbm5lY3RlZCcpCiAgICAgICAgdGhpcy5vcHRzLm9uSGVsbG8/LihoZWxsbykKICAgICAgfSkuY2F0Y2goKGVycjogdW5rbm93bikgPT4gewogICAgICAgIGlmIChlcnIgaW5zdGFuY2VvZiBHYXRld2F5UmVxdWVzdEVycm9yKSB7CiAgICAgICAgICB0aGlzLmxhc3RFcnJvciA9IHsgY29kZTogZXJyLmNvZGUsIG1lc3NhZ2U6IGVyci5tZXNzYWdlIH0KICAgICAgICB9CiAgICAgICAgdGhpcy53cz8uY2xvc2UoNDAwOCwgJ2Nvbm5lY3QgZmFpbGVkJykKICAgICAgfSkKICAgIH0KICB9CgogIHByaXZhdGUgaGFuZGxlTWVzc2FnZShyYXc6IHN0cmluZykgewogICAgbGV0IHBhcnNlZDogdW5rbm93bgogICAgdHJ5IHsgcGFyc2VkID0gSlNPTi5wYXJzZShyYXcpIH0gY2F0Y2ggeyByZXR1cm4gfQogICAgY29uc3QgZnJhbWUgPSBwYXJzZWQgYXMgeyB0eXBlPzogdW5rbm93biB9CgogICAgaWYgKGZyYW1lLnR5cGUgPT09ICdldmVudCcpIHsKICAgICAgY29uc3QgZXZ0ID0gcGFyc2VkIGFzIEdhdGV3YXlFdmVudEZyYW1lCiAgICAgIGlmIChldnQuZXZlbnQgPT09ICdjb25uZWN0LmNoYWxsZW5nZScpIHsKICAgICAgICBjb25zdCBwYXlsb2FkID0gZXZ0LnBheWxvYWQgYXMgeyBub25jZT86IHVua25vd24gfSB8IHVuZGVmaW5lZAogICAgICAgIGNvbnN0IG5vbmNlID0gdHlwZW9mIHBheWxvYWQ/Lm5vbmNlID09PSAnc3RyaW5nJyA/IHBheWxvYWQubm9uY2UgOiBudWxsCiAgICAgICAgaWYgKG5vbmNlKSB7CiAgICAgICAgICB0aGlzLmNvbm5lY3ROb25jZSA9IG5vbmNlCiAgICAgICAgICB2b2lkIHRoaXMuc2VuZENvbm5lY3QoKQogICAgICAgIH0KICAgICAgICByZXR1cm4KICAgICAgfQogICAgICB0aGlzLm9wdHMub25FdmVudD8uKGV2dCkKICAgICAgcmV0dXJuCiAgICB9CgogICAgaWYgKGZyYW1lLnR5cGUgPT09ICdyZXMnKSB7CiAgICAgIGNvbnN0IHJlcyA9IHBhcnNlZCBhcyBHYXRld2F5UmVzcG9uc2VGcmFtZQogICAgICBjb25zdCBwID0gdGhpcy5wZW5kaW5nLmdldChyZXMuaWQpCiAgICAgIGlmICghcCkge3JldHVybn0KICAgICAgdGhpcy5wZW5kaW5nLmRlbGV0ZShyZXMuaWQpCiAgICAgIGlmIChyZXMub2spIHsKICAgICAgICBwLnJlc29sdmUocmVzLnBheWxvYWQpCiAgICAgIH0gZWxzZSB7CiAgICAgICAgcC5yZWplY3QobmV3IEdhdGV3YXlSZXF1ZXN0RXJyb3IoewogICAgICAgICAgY29kZTogcmVzLmVycm9yPy5jb2RlID8/ICdVTkFWQUlMQUJMRScsCiAgICAgICAgICBtZXNzYWdlOiByZXMuZXJyb3I/Lm1lc3NhZ2UgPz8gJ3JlcXVlc3QgZmFpbGVkJywKICAgICAgICB9KSkKICAgICAgfQogICAgfQogIH0KCiAgcmVxdWVzdDxUID0gdW5rbm93bj4obWV0aG9kOiBzdHJpbmcsIHBhcmFtcz86IHVua25vd24pOiBQcm9taXNlPFQ+IHsKICAgIGlmICghdGhpcy53cyB8fCB0aGlzLndzLnJlYWR5U3RhdGUgIT09IFdlYlNvY2tldC5PUEVOKSB7CiAgICAgIHJldHVybiBQcm9taXNlLnJlamVjdChuZXcgRXJyb3IoJ25vdCBjb25uZWN0ZWQnKSkKICAgIH0KICAgIGNvbnN0IGlkID0gY3J5cHRvLnJhbmRvbVVVSUQoKQogICAgdGhpcy53cy5zZW5kKEpTT04uc3RyaW5naWZ5KHsgdHlwZTogJ3JlcScsIGlkLCBtZXRob2QsIHBhcmFtcyB9KSkKICAgIHJldHVybiBuZXcgUHJvbWlzZTxUPigocmVzb2x2ZSwgcmVqZWN0KSA9PiB7CiAgICAgIHRoaXMucGVuZGluZy5zZXQoaWQsIHsgcmVzb2x2ZTogKHYpID0+IHJlc29sdmUodiBhcyBUKSwgcmVqZWN0IH0pCiAgICB9KQogIH0KfQoKZXhwb3J0IGNsYXNzIEdhdGV3YXlSZXF1ZXN0RXJyb3IgZXh0ZW5kcyBFcnJvciB7CiAgcmVhZG9ubHkgY29kZTogc3RyaW5nCiAgY29uc3RydWN0b3IoZXJyOiB7IGNvZGU6IHN0cmluZzsgbWVzc2FnZTogc3RyaW5nIH0pIHsKICAgIHN1cGVyKGVyci5tZXNzYWdlKQogICAgdGhpcy5uYW1lID0gJ0dhdGV3YXlSZXF1ZXN0RXJyb3InCiAgICB0aGlzLmNvZGUgPSBlcnIuY29kZQogIH0KfQo="}
+import type { GatewayEventFrame, GatewayResponseFrame, GatewayHelloOk, GatewayErrorInfo, ConnectionStatus } from './types'
+import { loadOrCreateDeviceIdentity, signDevicePayload, buildDeviceAuthPayload } from './device-identity'
+import { loadDeviceAuthToken, storeDeviceAuthToken } from './device-auth'
+
+const NON_RECOVERABLE_CODES = new Set([
+  'AUTH_TOKEN_MISSING',
+  'AUTH_BOOTSTRAP_TOKEN_INVALID',
+  'AUTH_PASSWORD_MISSING',
+  'AUTH_PASSWORD_MISMATCH',
+  'AUTH_RATE_LIMITED',
+  'CONTROL_UI_DEVICE_IDENTITY_REQUIRED',
+  'DEVICE_IDENTITY_REQUIRED',
+])
+
+export function isNonRecoverableError(err: GatewayErrorInfo | null): boolean {
+  if (!err) {return false}
+  return NON_RECOVERABLE_CODES.has(err.code)
+}
+
+export function classifyCloseError(details: { code: string } | null): ConnectionStatus {
+  if (!details) {return 'reconnecting'}
+  if (details.code === 'PAIRING_REQUIRED') {return 'pairing'}
+  if (NON_RECOVERABLE_CODES.has(details.code)) {return 'auth-error'}
+  return 'reconnecting'
+}
+
+type Pending = { resolve: (v: unknown) => void; reject: (e: unknown) => void }
+
+export type GatewayClientOptions = {
+  url: string
+  token?: string
+  onStatus?: (s: ConnectionStatus) => void
+  onHello?: (hello: GatewayHelloOk) => void
+  onEvent?: (evt: GatewayEventFrame) => void
+}
+
+export class GatewayClient {
+  private ws: WebSocket | null = null
+  private pending = new Map<string, Pending>()
+  private closed = false
+  private connectNonce: string | null = null
+  private connectSent = false
+  private backoffMs = 800
+  private lastError: GatewayErrorInfo | undefined
+  private pingInterval: ReturnType<typeof setInterval> | null = null
+
+  constructor(private opts: GatewayClientOptions) {}
+
+  start() {
+    this.closed = false
+    this.opts.onStatus?.('connecting')
+    this.connect()
+  }
+
+  stop() {
+    this.closed = true
+    this.stopKeepalive()
+    this.ws?.close()
+    this.ws = null
+    this.flushPending(new Error('client stopped'))
+  }
+
+  get connected() {
+    return this.ws?.readyState === WebSocket.OPEN
+  }
+
+  private startKeepalive() {
+    this.stopKeepalive()
+    this.pingInterval = setInterval(() => {
+      if (this.connected) {
+        this.ws!.send(JSON.stringify({ type: 'req', id: crypto.randomUUID(), method: 'ping', params: {} }))
+      }
+    }, 30_000)
+  }
+
+  private stopKeepalive() {
+    if (this.pingInterval !== null) {
+      clearInterval(this.pingInterval)
+      this.pingInterval = null
+    }
+  }
+
+  private connect() {
+    if (this.closed) {return}
+    this.ws = new WebSocket(this.opts.url)
+    this.ws.addEventListener('open', () => {
+      this.connectNonce = null
+      this.connectSent = false
+      // Gateway sends connect.challenge first; fallback if it doesn't arrive
+      setTimeout(() => { if (!this.connectSent) {void this.sendConnect()} }, 750)
+    })
+    this.ws.addEventListener('message', (ev) => this.handleMessage(String((ev).data ?? '')))
+    this.ws.addEventListener('close', () => {
+      this.stopKeepalive()
+      const err = this.lastError
+      this.lastError = undefined
+      this.ws = null
+      this.flushPending(new Error('gateway closed'))
+      const status = classifyCloseError(err ? { code: err.code } : null)
+      this.opts.onStatus?.(status)
+      if (!isNonRecoverableError(err ?? null)) {
+        this.scheduleReconnect()
+      }
+    })
+    this.ws.addEventListener('error', () => {
+      // close handler fires after error
+    })
+  }
+
+  private scheduleReconnect() {
+    if (this.closed) {return}
+    const delay = this.backoffMs
+    this.backoffMs = Math.min(this.backoffMs * 1.7, 15_000)
+    setTimeout(() => this.connect(), delay)
+  }
+
+  private flushPending(err: Error) {
+    for (const [, p] of this.pending) {p.reject(err)}
+    this.pending.clear()
+  }
+
+  private async sendConnect() {
+    if (this.connectSent) {return}
+    this.connectSent = true
+
+    const isSecure = typeof crypto !== 'undefined' && !!crypto.subtle
+    const token = this.opts.token?.trim() || undefined
+    const role = 'operator'
+    const scopes = ['operator.admin', 'operator.approvals', 'operator.pairing']
+
+    if (isSecure) {
+      const identity = await loadOrCreateDeviceIdentity()
+      const signedAtMs = Date.now()
+      const nonce = this.connectNonce ?? ''
+      const payload = buildDeviceAuthPayload({
+        deviceId: identity.deviceId,
+        clientId: 'broker-dashboard',
+        role,
+        scopes,
+        signedAtMs,
+        token: token ?? null,
+        nonce,
+      })
+      const signature = await signDevicePayload(identity.privateKey, payload)
+      const device = {
+        id: identity.deviceId,
+        publicKey: identity.publicKey,
+        signature,
+        signedAt: signedAtMs,
+        nonce,
+      }
+
+      // Use cached device token if no explicit token provided
+      const cached = loadDeviceAuthToken({ deviceId: identity.deviceId, role })
+      const resolvedToken = token ?? cached?.token
+
+      void this.request<GatewayHelloOk>('connect', {
+        minProtocol: 3,
+        maxProtocol: 3,
+        client: {
+          id: 'broker-dashboard',
+          version: '1.0.0',
+          platform: typeof navigator !== 'undefined' ? (navigator.platform ?? 'web') : 'web',
+          mode: 'webchat',
+        },
+        role,
+        scopes,
+        caps: ['tool-events'],
+        auth: resolvedToken ? { token: resolvedToken } : undefined,
+        device,
+        userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'broker-dashboard',
+        locale: typeof navigator !== 'undefined' ? navigator.language : 'en',
+      }).then((hello) => {
+        this.backoffMs = 800
+        if (hello?.auth?.deviceToken) {
+          storeDeviceAuthToken({
+            deviceId: identity.deviceId,
+            role,
+            token: hello.auth.deviceToken,
+            scopes: hello.auth.scopes ?? [],
+          })
+        }
+        this.opts.onStatus?.('connected')
+        this.startKeepalive()
+        this.opts.onHello?.(hello)
+      }).catch((err: unknown) => {
+        if (err instanceof GatewayRequestError) {
+          this.lastError = { code: err.code, message: err.message }
+        }
+        this.ws?.close(4008, 'connect failed')
+      })
+    } else {
+      // Non-secure context (plain HTTP) — no device identity
+      void this.request<GatewayHelloOk>('connect', {
+        minProtocol: 3,
+        maxProtocol: 3,
+        client: {
+          id: 'broker-dashboard',
+          version: '1.0.0',
+          platform: 'web',
+          mode: 'webchat',
+        },
+        role,
+        scopes,
+        caps: [],
+        auth: token ? { token } : undefined,
+        userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'broker-dashboard',
+        locale: 'en',
+      }).then((hello) => {
+        this.backoffMs = 800
+        this.opts.onStatus?.('connected')
+        this.startKeepalive()
+        this.opts.onHello?.(hello)
+      }).catch((err: unknown) => {
+        if (err instanceof GatewayRequestError) {
+          this.lastError = { code: err.code, message: err.message }
+        }
+        this.ws?.close(4008, 'connect failed')
+      })
+    }
+  }
+
+  private handleMessage(raw: string) {
+    let parsed: unknown
+    try { parsed = JSON.parse(raw) } catch { return }
+    const frame = parsed as { type?: unknown }
+
+    if (frame.type === 'event') {
+      const evt = parsed as GatewayEventFrame
+      if (evt.event === 'connect.challenge') {
+        const payload = evt.payload as { nonce?: unknown } | undefined
+        const nonce = typeof payload?.nonce === 'string' ? payload.nonce : null
+        if (nonce) {
+          this.connectNonce = nonce
+          void this.sendConnect()
+        }
+        return
+      }
+      this.opts.onEvent?.(evt)
+      return
+    }
+
+    if (frame.type === 'res') {
+      const res = parsed as GatewayResponseFrame
+      const p = this.pending.get(res.id)
+      if (!p) {return}
+      this.pending.delete(res.id)
+      if (res.ok) {
+        p.resolve(res.payload)
+      } else {
+        p.reject(new GatewayRequestError({
+          code: res.error?.code ?? 'UNAVAILABLE',
+          message: res.error?.message ?? 'request failed',
+        }))
+      }
+    }
+  }
+
+  request<T = unknown>(method: string, params?: unknown): Promise<T> {
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) {
+      return Promise.reject(new Error('not connected'))
+    }
+    const id = crypto.randomUUID()
+    this.ws.send(JSON.stringify({ type: 'req', id, method, params }))
+    return new Promise<T>((resolve, reject) => {
+      this.pending.set(id, { resolve: (v) => resolve(v as T), reject })
+    })
+  }
+}
+
+export class GatewayRequestError extends Error {
+  readonly code: string
+  constructor(err: { code: string; message: string }) {
+    super(err.message)
+    this.name = 'GatewayRequestError'
+    this.code = err.code
+  }
+}
