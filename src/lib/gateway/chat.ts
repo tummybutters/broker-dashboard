@@ -12,6 +12,10 @@ export type ChatState = {
   error: string | null
 }
 
+function matchesSessionKey(actual: string, expected: string): boolean {
+  return actual === expected || actual.endsWith(`:${expected}`)
+}
+
 function extractText(message: unknown): string | null {
   if (!message || typeof message !== 'object') {return null}
   const m = message as Record<string, unknown>
@@ -28,7 +32,7 @@ function extractText(message: unknown): string | null {
 }
 
 export function handleChatEvent(state: ChatState, payload: ChatEventPayload) {
-  if (payload.sessionKey !== state.sessionKey) {return}
+  if (!matchesSessionKey(payload.sessionKey, state.sessionKey)) {return}
 
   if (payload.state === 'delta') {
     const text = extractText(payload.message)

@@ -51,6 +51,17 @@ describe('handleChatEvent', () => {
     expect(state.stream).toBeNull()
   })
 
+  it('accepts agent-scoped session keys from the gateway', () => {
+    const state = makeState()
+    handleChatEvent(state, {
+      runId: 'r1',
+      sessionKey: 'agent:main:test-session',
+      state: 'delta',
+      message: { text: 'Hello from live events' },
+    })
+    expect(state.stream).toBe('Hello from live events')
+  })
+
   it('sets error on error state and clears stream', () => {
     const state = makeState({ runId: 'r1', stream: 'partial' })
     handleChatEvent(state, {
