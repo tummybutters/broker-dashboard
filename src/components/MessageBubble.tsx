@@ -52,3 +52,36 @@ export function StreamBubble({ text }: { text: string }) {
     </div>
   )
 }
+
+export function ThinkingBubble() {
+  return (
+    <div className="flex justify-start mb-3">
+      <div
+        className="w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0 text-xs font-bold"
+        style={{ background: 'var(--gold-dim)', color: 'var(--gold)', border: '1px solid var(--border)', borderRadius: '4px' }}
+      >
+        Q
+      </div>
+      <div
+        className="max-w-[80%] px-4 py-3"
+        style={{ background: 'var(--surface)', color: 'var(--text)', borderRadius: '8px', border: '1px solid var(--border)' }}
+      >
+        <div className="flex items-center gap-3">
+          <div className="thinking-loader" aria-hidden="true">
+            <div className="thinking-cup">
+              <div className="thinking-cup-handle" />
+              <div className="thinking-smoke thinking-smoke-one" />
+              <div className="thinking-smoke thinking-smoke-two" />
+              <div className="thinking-smoke thinking-smoke-three" />
+            </div>
+            <div className="thinking-dots">..........................</div>
+          </div>
+          <div className="min-w-0">
+            <p className="font-sans text-sm font-medium" style={{ color: 'var(--text)' }}>Thinking</p>
+            <p className="text-xs" style={{ color: 'var(--text-muted)' }}>Connected to the live workspace and waiting on a response.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

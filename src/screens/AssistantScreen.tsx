@@ -5,7 +5,7 @@ import { ChatComposer } from '@/components/ChatComposer'
 import { QuickActions } from '@/components/QuickActions'
 
 export default function AssistantScreen() {
-  const { messages, stream, sending, loading, status, send, abort } = useGateway()
+  const { messages, stream, sending, thinking, loading, status, send, abort } = useGateway()
   const connected = status === 'connected'
 
   return (
@@ -14,12 +14,12 @@ export default function AssistantScreen() {
         <h1 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>Assistant</h1>
         <p className="text-serif text-xs mt-0.5">your AI sales partner</p>
       </div>
-      <ChatThread messages={messages} stream={stream} loading={loading} />
+      <ChatThread messages={messages} stream={stream} thinking={thinking} loading={loading} />
       <QuickActions onAction={(prompt) => void send(prompt)} />
       <ChatComposer
         onSend={(text) => void send(text)}
         onAbort={() => void abort()}
-        sending={sending}
+        sending={sending || thinking}
         connected={connected}
       />
     </div>

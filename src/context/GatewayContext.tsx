@@ -24,6 +24,7 @@ type GatewayContextValue = {
   messages: ChatMessage[]
   stream: string | null
   sending: boolean
+  thinking: boolean
   loading: boolean
   error: string | null
   send: (text: string) => Promise<void>
@@ -44,7 +45,7 @@ export function GatewayProvider({
   sessionKey?: string
 }) {
   const [status, setStatus] = useState<ConnectionStatus>('connecting')
-  const [_tick, setTick] = useState(0)
+  const [, setTick] = useState(0)
 
   const chatRef = useRef<ChatState>({
     sessionKey,
@@ -100,7 +101,9 @@ export function GatewayProvider({
   const send = useCallback(async (text: string) => {
     const client = clientRef.current
     if (!client) {return}
-    await sendMessage(chatRef.current, client, text)
+    const pending = sendMessage(chatRef.current, client, text)
+    rerender()
+    await pending
     rerender()
   }, [rerender])
 
@@ -120,6 +123,7 @@ export function GatewayProvider({
         messages: state.messages,
         stream: state.stream,
         sending: state.sending,
+        thinking: state.runId !== null && state.stream === null,
         loading: state.loading,
         error: state.error,
         send,

@@ -1,18 +1,19 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import { MessageBubble, StreamBubble } from './MessageBubble'
+import { MessageBubble, StreamBubble, ThinkingBubble } from './MessageBubble'
 import type { ChatMessage } from '@/lib/gateway/types'
 
-export function ChatThread({ messages, stream, loading }: {
+export function ChatThread({ messages, stream, thinking, loading }: {
   messages: ChatMessage[]
   stream: string | null
+  thinking: boolean
   loading: boolean
 }) {
   const bottomRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [messages.length, stream])
+  }, [messages.length, stream, thinking])
 
   if (loading) {
     return (
@@ -22,7 +23,7 @@ export function ChatThread({ messages, stream, loading }: {
     )
   }
 
-  if (messages.length === 0 && !stream) {
+  if (messages.length === 0 && !stream && !thinking) {
     return (
       <div className="flex-1 flex flex-col items-center justify-center gap-2 px-8 relative">
         <div className="texture-grid absolute inset-0 opacity-40 pointer-events-none" />
@@ -37,6 +38,7 @@ export function ChatThread({ messages, stream, loading }: {
       {messages.map((msg, i) => (
         <MessageBubble key={i} message={msg} />
       ))}
+      {thinking && <ThinkingBubble />}
       {stream !== null && <StreamBubble text={stream} />}
       <div ref={bottomRef} />
     </div>

@@ -107,7 +107,7 @@ export async function sendMessage(
   state.sending = true
   state.error = null
   state.runId = runId
-  state.stream = ''
+  state.stream = null
   state.streamStartedAt = Date.now()
   try {
     await client.request('chat.send', {
