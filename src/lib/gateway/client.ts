@@ -2,6 +2,8 @@ import type { GatewayEventFrame, GatewayResponseFrame, GatewayHelloOk, GatewayEr
 import { loadOrCreateDeviceIdentity, signDevicePayload, buildDeviceAuthPayload } from './device-identity'
 import { loadDeviceAuthToken, storeDeviceAuthToken } from './device-auth'
 
+const CONTROL_UI_CLIENT_ID = 'openclaw-control-ui'
+
 const NON_RECOVERABLE_CODES = new Set([
   'AUTH_TOKEN_MISSING',
   'AUTH_BOOTSTRAP_TOKEN_INVALID',
@@ -134,7 +136,7 @@ export class GatewayClient {
       const nonce = this.connectNonce ?? ''
       const payload = buildDeviceAuthPayload({
         deviceId: identity.deviceId,
-        clientId: 'broker-dashboard',
+        clientId: CONTROL_UI_CLIENT_ID,
         role,
         scopes,
         signedAtMs,
@@ -158,17 +160,17 @@ export class GatewayClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: 'broker-dashboard',
+          id: CONTROL_UI_CLIENT_ID,
           version: '1.0.0',
           platform: typeof navigator !== 'undefined' ? (navigator.platform ?? 'web') : 'web',
           mode: 'webchat',
         },
         role,
         scopes,
-        caps: ['tool-events'],
+        caps: [],
         auth: resolvedToken ? { token: resolvedToken } : undefined,
         device,
-        userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'broker-dashboard',
+        userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : CONTROL_UI_CLIENT_ID,
         locale: typeof navigator !== 'undefined' ? navigator.language : 'en',
       }).then((hello) => {
         this.backoffMs = 800
@@ -195,7 +197,7 @@ export class GatewayClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: 'broker-dashboard',
+          id: CONTROL_UI_CLIENT_ID,
           version: '1.0.0',
           platform: 'web',
           mode: 'webchat',
@@ -204,7 +206,7 @@ export class GatewayClient {
         scopes,
         caps: [],
         auth: token ? { token } : undefined,
-        userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'broker-dashboard',
+        userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : CONTROL_UI_CLIENT_ID,
         locale: 'en',
       }).then((hello) => {
         this.backoffMs = 800

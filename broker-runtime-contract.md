@@ -36,10 +36,10 @@ Passed to gateway as `connect.params.auth.token` during handshake. Hash is strip
   "type": "req", "id": "<uuid>", "method": "connect",
   "params": {
     "minProtocol": 3, "maxProtocol": 3,
-    "client": { "id": "broker-dashboard", "version": "1.0.0", "platform": "web", "mode": "webchat" },
+    "client": { "id": "openclaw-control-ui", "version": "1.0.0", "platform": "web", "mode": "webchat" },
     "role": "operator",
     "scopes": ["operator.admin", "operator.approvals", "operator.pairing"],
-    "caps": ["tool-events"],
+    "caps": [],
     "auth": { "token": "<from-hash>" },
     "device": { "id": "...", "publicKey": "...", "signature": "...", "signedAt": ..., "nonce": "..." },
     "userAgent": "...", "locale": "..."
