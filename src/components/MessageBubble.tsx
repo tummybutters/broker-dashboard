@@ -1,1 +1,54 @@
-{"data":"aW1wb3J0IHR5cGUgeyBDaGF0TWVzc2FnZSB9IGZyb20gJ0AvbGliL2dhdGV3YXkvdHlwZXMnCgpmdW5jdGlvbiBleHRyYWN0VGV4dChtc2c6IENoYXRNZXNzYWdlKTogc3RyaW5nIHsKICBmb3IgKGNvbnN0IGJsb2NrIG9mIG1zZy5jb250ZW50KSB7CiAgICBpZiAoYmxvY2sudHlwZSA9PT0gJ3RleHQnICYmIGJsb2NrLnRleHQpIHtyZXR1cm4gYmxvY2sudGV4dH0KICB9CiAgcmV0dXJuICcnCn0KCmV4cG9ydCBmdW5jdGlvbiBNZXNzYWdlQnViYmxlKHsgbWVzc2FnZSB9OiB7IG1lc3NhZ2U6IENoYXRNZXNzYWdlIH0pIHsKICBjb25zdCBpc1VzZXIgPSBtZXNzYWdlLnJvbGUgPT09ICd1c2VyJwogIGNvbnN0IHRleHQgPSBleHRyYWN0VGV4dChtZXNzYWdlKQogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT17YGZsZXggJHtpc1VzZXIgPyAnanVzdGlmeS1lbmQnIDogJ2p1c3RpZnktc3RhcnQnfSBtYi0zYH0+CiAgICAgIHshaXNVc2VyICYmICgKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy02IGgtNiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBtci0yIG10LTEgZmxleC1zaHJpbmstMCB0ZXh0LXhzIGZvbnQtYm9sZCIKICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6ICd2YXIoLS1nb2xkLWRpbSknLCBjb2xvcjogJ3ZhcigtLWdvbGQpJywgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlciknLCBib3JkZXJSYWRpdXM6ICc0cHgnIH19PgogICAgICAgICAgUQogICAgICAgIDwvZGl2PgogICAgICApfQogICAgICA8ZGl2CiAgICAgICAgY2xhc3NOYW1lPXtgbWF4LXctWzgwJV0gcHgtNCBweS0zIHRleHQtc20gbGVhZGluZy1yZWxheGVkICR7aXNVc2VyID8gJ21sLTgnIDogJyd9YH0KICAgICAgICBzdHlsZT17ewogICAgICAgICAgYmFja2dyb3VuZDogaXNVc2VyID8gJ3ZhcigtLXRleHQpJyA6ICd2YXIoLS1zdXJmYWNlKScsCiAgICAgICAgICBjb2xvcjogaXNVc2VyID8gJyNmYWY2ZWYnIDogJ3ZhcigtLXRleHQpJywKICAgICAgICAgIGJvcmRlclJhZGl1czogJzhweCcsCiAgICAgICAgICBib3JkZXI6IGlzVXNlciA/ICdub25lJyA6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScsCiAgICAgICAgICB3aGl0ZVNwYWNlOiAncHJlLXdyYXAnLAogICAgICAgICAgd29yZEJyZWFrOiAnYnJlYWstd29yZCcsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIHt0ZXh0fQogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICkKfQoKZXhwb3J0IGZ1bmN0aW9uIFN0cmVhbUJ1YmJsZSh7IHRleHQgfTogeyB0ZXh0OiBzdHJpbmcgfSkgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LXN0YXJ0IG1iLTMiPgogICAgICA8ZGl2IGNsYXNzTmFtZT0idy02IGgtNiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBtci0yIG10LTEgZmxleC1zaHJpbmstMCB0ZXh0LXhzIGZvbnQtYm9sZCIKICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiAndmFyKC0tZ29sZC1kaW0pJywgY29sb3I6ICd2YXIoLS1nb2xkKScsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgYm9yZGVyUmFkaXVzOiAnNHB4JyB9fT4KICAgICAgICBRCiAgICAgIDwvZGl2PgogICAgICA8ZGl2CiAgICAgICAgY2xhc3NOYW1lPSJtYXgtdy1bODAlXSBweC00IHB5LTMgdGV4dC1zbSBsZWFkaW5nLXJlbGF4ZWQiCiAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogJ3ZhcigtLXN1cmZhY2UpJywgY29sb3I6ICd2YXIoLS10ZXh0KScsIGJvcmRlclJhZGl1czogJzhweCcsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgd2hpdGVTcGFjZTogJ3ByZS13cmFwJywgd29yZEJyZWFrOiAnYnJlYWstd29yZCcgfX0KICAgICAgPgogICAgICAgIHt0ZXh0fQogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iaW5saW5lLWJsb2NrIHctMC41IGgtNCBtbC0wLjUgYWxpZ24tbWlkZGxlIGFuaW1hdGUtcHVsc2UiIHN0eWxlPXt7IGJhY2tncm91bmQ6ICd2YXIoLS1nb2xkKScgfX0gLz4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0K"}
+import type { ChatMessage } from '@/lib/gateway/types'
+
+function extractText(msg: ChatMessage): string {
+  for (const block of msg.content) {
+    if (block.type === 'text' && block.text) {return block.text}
+  }
+  return ''
+}
+
+export function MessageBubble({ message }: { message: ChatMessage }) {
+  const isUser = message.role === 'user'
+  const text = extractText(message)
+  return (
+    <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-3`}>
+      {!isUser && (
+        <div className="w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0 text-xs font-bold"
+          style={{ background: 'var(--gold-dim)', color: 'var(--gold)', border: '1px solid var(--border)', borderRadius: '4px' }}>
+          Q
+        </div>
+      )}
+      <div
+        className={`max-w-[80%] px-4 py-3 text-sm leading-relaxed ${isUser ? 'ml-8' : ''}`}
+        style={{
+          background: isUser ? 'var(--text)' : 'var(--surface)',
+          color: isUser ? '#faf6ef' : 'var(--text)',
+          borderRadius: '8px',
+          border: isUser ? 'none' : '1px solid var(--border)',
+          whiteSpace: 'pre-wrap',
+          wordBreak: 'break-word',
+        }}
+      >
+        {text}
+      </div>
+    </div>
+  )
+}
+
+export function StreamBubble({ text }: { text: string }) {
+  return (
+    <div className="flex justify-start mb-3">
+      <div className="w-6 h-6 flex items-center justify-center mr-2 mt-1 flex-shrink-0 text-xs font-bold"
+        style={{ background: 'var(--gold-dim)', color: 'var(--gold)', border: '1px solid var(--border)', borderRadius: '4px' }}>
+        Q
+      </div>
+      <div
+        className="max-w-[80%] px-4 py-3 text-sm leading-relaxed"
+        style={{ background: 'var(--surface)', color: 'var(--text)', borderRadius: '8px', border: '1px solid var(--border)', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}
+      >
+        {text}
+        <span className="inline-block w-0.5 h-4 ml-0.5 align-middle animate-pulse" style={{ background: 'var(--gold)' }} />
+      </div>
+    </div>
+  )
+}

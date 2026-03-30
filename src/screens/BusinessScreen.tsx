@@ -1,1 +1,55 @@
-{"data":"ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQnVzaW5lc3NTY3JlZW4oKSB7CiAgY29uc3QgcHJvZmlsZSA9IHsKICAgIGNvbXBhbnk6ICdTYW5kbGVyIFBhcnRuZXJzJywKICAgIHJvbGU6ICdJbmRlcGVuZGVudCBCcm9rZXInLAogICAgdGVycml0b3J5OiAnU291dGhlcm4gQ2FsaWZvcm5pYScsCiAgICBwcmVmZXJyZWRDYXJyaWVyczogWydCcm9hZHZvaWNlJywgJ1JpbmdDZW50cmFsJywgJ1NwZWN0cnVtJywgJ09vbWEnXSwKICAgIGFwcHJvdmVkU3lzdGVtczogWydIdWJzcG90IENSTScsICdBZG9iZSBTaWduJywgJ0NhcnJpZXIgUG9ydGFscycsICdHb29nbGUgV29ya3NwYWNlJ10sCiAgfQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wgaC1mdWxsIj4KICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTQgbWQ6cHgtOCBweS0zIiBzdHlsZT17eyBib3JkZXJCb3R0b206ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScgfX0+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtNjAwIHRleHQtc20iIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dCknIH19PkJ1c2luZXNzPC9oMT4KICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc2VyaWYgdGV4dC14cyBtdC0wLjUiPnlvdXIgd29ya3NwYWNlIGNvbnRleHQ8L3A+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG92ZXJmbG93LXktYXV0byBweC00IG1kOnB4LTggcHktNCBzcGFjZS15LTQiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC00IHB5LTQiIHN0eWxlPXt7IGJhY2tncm91bmQ6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuNTUpJywgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlciknLCBib3JkZXJSYWRpdXM6ICc4cHgnIH19PgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0idGV4dC14cyBmb250LTYwMCB1cHBlcmNhc2UgdHJhY2tpbmctd2lkZXN0IG1iLTMiIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dC1tdXRlZCknIH19PlByb2ZpbGU8L2gyPgogICAgICAgICAgPGRsIGNsYXNzTmFtZT0ic3BhY2UteS0yIj4KICAgICAgICAgICAgeyhbWydDb21wYW55JywgcHJvZmlsZS5jb21wYW55XSwgWydSb2xlJywgcHJvZmlsZS5yb2xlXSwgWydUZXJyaXRvcnknLCBwcm9maWxlLnRlcnJpdG9yeV1dIGFzIFtzdHJpbmcsIHN0cmluZ11bXSkubWFwKChbaywgdl0pID0+ICgKICAgICAgICAgICAgICA8ZGl2IGtleT17a30gY2xhc3NOYW1lPSJmbGV4IGdhcC00Ij4KICAgICAgICAgICAgICAgIDxkdCBjbGFzc05hbWU9InRleHQteHMgdy0yNCBmbGV4LXNocmluay0wIiBzdHlsZT17eyBjb2xvcjogJ3ZhcigtLXRleHQtbXV0ZWQpJyB9fT57a308L2R0PgogICAgICAgICAgICAgICAgPGRkIGNsYXNzTmFtZT0idGV4dC1zbSBmb250LW1lZGl1bSIgc3R5bGU9e3sgY29sb3I6ICd2YXIoLS10ZXh0KScgfX0+e3Z9PC9kZD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKSl9CiAgICAgICAgICA8L2RsPgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtNCBweS00IiBzdHlsZT17eyBiYWNrZ3JvdW5kOiAncmdiYSgyNTUsMjU1LDI1NSwwLjU1KScsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgYm9yZGVyUmFkaXVzOiAnOHB4JyB9fT4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQteHMgZm9udC02MDAgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCBtYi0zIiBzdHlsZT17eyBjb2xvcjogJ3ZhcigtLXRleHQtbXV0ZWQpJyB9fT5QcmVmZXJyZWQgQ2FycmllcnM8L2gyPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC0yIj4KICAgICAgICAgICAge3Byb2ZpbGUucHJlZmVycmVkQ2FycmllcnMubWFwKGMgPT4gKAogICAgICAgICAgICAgIDxzcGFuIGtleT17Y30gY2xhc3NOYW1lPSJ0ZXh0LXhzIHB4LTIuNSBweS0xIGZvbnQtbWVkaXVtIgogICAgICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogJ3ZhcigtLWdvbGQtZGltKScsIGNvbG9yOiAndmFyKC0tZ29sZCknLCBib3JkZXI6ICcxcHggc29saWQgcmdiYSgxODQsMTQ4LDYwLDAuMiknLCBib3JkZXJSYWRpdXM6ICc0cHgnIH19PgogICAgICAgICAgICAgICAge2N9CiAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtNCBweS00IiBzdHlsZT17eyBiYWNrZ3JvdW5kOiAncmdiYSgyNTUsMjU1LDI1NSwwLjU1KScsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgYm9yZGVyUmFkaXVzOiAnOHB4JyB9fT4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQteHMgZm9udC02MDAgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCBtYi0zIiBzdHlsZT17eyBjb2xvcjogJ3ZhcigtLXRleHQtbXV0ZWQpJyB9fT5BcHByb3ZlZCBTeXN0ZW1zPC9oMj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTEuNSI+CiAgICAgICAgICAgIHtwcm9maWxlLmFwcHJvdmVkU3lzdGVtcy5tYXAocyA9PiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e3N9IGNsYXNzTmFtZT0idGV4dC1zbSBweC0zIHB5LTIiCiAgICAgICAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiAncmdiYSgyNTUsMjU1LDI1NSwwLjQpJywgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlciknLCBib3JkZXJSYWRpdXM6ICc2cHgnLCBjb2xvcjogJ3ZhcigtLXRleHQpJyB9fT4KICAgICAgICAgICAgICAgIHtzfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICkKfQo="}
+export default function BusinessScreen() {
+  const profile = {
+    company: 'Sandler Partners',
+    role: 'Independent Broker',
+    territory: 'Southern California',
+    preferredCarriers: ['Broadvoice', 'RingCentral', 'Spectrum', 'Ooma'],
+    approvedSystems: ['Hubspot CRM', 'Adobe Sign', 'Carrier Portals', 'Google Workspace'],
+  }
+
+  return (
+    <div className="flex flex-col h-full">
+      <div className="px-4 md:px-8 py-3" style={{ borderBottom: '1px solid var(--border)' }}>
+        <h1 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>Business</h1>
+        <p className="text-serif text-xs mt-0.5">your workspace context</p>
+      </div>
+      <div className="flex-1 overflow-y-auto px-4 md:px-8 py-4 space-y-4">
+        <div className="px-4 py-4" style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px' }}>
+          <h2 className="text-xs font-600 uppercase tracking-widest mb-3" style={{ color: 'var(--text-muted)' }}>Profile</h2>
+          <dl className="space-y-2">
+            {([['Company', profile.company], ['Role', profile.role], ['Territory', profile.territory]] as [string, string][]).map(([k, v]) => (
+              <div key={k} className="flex gap-4">
+                <dt className="text-xs w-24 flex-shrink-0" style={{ color: 'var(--text-muted)' }}>{k}</dt>
+                <dd className="text-sm font-medium" style={{ color: 'var(--text)' }}>{v}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        <div className="px-4 py-4" style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px' }}>
+          <h2 className="text-xs font-600 uppercase tracking-widest mb-3" style={{ color: 'var(--text-muted)' }}>Preferred Carriers</h2>
+          <div className="flex flex-wrap gap-2">
+            {profile.preferredCarriers.map(c => (
+              <span key={c} className="text-xs px-2.5 py-1 font-medium"
+                style={{ background: 'var(--gold-dim)', color: 'var(--gold)', border: '1px solid rgba(184,148,60,0.2)', borderRadius: '4px' }}>
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="px-4 py-4" style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px' }}>
+          <h2 className="text-xs font-600 uppercase tracking-widest mb-3" style={{ color: 'var(--text-muted)' }}>Approved Systems</h2>
+          <div className="space-y-1.5">
+            {profile.approvedSystems.map(s => (
+              <div key={s} className="text-sm px-3 py-2"
+                style={{ background: 'rgba(255,255,255,0.4)', border: '1px solid var(--border)', borderRadius: '6px', color: 'var(--text)' }}>
+                {s}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

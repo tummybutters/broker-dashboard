@@ -1,1 +1,25 @@
-{"data":"ewogICIkc2NoZW1hIjogImh0dHBzOi8vdWkuc2hhZGNuLmNvbS9zY2hlbWEuanNvbiIsCiAgInN0eWxlIjogImJhc2Utbm92YSIsCiAgInJzYyI6IHRydWUsCiAgInRzeCI6IHRydWUsCiAgInRhaWx3aW5kIjogewogICAgImNvbmZpZyI6ICIiLAogICAgImNzcyI6ICJzcmMvYXBwL2dsb2JhbHMuY3NzIiwKICAgICJiYXNlQ29sb3IiOiAibmV1dHJhbCIsCiAgICAiY3NzVmFyaWFibGVzIjogdHJ1ZSwKICAgICJwcmVmaXgiOiAiIgogIH0sCiAgImljb25MaWJyYXJ5IjogImx1Y2lkZSIsCiAgInJ0bCI6IGZhbHNlLAogICJhbGlhc2VzIjogewogICAgImNvbXBvbmVudHMiOiAiQC9jb21wb25lbnRzIiwKICAgICJ1dGlscyI6ICJAL2xpYi91dGlscyIsCiAgICAidWkiOiAiQC9jb21wb25lbnRzL3VpIiwKICAgICJsaWIiOiAiQC9saWIiLAogICAgImhvb2tzIjogIkAvaG9va3MiCiAgfSwKICAibWVudUNvbG9yIjogImRlZmF1bHQiLAogICJtZW51QWNjZW50IjogInN1YnRsZSIsCiAgInJlZ2lzdHJpZXMiOiB7fQp9Cg=="}
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-nova",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "rtl": false,
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "registries": {}
+}

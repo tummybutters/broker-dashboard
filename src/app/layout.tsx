@@ -1,1 +1,33 @@
-{"data":"aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gJ25leHQnCmltcG9ydCB7IEpvc3QsIENvcm1vcmFudF9HYXJhbW9uZCB9IGZyb20gJ25leHQvZm9udC9nb29nbGUnCmltcG9ydCAnLi9nbG9iYWxzLmNzcycKCmNvbnN0IGpvc3QgPSBKb3N0KHsKICBzdWJzZXRzOiBbJ2xhdGluJ10sCiAgd2VpZ2h0OiBbJzMwMCcsICc0MDAnLCAnNTAwJywgJzYwMCcsICc3MDAnXSwKICB2YXJpYWJsZTogJy0tZm9udC1qb3N0JywKICBkaXNwbGF5OiAnc3dhcCcsCn0pCgpjb25zdCBjb3Jtb3JhbnQgPSBDb3Jtb3JhbnRfR2FyYW1vbmQoewogIHN1YnNldHM6IFsnbGF0aW4nXSwKICB3ZWlnaHQ6IFsnNDAwJywgJzUwMCddLAogIHN0eWxlOiBbJ25vcm1hbCcsICdpdGFsaWMnXSwKICB2YXJpYWJsZTogJy0tZm9udC1jb3Jtb3JhbnQnLAogIGRpc3BsYXk6ICdzd2FwJywKfSkKCmV4cG9ydCBjb25zdCBtZXRhZGF0YTogTWV0YWRhdGEgPSB7CiAgdGl0bGU6ICdRb3J0YW5hIFdvcmtzcGFjZScsCiAgZGVzY3JpcHRpb246ICdZb3VyIEFJLXBvd2VyZWQgYnJva2VyIHdvcmtzcGFjZScsCn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJvb3RMYXlvdXQoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkgewogIHJldHVybiAoCiAgICA8aHRtbCBsYW5nPSJlbiIgY2xhc3NOYW1lPXtgJHtqb3N0LnZhcmlhYmxlfSAke2Nvcm1vcmFudC52YXJpYWJsZX1gfSBzdHlsZT17eyBoZWlnaHQ6ICcxMDAlJyB9fT4KICAgICAgPGJvZHkgc3R5bGU9e3sgaGVpZ2h0OiAnMTAwJScsIG1hcmdpbjogMCB9fT4KICAgICAgICB7Y2hpbGRyZW59CiAgICAgIDwvYm9keT4KICAgIDwvaHRtbD4KICApCn0K"}
+import type { Metadata } from 'next'
+import { Jost, Cormorant_Garamond } from 'next/font/google'
+import './globals.css'
+
+const jost = Jost({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-jost',
+  display: 'swap',
+})
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  style: ['normal', 'italic'],
+  variable: '--font-cormorant',
+  display: 'swap',
+})
+
+export const metadata: Metadata = {
+  title: 'Qortana Workspace',
+  description: 'Your AI-powered broker workspace',
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${jost.variable} ${cormorant.variable}`} style={{ height: '100%' }}>
+      <body style={{ height: '100%', margin: 0 }}>
+        {children}
+      </body>
+    </html>
+  )
+}

@@ -1,1 +1,140 @@
-{"data":"aW1wb3J0IHR5cGUgeyBDaGF0TWVzc2FnZSwgQ2hhdEV2ZW50UGF5bG9hZCB9IGZyb20gJy4vdHlwZXMnCmltcG9ydCB0eXBlIHsgR2F0ZXdheUNsaWVudCB9IGZyb20gJy4vY2xpZW50JwoKZXhwb3J0IHR5cGUgQ2hhdFN0YXRlID0gewogIHNlc3Npb25LZXk6IHN0cmluZwogIG1lc3NhZ2VzOiBDaGF0TWVzc2FnZVtdCiAgc3RyZWFtOiBzdHJpbmcgfCBudWxsCiAgcnVuSWQ6IHN0cmluZyB8IG51bGwKICBzdHJlYW1TdGFydGVkQXQ6IG51bWJlciB8IG51bGwKICBzZW5kaW5nOiBib29sZWFuCiAgbG9hZGluZzogYm9vbGVhbgogIGVycm9yOiBzdHJpbmcgfCBudWxsCn0KCmZ1bmN0aW9uIGV4dHJhY3RUZXh0KG1lc3NhZ2U6IHVua25vd24pOiBzdHJpbmcgfCBudWxsIHsKICBpZiAoIW1lc3NhZ2UgfHwgdHlwZW9mIG1lc3NhZ2UgIT09ICdvYmplY3QnKSB7cmV0dXJuIG51bGx9CiAgY29uc3QgbSA9IG1lc3NhZ2UgYXMgUmVjb3JkPHN0cmluZywgdW5rbm93bj4KICBpZiAodHlwZW9mIG0udGV4dCA9PT0gJ3N0cmluZycpIHtyZXR1cm4gbS50ZXh0fQogIGlmIChBcnJheS5pc0FycmF5KG0uY29udGVudCkpIHsKICAgIGZvciAoY29uc3QgYmxvY2sgb2YgbS5jb250ZW50KSB7CiAgICAgIGlmIChibG9jayAmJiB0eXBlb2YgYmxvY2sgPT09ICdvYmplY3QnKSB7CiAgICAgICAgY29uc3QgYiA9IGJsb2NrIGFzIFJlY29yZDxzdHJpbmcsIHVua25vd24+CiAgICAgICAgaWYgKGIudHlwZSA9PT0gJ3RleHQnICYmIHR5cGVvZiBiLnRleHQgPT09ICdzdHJpbmcnKSB7cmV0dXJuIGIudGV4dH0KICAgICAgfQogICAgfQogIH0KICByZXR1cm4gbnVsbAp9CgpleHBvcnQgZnVuY3Rpb24gaGFuZGxlQ2hhdEV2ZW50KHN0YXRlOiBDaGF0U3RhdGUsIHBheWxvYWQ6IENoYXRFdmVudFBheWxvYWQpIHsKICBpZiAocGF5bG9hZC5zZXNzaW9uS2V5ICE9PSBzdGF0ZS5zZXNzaW9uS2V5KSB7cmV0dXJufQoKICBpZiAocGF5bG9hZC5zdGF0ZSA9PT0gJ2RlbHRhJykgewogICAgY29uc3QgdGV4dCA9IGV4dHJhY3RUZXh0KHBheWxvYWQubWVzc2FnZSkKICAgIGlmICh0eXBlb2YgdGV4dCA9PT0gJ3N0cmluZycpIHtzdGF0ZS5zdHJlYW0gPSB0ZXh0fQogIH0gZWxzZSBpZiAocGF5bG9hZC5zdGF0ZSA9PT0gJ2ZpbmFsJykgewogICAgY29uc3QgbXNnID0gcGF5bG9hZC5tZXNzYWdlCiAgICBpZiAobXNnICYmIHR5cGVvZiBtc2cgPT09ICdvYmplY3QnKSB7CiAgICAgIHN0YXRlLm1lc3NhZ2VzID0gWy4uLnN0YXRlLm1lc3NhZ2VzLCBtc2cgYXMgQ2hhdE1lc3NhZ2VdCiAgICB9IGVsc2UgaWYgKHN0YXRlLnN0cmVhbT8udHJpbSgpKSB7CiAgICAgIHN0YXRlLm1lc3NhZ2VzID0gWwogICAgICAgIC4uLnN0YXRlLm1lc3NhZ2VzLAogICAgICAgIHsKICAgICAgICAgIHJvbGU6ICdhc3Npc3RhbnQnLAogICAgICAgICAgY29udGVudDogW3sgdHlwZTogJ3RleHQnLCB0ZXh0OiBzdGF0ZS5zdHJlYW0gfV0sCiAgICAgICAgICB0aW1lc3RhbXA6IERhdGUubm93KCksCiAgICAgICAgfSwKICAgICAgXQogICAgfQogICAgc3RhdGUuc3RyZWFtID0gbnVsbAogICAgc3RhdGUucnVuSWQgPSBudWxsCiAgICBzdGF0ZS5zdHJlYW1TdGFydGVkQXQgPSBudWxsCiAgfSBlbHNlIGlmIChwYXlsb2FkLnN0YXRlID09PSAnYWJvcnRlZCcpIHsKICAgIGlmIChzdGF0ZS5zdHJlYW0/LnRyaW0oKSkgewogICAgICBzdGF0ZS5tZXNzYWdlcyA9IFsKICAgICAgICAuLi5zdGF0ZS5tZXNzYWdlcywKICAgICAgICB7CiAgICAgICAgICByb2xlOiAnYXNzaXN0YW50JywKICAgICAgICAgIGNvbnRlbnQ6IFt7IHR5cGU6ICd0ZXh0JywgdGV4dDogc3RhdGUuc3RyZWFtIH1dLAogICAgICAgICAgdGltZXN0YW1wOiBEYXRlLm5vdygpLAogICAgICAgIH0sCiAgICAgIF0KICAgIH0KICAgIHN0YXRlLnN0cmVhbSA9IG51bGwKICAgIHN0YXRlLnJ1bklkID0gbnVsbAogICAgc3RhdGUuc3RyZWFtU3RhcnRlZEF0ID0gbnVsbAogIH0gZWxzZSBpZiAocGF5bG9hZC5zdGF0ZSA9PT0gJ2Vycm9yJykgewogICAgc3RhdGUuc3RyZWFtID0gbnVsbAogICAgc3RhdGUucnVuSWQgPSBudWxsCiAgICBzdGF0ZS5zdHJlYW1TdGFydGVkQXQgPSBudWxsCiAgICBzdGF0ZS5lcnJvciA9IHBheWxvYWQuZXJyb3JNZXNzYWdlID8/ICdjaGF0IGVycm9yJwogIH0KfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGxvYWRIaXN0b3J5KHN0YXRlOiBDaGF0U3RhdGUsIGNsaWVudDogR2F0ZXdheUNsaWVudCkgewogIHN0YXRlLmxvYWRpbmcgPSB0cnVlCiAgc3RhdGUuZXJyb3IgPSBudWxsCiAgdHJ5IHsKICAgIGNvbnN0IHJlcyA9IGF3YWl0IGNsaWVudC5yZXF1ZXN0PHsgbWVzc2FnZXM/OiB1bmtub3duW107IHRoaW5raW5nTGV2ZWw/OiBzdHJpbmcgfT4oCiAgICAgICdjaGF0Lmhpc3RvcnknLAogICAgICB7IHNlc3Npb25LZXk6IHN0YXRlLnNlc3Npb25LZXksIGxpbWl0OiAyMDAgfQogICAgKQogICAgc3RhdGUubWVzc2FnZXMgPSAocmVzLm1lc3NhZ2VzID8/IFtdKSBhcyBDaGF0TWVzc2FnZVtdCiAgfSBjYXRjaCAoZXJyKSB7CiAgICBzdGF0ZS5lcnJvciA9IFN0cmluZyhlcnIpCiAgfSBmaW5hbGx5IHsKICAgIHN0YXRlLmxvYWRpbmcgPSBmYWxzZQogIH0KfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHNlbmRNZXNzYWdlKAogIHN0YXRlOiBDaGF0U3RhdGUsCiAgY2xpZW50OiBHYXRld2F5Q2xpZW50LAogIHRleHQ6IHN0cmluZwopOiBQcm9taXNlPHN0cmluZyB8IG51bGw+IHsKICBjb25zdCBtc2cgPSB0ZXh0LnRyaW0oKQogIGlmICghbXNnKSB7cmV0dXJuIG51bGx9CiAgY29uc3QgcnVuSWQgPSBjcnlwdG8ucmFuZG9tVVVJRCgpCiAgc3RhdGUubWVzc2FnZXMgPSBbCiAgICAuLi5zdGF0ZS5tZXNzYWdlcywKICAgIHsKICAgICAgcm9sZTogJ3VzZXInLAogICAgICBjb250ZW50OiBbeyB0eXBlOiAndGV4dCcsIHRleHQ6IG1zZyB9XSwKICAgICAgdGltZXN0YW1wOiBEYXRlLm5vdygpLAogICAgfSwKICBdCiAgc3RhdGUuc2VuZGluZyA9IHRydWUKICBzdGF0ZS5lcnJvciA9IG51bGwKICBzdGF0ZS5ydW5JZCA9IHJ1bklkCiAgc3RhdGUuc3RyZWFtID0gJycKICBzdGF0ZS5zdHJlYW1TdGFydGVkQXQgPSBEYXRlLm5vdygpCiAgdHJ5IHsKICAgIGF3YWl0IGNsaWVudC5yZXF1ZXN0KCdjaGF0LnNlbmQnLCB7CiAgICAgIHNlc3Npb25LZXk6IHN0YXRlLnNlc3Npb25LZXksCiAgICAgIG1lc3NhZ2U6IG1zZywKICAgICAgZGVsaXZlcjogZmFsc2UsCiAgICAgIGlkZW1wb3RlbmN5S2V5OiBydW5JZCwKICAgIH0pCiAgICByZXR1cm4gcnVuSWQKICB9IGNhdGNoIChlcnIpIHsKICAgIHN0YXRlLnJ1bklkID0gbnVsbAogICAgc3RhdGUuc3RyZWFtID0gbnVsbAogICAgc3RhdGUuc3RyZWFtU3RhcnRlZEF0ID0gbnVsbAogICAgc3RhdGUuZXJyb3IgPSBTdHJpbmcoZXJyKQogICAgcmV0dXJuIG51bGwKICB9IGZpbmFsbHkgewogICAgc3RhdGUuc2VuZGluZyA9IGZhbHNlCiAgfQp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gYWJvcnRSdW4oc3RhdGU6IENoYXRTdGF0ZSwgY2xpZW50OiBHYXRld2F5Q2xpZW50KSB7CiAgdHJ5IHsKICAgIGF3YWl0IGNsaWVudC5yZXF1ZXN0KCdjaGF0LmFib3J0JywgewogICAgICBzZXNzaW9uS2V5OiBzdGF0ZS5zZXNzaW9uS2V5LAogICAgICBydW5JZDogc3RhdGUucnVuSWQsCiAgICB9KQogIH0gY2F0Y2ggewogICAgLy8gYmVzdC1lZmZvcnQgYWJvcnQ7IGlnbm9yZSBmYWlsdXJlcwogIH0KfQo="}
+import type { ChatMessage, ChatEventPayload } from './types'
+import type { GatewayClient } from './client'
+
+export type ChatState = {
+  sessionKey: string
+  messages: ChatMessage[]
+  stream: string | null
+  runId: string | null
+  streamStartedAt: number | null
+  sending: boolean
+  loading: boolean
+  error: string | null
+}
+
+function extractText(message: unknown): string | null {
+  if (!message || typeof message !== 'object') {return null}
+  const m = message as Record<string, unknown>
+  if (typeof m.text === 'string') {return m.text}
+  if (Array.isArray(m.content)) {
+    for (const block of m.content) {
+      if (block && typeof block === 'object') {
+        const b = block as Record<string, unknown>
+        if (b.type === 'text' && typeof b.text === 'string') {return b.text}
+      }
+    }
+  }
+  return null
+}
+
+export function handleChatEvent(state: ChatState, payload: ChatEventPayload) {
+  if (payload.sessionKey !== state.sessionKey) {return}
+
+  if (payload.state === 'delta') {
+    const text = extractText(payload.message)
+    if (typeof text === 'string') {state.stream = text}
+  } else if (payload.state === 'final') {
+    const msg = payload.message
+    if (msg && typeof msg === 'object') {
+      state.messages = [...state.messages, msg as ChatMessage]
+    } else if (state.stream?.trim()) {
+      state.messages = [
+        ...state.messages,
+        {
+          role: 'assistant',
+          content: [{ type: 'text', text: state.stream }],
+          timestamp: Date.now(),
+        },
+      ]
+    }
+    state.stream = null
+    state.runId = null
+    state.streamStartedAt = null
+  } else if (payload.state === 'aborted') {
+    if (state.stream?.trim()) {
+      state.messages = [
+        ...state.messages,
+        {
+          role: 'assistant',
+          content: [{ type: 'text', text: state.stream }],
+          timestamp: Date.now(),
+        },
+      ]
+    }
+    state.stream = null
+    state.runId = null
+    state.streamStartedAt = null
+  } else if (payload.state === 'error') {
+    state.stream = null
+    state.runId = null
+    state.streamStartedAt = null
+    state.error = payload.errorMessage ?? 'chat error'
+  }
+}
+
+export async function loadHistory(state: ChatState, client: GatewayClient) {
+  state.loading = true
+  state.error = null
+  try {
+    const res = await client.request<{ messages?: unknown[]; thinkingLevel?: string }>(
+      'chat.history',
+      { sessionKey: state.sessionKey, limit: 200 }
+    )
+    state.messages = (res.messages ?? []) as ChatMessage[]
+  } catch (err) {
+    state.error = String(err)
+  } finally {
+    state.loading = false
+  }
+}
+
+export async function sendMessage(
+  state: ChatState,
+  client: GatewayClient,
+  text: string
+): Promise<string | null> {
+  const msg = text.trim()
+  if (!msg) {return null}
+  const runId = crypto.randomUUID()
+  state.messages = [
+    ...state.messages,
+    {
+      role: 'user',
+      content: [{ type: 'text', text: msg }],
+      timestamp: Date.now(),
+    },
+  ]
+  state.sending = true
+  state.error = null
+  state.runId = runId
+  state.stream = ''
+  state.streamStartedAt = Date.now()
+  try {
+    await client.request('chat.send', {
+      sessionKey: state.sessionKey,
+      message: msg,
+      deliver: false,
+      idempotencyKey: runId,
+    })
+    return runId
+  } catch (err) {
+    state.runId = null
+    state.stream = null
+    state.streamStartedAt = null
+    state.error = String(err)
+    return null
+  } finally {
+    state.sending = false
+  }
+}
+
+export async function abortRun(state: ChatState, client: GatewayClient) {
+  try {
+    await client.request('chat.abort', {
+      sessionKey: state.sessionKey,
+      runId: state.runId,
+    })
+  } catch {
+    // best-effort abort; ignore failures
+  }
+}

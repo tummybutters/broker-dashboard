@@ -1,1 +1,29 @@
-{"data":"aW1wb3J0IHsgU2lkZWJhciB9IGZyb20gJy4vU2lkZWJhcicKaW1wb3J0IHsgTW9iaWxlTmF2IH0gZnJvbSAnLi9Nb2JpbGVOYXYnCmltcG9ydCB7IENvbm5lY3Rpb25CYW5uZXIgfSBmcm9tICcuL0Nvbm5lY3Rpb25CYW5uZXInCmltcG9ydCB0eXBlIHsgQ29ubmVjdGlvblN0YXR1cyB9IGZyb20gJ0AvbGliL2dhdGV3YXkvdHlwZXMnCgpleHBvcnQgZnVuY3Rpb24gQXBwU2hlbGwoewogIGNoaWxkcmVuLAogIHN0YXR1cywKfTogewogIGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUKICBzdGF0dXM6IENvbm5lY3Rpb25TdGF0dXMKfSkgewogIHJldHVybiAoCiAgICA8ZGl2CiAgICAgIGNsYXNzTmFtZT0iZmxleCB3LWZ1bGwgb3ZlcmZsb3ctaGlkZGVuIgogICAgICBzdHlsZT17ewogICAgICAgIGhlaWdodDogJzEwMGR2aCcsCiAgICAgICAgYmFja2dyb3VuZDogJ2xpbmVhci1ncmFkaWVudCgxODBkZWcsICNmYmY3ZjAgMCUsICNmM2VhZGIgMTAwJSknLAogICAgICB9fQogICAgPgogICAgICA8U2lkZWJhciAvPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBmbGV4LTEgbWluLXctMCI+CiAgICAgICAgPENvbm5lY3Rpb25CYW5uZXIgc3RhdHVzPXtzdGF0dXN9IC8+CiAgICAgICAgPG1haW4gY2xhc3NOYW1lPSJmbGV4LTEgb3ZlcmZsb3ctaGlkZGVuIHBiLTE2IG1kOnBiLTAiPntjaGlsZHJlbn08L21haW4+CiAgICAgIDwvZGl2PgogICAgICA8TW9iaWxlTmF2IC8+CiAgICA8L2Rpdj4KICApCn0K"}
+import { Sidebar } from './Sidebar'
+import { MobileNav } from './MobileNav'
+import { ConnectionBanner } from './ConnectionBanner'
+import type { ConnectionStatus } from '@/lib/gateway/types'
+
+export function AppShell({
+  children,
+  status,
+}: {
+  children: React.ReactNode
+  status: ConnectionStatus
+}) {
+  return (
+    <div
+      className="flex w-full overflow-hidden"
+      style={{
+        height: '100dvh',
+        background: 'linear-gradient(180deg, #fbf7f0 0%, #f3eadb 100%)',
+      }}
+    >
+      <Sidebar />
+      <div className="flex flex-col flex-1 min-w-0">
+        <ConnectionBanner status={status} />
+        <main className="flex-1 overflow-hidden pb-16 md:pb-0">{children}</main>
+      </div>
+      <MobileNav />
+    </div>
+  )
+}

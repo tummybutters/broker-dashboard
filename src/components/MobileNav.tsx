@@ -1,1 +1,40 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaycKaW1wb3J0IHsgdXNlUGF0aG5hbWUgfSBmcm9tICduZXh0L25hdmlnYXRpb24nCmltcG9ydCB7IE1lc3NhZ2VTcXVhcmUsIENoZWNrU3F1YXJlLCBTdW4sIFdvcmtmbG93LCBCdWlsZGluZzIgfSBmcm9tICdsdWNpZGUtcmVhY3QnCgpjb25zdCBOQVYgPSBbCiAgeyBsYWJlbDogJ0NoYXQnLCBocmVmOiAnLycsIGljb246IE1lc3NhZ2VTcXVhcmUgfSwKICB7IGxhYmVsOiAnVGFza3MnLCBocmVmOiAnL3Rhc2tzJywgaWNvbjogQ2hlY2tTcXVhcmUgfSwKICB7IGxhYmVsOiAnVG9kYXknLCBocmVmOiAnL3RvZGF5JywgaWNvbjogU3VuIH0sCiAgeyBsYWJlbDogJ0Zsb3dzJywgaHJlZjogJy93b3JrZmxvd3MnLCBpY29uOiBXb3JrZmxvdyB9LAogIHsgbGFiZWw6ICdCaXonLCBocmVmOiAnL2J1c2luZXNzJywgaWNvbjogQnVpbGRpbmcyIH0sCl0gYXMgY29uc3QKCmV4cG9ydCBmdW5jdGlvbiBNb2JpbGVOYXYoKSB7CiAgY29uc3QgcGF0aG5hbWUgPSB1c2VQYXRobmFtZSgpCiAgcmV0dXJuICgKICAgIDxuYXYKICAgICAgY2xhc3NOYW1lPSJtZDpoaWRkZW4gZml4ZWQgYm90dG9tLTAgbGVmdC0wIHJpZ2h0LTAgZmxleCB6LTIwIgogICAgICBzdHlsZT17ewogICAgICAgIGJvcmRlclRvcDogJzFweCBzb2xpZCB2YXIoLS1xLWJvcmRlciknLAogICAgICAgIGJhY2tncm91bmQ6ICdsaW5lYXItZ3JhZGllbnQoMGRlZywgI2ZiZjdmMCAwJSwgI2YzZWFkYiAxMDAlKScsCiAgICAgIH19CiAgICA+CiAgICAgIHtOQVYubWFwKCh7IGxhYmVsLCBocmVmLCBpY29uOiBJY29uIH0pID0+IHsKICAgICAgICBjb25zdCBhY3RpdmUgPSBocmVmID09PSAnLycgPyBwYXRobmFtZSA9PT0gJy8nIDogcGF0aG5hbWUuc3RhcnRzV2l0aChocmVmKQogICAgICAgIHJldHVybiAoCiAgICAgICAgICA8TGluawogICAgICAgICAgICBrZXk9e2hyZWZ9CiAgICAgICAgICAgIGhyZWY9e2hyZWZ9CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleC0xIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGdhcC0wLjUgcHktMyB0ZXh0LXhzIGZvbnQtbWVkaXVtIgogICAgICAgICAgICBzdHlsZT17eyBjb2xvcjogYWN0aXZlID8gJ3ZhcigtLXEtZ29sZCknIDogJ3ZhcigtLXEtdGV4dC1tdXRlZCknIH19CiAgICAgICAgICA+CiAgICAgICAgICAgIDxJY29uIHNpemU9ezIwfSBzdHJva2VXaWR0aD17MS43NX0gLz4KICAgICAgICAgICAge2xhYmVsfQogICAgICAgICAgPC9MaW5rPgogICAgICAgICkKICAgICAgfSl9CiAgICA8L25hdj4KICApCn0K"}
+'use client'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { MessageSquare, CheckSquare, Sun, Workflow, Building2 } from 'lucide-react'
+
+const NAV = [
+  { label: 'Chat', href: '/', icon: MessageSquare },
+  { label: 'Tasks', href: '/tasks', icon: CheckSquare },
+  { label: 'Today', href: '/today', icon: Sun },
+  { label: 'Flows', href: '/workflows', icon: Workflow },
+  { label: 'Biz', href: '/business', icon: Building2 },
+] as const
+
+export function MobileNav() {
+  const pathname = usePathname()
+  return (
+    <nav
+      className="md:hidden fixed bottom-0 left-0 right-0 flex z-20"
+      style={{
+        borderTop: '1px solid var(--q-border)',
+        background: 'linear-gradient(0deg, #fbf7f0 0%, #f3eadb 100%)',
+      }}
+    >
+      {NAV.map(({ label, href, icon: Icon }) => {
+        const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
+        return (
+          <Link
+            key={href}
+            href={href}
+            className="flex-1 flex flex-col items-center gap-0.5 py-3 text-xs font-medium"
+            style={{ color: active ? 'var(--q-gold)' : 'var(--q-text-muted)' }}
+          >
+            <Icon size={20} strokeWidth={1.75} />
+            {label}
+          </Link>
+        )
+      })}
+    </nav>
+  )
+}

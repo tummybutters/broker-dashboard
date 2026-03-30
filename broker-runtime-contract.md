@@ -1,1 +1,180 @@
-{"data":"IyBCcm9rZXIgRGFzaGJvYXJkIOKAlCBSdW50aW1lIENvbnRyYWN0CgpUaGlzIGRvY3VtZW50IGRlc2NyaWJlcyB0aGUgV2ViU29ja2V0IHByb3RvY29sIGFuZCBjb25uZWN0aW9uIG1vZGVsIHVzZWQgYnkgdGhlIGJyb2tlciBkYXNoYm9hcmQgdG8gY29tbXVuaWNhdGUgd2l0aCBhbiBPcGVuQ2xhdyBnYXRld2F5IHJ1bnRpbWUuCgotLS0KCiMjIENvbm5lY3Rpb24gVVJMCgpgYGAKd3NzOi8vPGJyb2tlci10dW5uZWw+LnRyeWNsb3VkZmxhcmUuY29tCmBgYAoKUGxhaW4gV2ViU29ja2V0LCB0ZXh0IGZyYW1lcywgSlNPTiBwYXlsb2Fkcy4gVGhlIGJyb2tlcidzIGdhdGV3YXkgVVJMIGFuZCBhdXRoIHRva2VuIGFycml2ZSBpbiB0aGUgVVJMIGhhc2ggZnJhZ21lbnQg4oCUIG5ldmVyIHNlbnQgdG8gdGhlIHNlcnZlci4KCi0tLQoKIyMgQXV0aCBUcmFuc3BvcnQKClRva2VuIGFycml2ZXMgdmlhIFVSTCBoYXNoOgpgYGAKI2dhdGV3YXk9d3NzOi8vLi4uJnRva2VuPTxzdGF0aWMtdG9rZW4+CmBgYAoKUGFzc2VkIHRvIGdhdGV3YXkgYXMgYGNvbm5lY3QucGFyYW1zLmF1dGgudG9rZW5gIGR1cmluZyBoYW5kc2hha2UuIEhhc2ggaXMgc3RyaXBwZWQgZnJvbSB0aGUgYnJvd3NlciBVUkwgaW1tZWRpYXRlbHkgYWZ0ZXIgcmVhZGluZyAodXNpbmcgYGhpc3RvcnkucmVwbGFjZVN0YXRlYCkuCgotLS0KCiMjIEhhbmRzaGFrZSBTZXF1ZW5jZQoKMS4gQnJvd3NlciBvcGVucyBXZWJTb2NrZXQgdG8gZ2F0ZXdheSBVUkwKMi4gR2F0ZXdheSBzZW5kcyBgY29ubmVjdC5jaGFsbGVuZ2VgIGV2ZW50IHdpdGggYHsgbm9uY2UgfWAKMy4gQ2xpZW50IHNlbmRzIGBjb25uZWN0YCByZXF1ZXN0OgoKYGBganNvbgp7CiAgInR5cGUiOiAicmVxIiwgImlkIjogIjx1dWlkPiIsICJtZXRob2QiOiAiY29ubmVjdCIsCiAgInBhcmFtcyI6IHsKICAgICJtaW5Qcm90b2NvbCI6IDMsICJtYXhQcm90b2NvbCI6IDMsCiAgICAiY2xpZW50IjogeyAiaWQiOiAiYnJva2VyLWRhc2hib2FyZCIsICJ2ZXJzaW9uIjogIjEuMC4wIiwgInBsYXRmb3JtIjogIndlYiIsICJtb2RlIjogIndlYmNoYXQiIH0sCiAgICAicm9sZSI6ICJvcGVyYXRvciIsCiAgICAic2NvcGVzIjogWyJvcGVyYXRvci5hZG1pbiIsICJvcGVyYXRvci5hcHByb3ZhbHMiLCAib3BlcmF0b3IucGFpcmluZyJdLAogICAgImNhcHMiOiBbInRvb2wtZXZlbnRzIl0sCiAgICAiYXV0aCI6IHsgInRva2VuIjogIjxmcm9tLWhhc2g+IiB9LAogICAgImRldmljZSI6IHsgImlkIjogIi4uLiIsICJwdWJsaWNLZXkiOiAiLi4uIiwgInNpZ25hdHVyZSI6ICIuLi4iLCAic2lnbmVkQXQiOiAuLi4sICJub25jZSI6ICIuLi4iIH0sCiAgICAidXNlckFnZW50IjogIi4uLiIsICJsb2NhbGUiOiAiLi4uIgogIH0KfQpgYGAKCkRldmljZSBpZGVudGl0eSBpcyBhbiBFQ0RTQSBQLTI1NiBrZXlwYWlyIHN0b3JlZCBpbiBJbmRleGVkREIuIEF2YWlsYWJsZSBiZWNhdXNlIGNsb3VkZmxhcmVkIHR1bm5lbCA9IEhUVFBTID0gc2VjdXJlIGNvbnRleHQuCgo0LiBHYXRld2F5IHJlcGxpZXMgd2l0aCBgaGVsbG8tb2tgOgoKYGBganNvbgp7CiAgInR5cGUiOiAicmVzIiwgImlkIjogIi4uLiIsICJvayI6IHRydWUsCiAgInBheWxvYWQiOiB7CiAgICAidHlwZSI6ICJoZWxsby1vayIsCiAgICAicHJvdG9jb2wiOiAzLAogICAgInBvbGljeSI6IHsgInRpY2tJbnRlcnZhbE1zIjogMTUwMDAgfQogIH0KfQpgYGAKCk1heSBpbmNsdWRlIGBhdXRoLmRldmljZVRva2VuYCBmb3IgZnV0dXJlIHJlY29ubmVjdHMgKGNhY2hlZCBpbiBsb2NhbFN0b3JhZ2UpLgoKSWYgdGhlIGBjb25uZWN0LmNoYWxsZW5nZWAgZXZlbnQgZG9lcyBub3QgYXJyaXZlIHdpdGhpbiA3NTBtcyBvZiBXZWJTb2NrZXQgb3BlbiwgdGhlIGNsaWVudCBzZW5kcyBgY29ubmVjdGAgYW55d2F5IChmYWxsYmFjayB0aW1lcikuCgotLS0KCiMjIENoYXQgU2VuZAoKYGBganNvbgp7CiAgIm1ldGhvZCI6ICJjaGF0LnNlbmQiLAogICJwYXJhbXMiOiB7CiAgICAic2Vzc2lvbktleSI6ICI8c2Vzc2lvbj4iLAogICAgIm1lc3NhZ2UiOiAiPHRleHQ+IiwKICAgICJkZWxpdmVyIjogZmFsc2UsCiAgICAiaWRlbXBvdGVuY3lLZXkiOiAiPHV1aWQ+IgogIH0KfQpgYGAKCk5vbi1ibG9ja2luZzogYWNrcyB3aXRoIGB7IHJ1bklkLCBzdGF0dXM6ICJzdGFydGVkIiB9YC4gUmVzcG9uc2Ugc3RyZWFtcyB2aWEgZXZlbnRzLgoKLS0tCgojIyBTdHJlYW1pbmcgRXZlbnRzCgpgYGBqc29uCnsKICAidHlwZSI6ICJldmVudCIsCiAgImV2ZW50IjogImNoYXQiLAogICJwYXlsb2FkIjogewogICAgInJ1bklkIjogIi4uLiIsCiAgICAic2Vzc2lvbktleSI6ICIuLi4iLAogICAgInN0YXRlIjogImRlbHRhIiB8ICJmaW5hbCIgfCAiYWJvcnRlZCIgfCAiZXJyb3IiLAogICAgIm1lc3NhZ2UiOiB7Li4ufSwKICAgICJlcnJvck1lc3NhZ2UiOiAiLi4uIgogIH0KfQpgYGAKCi0gYGRlbHRhYDogYWNjdW11bGF0ZSBgcGF5bG9hZC5tZXNzYWdlLnRleHRgIGludG8gc3RyZWFtIGJ1ZmZlcgotIGBmaW5hbGA6IGNvbW1pdCBtZXNzYWdlIHRvIGhpc3RvcnksIGNsZWFyIHN0cmVhbQotIGBhYm9ydGVkYDogY29tbWl0IHBhcnRpYWwgaWYgYnVmZmVyZWQsIGNsZWFyIHN0cmVhbQotIGBlcnJvcmA6IGNsZWFyIHN0cmVhbSwgc2hvdyBgcGF5bG9hZC5lcnJvck1lc3NhZ2VgCgotLS0KCiMjIENoYXQgSGlzdG9yeQoKYGBganNvbgp7ICJtZXRob2QiOiAiY2hhdC5oaXN0b3J5IiwgInBhcmFtcyI6IHsgInNlc3Npb25LZXkiOiAiLi4uIiwgImxpbWl0IjogMjAwIH0gfQpgYGAKClJldHVybnMgYHsgbWVzc2FnZXM6IFsuLi5dLCB0aGlua2luZ0xldmVsOiBzdHJpbmcgfCBudWxsIH1gLiBIaXN0b3J5IGxpdmVzIGluIHRoZSBnYXRld2F5IHJ1bnRpbWUg4oCUIG5vIGNsaWVudC1zaWRlIHBlcnNpc3RlbmNlIG5lZWRlZC4KCi0tLQoKIyMgQWJvcnQKCmBgYGpzb24KeyAibWV0aG9kIjogImNoYXQuYWJvcnQiLCAicGFyYW1zIjogeyAic2Vzc2lvbktleSI6ICIuLi4iLCAicnVuSWQiOiAiLi4uIiB9IH0KYGBgCgotLS0KCiMjIFNlc3Npb24gS2V5CgpEZWZhdWx0IHNlc3Npb24ga2V5OiBgd2ViY2hhdGAgKGNvbmZpZ3VyYWJsZSB2aWEgYE5FWFRfUFVCTElDX0RFRkFVTFRfU0VTU0lPTl9LRVlgIGVudiB2YXIpLgoKVGhlIHNhbWUgYHNlc3Npb25LZXlgIG11c3QgYmUgdXNlZCBmb3IgYGNoYXQuc2VuZGAsIGBjaGF0Lmhpc3RvcnlgLCBhbmQgZXZlbnQgZmlsdGVyaW5nLgoKLS0tCgojIyBFcnJvciBDb2RlcyAoTm9uLVJlY292ZXJhYmxlIOKAlCBTdG9wIEF1dG8tUmVjb25uZWN0KQoKLSBgQVVUSF9UT0tFTl9NSVNTSU5HYAotIGBBVVRIX0JPT1RTVFJBUF9UT0tFTl9JTlZBTElEYAotIGBBVVRIX1BBU1NXT1JEX01JU1NJTkdgCi0gYEFVVEhfUEFTU1dPUkRfTUlTTUFUQ0hgCi0gYEFVVEhfUkFURV9MSU1JVEVEYAotIGBDT05UUk9MX1VJX0RFVklDRV9JREVOVElUWV9SRVFVSVJFRGAKLSBgREVWSUNFX0lERU5USVRZX1JFUVVJUkVEYAoKLS0tCgojIyBSZWNvbm5lY3QgQmVoYXZpb3IKCkV4cG9uZW50aWFsIGJhY2tvZmYgc3RhcnRpbmcgYXQgODAwbXMsIG11bHRpcGxpZXIgMS43eCwgY2FwIDE1cy4gU3RvcHMgb25seSBvbiBub24tcmVjb3ZlcmFibGUgYXV0aCBlcnJvcnMuCgotLS0KCiMjIFBhaXJpbmcKCk5ldyBkZXZpY2VzIGNvbm5lY3RpbmcgcmVtb3RlbHkgcmVxdWlyZSBvbmUtdGltZSBhcHByb3ZhbCBmcm9tIHRoZSBvcGVyYXRvciAoYG9wZW5jbGF3IGRldmljZXMgYXBwcm92ZSA8aWQ+YCkuIFRoZSBhdXRvbWF0aW9uIGFnZW50IGhhbmRsZXMgdGhpcyBhdXRvbWF0aWNhbGx5LiBUaGUgYXBwIHNob3dzICJZb3VyIHdvcmtzcGFjZSBpcyBiZWluZyBhY3RpdmF0ZWQuIEhhbmcgdGlnaHQuIiBhbmQgcmV0cmllcyDigJQgYFBBSVJJTkdfUkVRVUlSRURgIGlzICoqbm90KiogaW4gdGhlIG5vbi1yZWNvdmVyYWJsZSBzZXQuCgotLS0KCiMjIFByb3RvY29sIFJpc2tzCgotIGBQQUlSSU5HX1JFUVVJUkVEYCBvbiBmaXJzdCBjb25uZWN0IGlzIGV4cGVjdGVkIOKAlCBhdXRvbWF0aW9uIHJlc29sdmVzIGl0LCBhcHAgcmV0cmllcyBncmFjZWZ1bGx5Ci0gYGNoYXQuaGlzdG9yeWAgaXMgc2l6ZS1ib3VuZGVkIChsaW1pdDogMjAwKTsgdmVyeSBsb25nIHRyYW5zY3JpcHRzIG1heSBiZSB0cnVuY2F0ZWQKLSBEZXZpY2UgaWRlbnRpdHkgcmVxdWlyZXMgc2VjdXJlIGNvbnRleHQgKEhUVFBTKSDigJQgY2xvdWRmbGFyZWQgdHVubmVsIHNhdGlzZmllcyB0aGlzCi0gYHNlc3Npb25LZXlgIG11c3QgbWF0Y2ggYmV0d2VlbiBgY2hhdC5zZW5kYCwgYGNoYXQuaGlzdG9yeWAsIGFuZCBldmVudCBmaWx0ZXJpbmcKCi0tLQoKIyMgQ29ubmVjdGlvbiBTdGF0ZXMgKFVJKQoKfCBTdGF0ZSB8IEJhbm5lciB8IERlc2NyaXB0aW9uIHwKfC0tLXwtLS18LS0tfAp8IGBjb25uZWN0aW5nYCB8ICJDb25uZWN0aW5nIHRvIHlvdXIgd29ya3NwYWNlLi4uIiB8IEluaXRpYWwgY29ubmVjdCB8CnwgYHJlY29ubmVjdGluZ2AgfCAiUmVjb25uZWN0aW5nLi4uIiB8IFRyYW5zaWVudCBkaXNjb25uZWN0IHwKfCBgcGFpcmluZ2AgfCAiWW91ciB3b3Jrc3BhY2UgaXMgYmVpbmcgYWN0aXZhdGVkLiBIYW5nIHRpZ2h0LiIgfCBQQUlSSU5HX1JFUVVJUkVEIOKAlCByZXRyeWluZyB8CnwgYGF1dGgtZXJyb3JgIHwgIlVuYWJsZSB0byBjb25uZWN0LiBDaGVjayB5b3VyIHdvcmtzcGFjZSBsaW5rLiIgfCBOb24tcmVjb3ZlcmFibGUgYXV0aCBlcnJvciB8CnwgYHVucmVhY2hhYmxlYCB8ICJZb3VyIHdvcmtzcGFjZSBpcyB1bnJlYWNoYWJsZSByaWdodCBub3cuIiB8IFBlcnNpc3RlbnQgbmV0d29yayBmYWlsdXJlIHwKfCBgY29ubmVjdGVkYCB8IChoaWRkZW4pIHwgTm9ybWFsIG9wZXJhdGlvbiB8Cg=="}
+# Broker Dashboard — Runtime Contract
+
+This document describes the WebSocket protocol and connection model used by the broker dashboard to communicate with an OpenClaw gateway runtime.
+
+---
+
+## Connection URL
+
+```
+wss://<broker-tunnel>.trycloudflare.com
+```
+
+Plain WebSocket, text frames, JSON payloads. The broker's gateway URL and auth token arrive in the URL hash fragment — never sent to the server.
+
+---
+
+## Auth Transport
+
+Token arrives via URL hash:
+```
+#gateway=wss://...&token=<static-token>
+```
+
+Passed to gateway as `connect.params.auth.token` during handshake. Hash is stripped from the browser URL immediately after reading (using `history.replaceState`).
+
+---
+
+## Handshake Sequence
+
+1. Browser opens WebSocket to gateway URL
+2. Gateway sends `connect.challenge` event with `{ nonce }`
+3. Client sends `connect` request:
+
+```json
+{
+  "type": "req", "id": "<uuid>", "method": "connect",
+  "params": {
+    "minProtocol": 3, "maxProtocol": 3,
+    "client": { "id": "broker-dashboard", "version": "1.0.0", "platform": "web", "mode": "webchat" },
+    "role": "operator",
+    "scopes": ["operator.admin", "operator.approvals", "operator.pairing"],
+    "caps": ["tool-events"],
+    "auth": { "token": "<from-hash>" },
+    "device": { "id": "...", "publicKey": "...", "signature": "...", "signedAt": ..., "nonce": "..." },
+    "userAgent": "...", "locale": "..."
+  }
+}
+```
+
+Device identity is an ECDSA P-256 keypair stored in IndexedDB. Available because cloudflared tunnel = HTTPS = secure context.
+
+4. Gateway replies with `hello-ok`:
+
+```json
+{
+  "type": "res", "id": "...", "ok": true,
+  "payload": {
+    "type": "hello-ok",
+    "protocol": 3,
+    "policy": { "tickIntervalMs": 15000 }
+  }
+}
+```
+
+May include `auth.deviceToken` for future reconnects (cached in localStorage).
+
+If the `connect.challenge` event does not arrive within 750ms of WebSocket open, the client sends `connect` anyway (fallback timer).
+
+---
+
+## Chat Send
+
+```json
+{
+  "method": "chat.send",
+  "params": {
+    "sessionKey": "<session>",
+    "message": "<text>",
+    "deliver": false,
+    "idempotencyKey": "<uuid>"
+  }
+}
+```
+
+Non-blocking: acks with `{ runId, status: "started" }`. Response streams via events.
+
+---
+
+## Streaming Events
+
+```json
+{
+  "type": "event",
+  "event": "chat",
+  "payload": {
+    "runId": "...",
+    "sessionKey": "...",
+    "state": "delta" | "final" | "aborted" | "error",
+    "message": {...},
+    "errorMessage": "..."
+  }
+}
+```
+
+- `delta`: accumulate `payload.message.text` into stream buffer
+- `final`: commit message to history, clear stream
+- `aborted`: commit partial if buffered, clear stream
+- `error`: clear stream, show `payload.errorMessage`
+
+---
+
+## Chat History
+
+```json
+{ "method": "chat.history", "params": { "sessionKey": "...", "limit": 200 } }
+```
+
+Returns `{ messages: [...], thinkingLevel: string | null }`. History lives in the gateway runtime — no client-side persistence needed.
+
+---
+
+## Abort
+
+```json
+{ "method": "chat.abort", "params": { "sessionKey": "...", "runId": "..." } }
+```
+
+---
+
+## Session Key
+
+Default session key: `webchat` (configurable via `NEXT_PUBLIC_DEFAULT_SESSION_KEY` env var).
+
+The same `sessionKey` must be used for `chat.send`, `chat.history`, and event filtering.
+
+---
+
+## Error Codes (Non-Recoverable — Stop Auto-Reconnect)
+
+- `AUTH_TOKEN_MISSING`
+- `AUTH_BOOTSTRAP_TOKEN_INVALID`
+- `AUTH_PASSWORD_MISSING`
+- `AUTH_PASSWORD_MISMATCH`
+- `AUTH_RATE_LIMITED`
+- `CONTROL_UI_DEVICE_IDENTITY_REQUIRED`
+- `DEVICE_IDENTITY_REQUIRED`
+
+---
+
+## Reconnect Behavior
+
+Exponential backoff starting at 800ms, multiplier 1.7x, cap 15s. Stops only on non-recoverable auth errors.
+
+---
+
+## Pairing
+
+New devices connecting remotely require one-time approval from the operator (`openclaw devices approve <id>`). The automation agent handles this automatically. The app shows "Your workspace is being activated. Hang tight." and retries — `PAIRING_REQUIRED` is **not** in the non-recoverable set.
+
+---
+
+## Protocol Risks
+
+- `PAIRING_REQUIRED` on first connect is expected — automation resolves it, app retries gracefully
+- `chat.history` is size-bounded (limit: 200); very long transcripts may be truncated
+- Device identity requires secure context (HTTPS) — cloudflared tunnel satisfies this
+- `sessionKey` must match between `chat.send`, `chat.history`, and event filtering
+
+---
+
+## Connection States (UI)
+
+| State | Banner | Description |
+|---|---|---|
+| `connecting` | "Connecting to your workspace..." | Initial connect |
+| `reconnecting` | "Reconnecting..." | Transient disconnect |
+| `pairing` | "Your workspace is being activated. Hang tight." | PAIRING_REQUIRED — retrying |
+| `auth-error` | "Unable to connect. Check your workspace link." | Non-recoverable auth error |
+| `unreachable` | "Your workspace is unreachable right now." | Persistent network failure |
+| `connected` | (hidden) | Normal operation |

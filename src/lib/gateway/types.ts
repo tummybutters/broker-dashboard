@@ -1,1 +1,52 @@
-{"data":"ZXhwb3J0IHR5cGUgR2F0ZXdheUV2ZW50RnJhbWUgPSB7CiAgdHlwZTogJ2V2ZW50JwogIGV2ZW50OiBzdHJpbmcKICBwYXlsb2FkPzogdW5rbm93bgogIHNlcT86IG51bWJlcgp9CgpleHBvcnQgdHlwZSBHYXRld2F5UmVzcG9uc2VGcmFtZSA9IHsKICB0eXBlOiAncmVzJwogIGlkOiBzdHJpbmcKICBvazogYm9vbGVhbgogIHBheWxvYWQ/OiB1bmtub3duCiAgZXJyb3I/OiB7IGNvZGU6IHN0cmluZzsgbWVzc2FnZTogc3RyaW5nOyBkZXRhaWxzPzogdW5rbm93biB9Cn0KCmV4cG9ydCB0eXBlIEdhdGV3YXlIZWxsb09rID0gewogIHR5cGU6ICdoZWxsby1vaycKICBwcm90b2NvbDogbnVtYmVyCiAgc2VydmVyPzogeyB2ZXJzaW9uPzogc3RyaW5nOyBjb25uSWQ/OiBzdHJpbmcgfQogIGZlYXR1cmVzPzogeyBtZXRob2RzPzogc3RyaW5nW107IGV2ZW50cz86IHN0cmluZ1tdIH0KICBhdXRoPzogeyBkZXZpY2VUb2tlbj86IHN0cmluZzsgcm9sZT86IHN0cmluZzsgc2NvcGVzPzogc3RyaW5nW10gfQogIHBvbGljeT86IHsgdGlja0ludGVydmFsTXM/OiBudW1iZXIgfQp9CgpleHBvcnQgdHlwZSBDaGF0RXZlbnRQYXlsb2FkID0gewogIHJ1bklkOiBzdHJpbmcKICBzZXNzaW9uS2V5OiBzdHJpbmcKICBzdGF0ZTogJ2RlbHRhJyB8ICdmaW5hbCcgfCAnYWJvcnRlZCcgfCAnZXJyb3InCiAgbWVzc2FnZT86IHVua25vd24KICBlcnJvck1lc3NhZ2U/OiBzdHJpbmcKfQoKZXhwb3J0IHR5cGUgQ2hhdE1lc3NhZ2UgPSB7CiAgcm9sZTogJ3VzZXInIHwgJ2Fzc2lzdGFudCcKICBjb250ZW50OiBBcnJheTx7IHR5cGU6IHN0cmluZzsgdGV4dD86IHN0cmluZzsgc291cmNlPzogdW5rbm93biB9PgogIHRpbWVzdGFtcDogbnVtYmVyCn0KCmV4cG9ydCB0eXBlIENvbm5lY3Rpb25TdGF0dXMgPQogIHwgJ2lkbGUnCiAgfCAnY29ubmVjdGluZycKICB8ICdjb25uZWN0ZWQnCiAgfCAncmVjb25uZWN0aW5nJwogIHwgJ3BhaXJpbmcnCiAgfCAnYXV0aC1lcnJvcicKICB8ICd1bnJlYWNoYWJsZScKCmV4cG9ydCB0eXBlIEdhdGV3YXlFcnJvckluZm8gPSB7CiAgY29kZTogc3RyaW5nCiAgbWVzc2FnZTogc3RyaW5nCiAgZGV0YWlscz86IHVua25vd24KfQo="}
+export type GatewayEventFrame = {
+  type: 'event'
+  event: string
+  payload?: unknown
+  seq?: number
+}
+
+export type GatewayResponseFrame = {
+  type: 'res'
+  id: string
+  ok: boolean
+  payload?: unknown
+  error?: { code: string; message: string; details?: unknown }
+}
+
+export type GatewayHelloOk = {
+  type: 'hello-ok'
+  protocol: number
+  server?: { version?: string; connId?: string }
+  features?: { methods?: string[]; events?: string[] }
+  auth?: { deviceToken?: string; role?: string; scopes?: string[] }
+  policy?: { tickIntervalMs?: number }
+}
+
+export type ChatEventPayload = {
+  runId: string
+  sessionKey: string
+  state: 'delta' | 'final' | 'aborted' | 'error'
+  message?: unknown
+  errorMessage?: string
+}
+
+export type ChatMessage = {
+  role: 'user' | 'assistant'
+  content: Array<{ type: string; text?: string; source?: unknown }>
+  timestamp: number
+}
+
+export type ConnectionStatus =
+  | 'idle'
+  | 'connecting'
+  | 'connected'
+  | 'reconnecting'
+  | 'pairing'
+  | 'auth-error'
+  | 'unreachable'
+
+export type GatewayErrorInfo = {
+  code: string
+  message: string
+  details?: unknown
+}

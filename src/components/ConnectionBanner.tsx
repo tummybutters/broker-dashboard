@@ -1,1 +1,37 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCB0eXBlIHsgQ29ubmVjdGlvblN0YXR1cyB9IGZyb20gJ0AvbGliL2dhdGV3YXkvdHlwZXMnCgp0eXBlIEJhbm5lckNvbmZpZyA9IHsgdGV4dDogc3RyaW5nOyBjbGFzc05hbWU6IHN0cmluZyB9Cgpjb25zdCBNRVNTQUdFUzogUGFydGlhbDxSZWNvcmQ8Q29ubmVjdGlvblN0YXR1cywgQmFubmVyQ29uZmlnPj4gPSB7CiAgY29ubmVjdGluZzogewogICAgdGV4dDogJ0Nvbm5lY3RpbmcgdG8geW91ciB3b3Jrc3BhY2UuLi4nLAogICAgY2xhc3NOYW1lOiAnYmctYnJhbmQtc3VyZmFjZSBib3JkZXItYiBib3JkZXItYnJhbmQtYm9yZGVyIHRleHQtcS10ZXh0LXNlY29uZGFyeScsCiAgfSwKICByZWNvbm5lY3Rpbmc6IHsKICAgIHRleHQ6ICdSZWNvbm5lY3RpbmcuLi4nLAogICAgY2xhc3NOYW1lOiAnYmctYW1iZXItNTAgYm9yZGVyLWIgYm9yZGVyLWFtYmVyLTIwMCB0ZXh0LWFtYmVyLTgwMCcsCiAgfSwKICBwYWlyaW5nOiB7CiAgICB0ZXh0OiAnWW91ciB3b3Jrc3BhY2UgaXMgYmVpbmcgYWN0aXZhdGVkLiBIYW5nIHRpZ2h0LicsCiAgICBjbGFzc05hbWU6ICdiZy1hbWJlci01MCBib3JkZXItYiBib3JkZXItYW1iZXItMjAwIHRleHQtYW1iZXItODAwJywKICB9LAogICdhdXRoLWVycm9yJzogewogICAgdGV4dDogJ1VuYWJsZSB0byBjb25uZWN0LiBDaGVjayB5b3VyIHdvcmtzcGFjZSBsaW5rLicsCiAgICBjbGFzc05hbWU6ICdiZy1yb3NlLTUwIGJvcmRlci1iIGJvcmRlci1yb3NlLTIwMCB0ZXh0LXJvc2UtODAwJywKICB9LAogIHVucmVhY2hhYmxlOiB7CiAgICB0ZXh0OiAnWW91ciB3b3Jrc3BhY2UgaXMgdW5yZWFjaGFibGUgcmlnaHQgbm93LicsCiAgICBjbGFzc05hbWU6ICdiZy1yb3NlLTUwIGJvcmRlci1iIGJvcmRlci1yb3NlLTIwMCB0ZXh0LXJvc2UtODAwJywKICB9LAp9CgpleHBvcnQgZnVuY3Rpb24gQ29ubmVjdGlvbkJhbm5lcih7IHN0YXR1cyB9OiB7IHN0YXR1czogQ29ubmVjdGlvblN0YXR1cyB9KSB7CiAgY29uc3QgbXNnID0gTUVTU0FHRVNbc3RhdHVzXQogIGlmICghbXNnKSB7cmV0dXJuIG51bGx9CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPXtgcHgtNCBweS0yIHRleHQtc20gZm9udC1tZWRpdW0gdGV4dC1jZW50ZXIgJHttc2cuY2xhc3NOYW1lfWB9PgogICAgICB7bXNnLnRleHR9CiAgICA8L2Rpdj4KICApCn0K"}
+'use client'
+import type { ConnectionStatus } from '@/lib/gateway/types'
+
+type BannerConfig = { text: string; className: string }
+
+const MESSAGES: Partial<Record<ConnectionStatus, BannerConfig>> = {
+  connecting: {
+    text: 'Connecting to your workspace...',
+    className: 'bg-brand-surface border-b border-brand-border text-q-text-secondary',
+  },
+  reconnecting: {
+    text: 'Reconnecting...',
+    className: 'bg-amber-50 border-b border-amber-200 text-amber-800',
+  },
+  pairing: {
+    text: 'Your workspace is being activated. Hang tight.',
+    className: 'bg-amber-50 border-b border-amber-200 text-amber-800',
+  },
+  'auth-error': {
+    text: 'Unable to connect. Check your workspace link.',
+    className: 'bg-rose-50 border-b border-rose-200 text-rose-800',
+  },
+  unreachable: {
+    text: 'Your workspace is unreachable right now.',
+    className: 'bg-rose-50 border-b border-rose-200 text-rose-800',
+  },
+}
+
+export function ConnectionBanner({ status }: { status: ConnectionStatus }) {
+  const msg = MESSAGES[status]
+  if (!msg) {return null}
+  return (
+    <div className={`px-4 py-2 text-sm font-medium text-center ${msg.className}`}>
+      {msg.text}
+    </div>
+  )
+}

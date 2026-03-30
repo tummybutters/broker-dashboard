@@ -1,1 +1,22 @@
-{"data":"aW1wb3J0IHsgZGVzY3JpYmUsIGl0LCBleHBlY3QgfSBmcm9tICd2aXRlc3QnCmltcG9ydCB7IHBhcnNlSGFzaFBhcmFtcyB9IGZyb20gJy4vdXJsLXBhcmFtcycKCmRlc2NyaWJlKCdwYXJzZUhhc2hQYXJhbXMnLCAoKSA9PiB7CiAgaXQoJ3BhcnNlcyBnYXRld2F5IGFuZCB0b2tlbiBmcm9tIGhhc2gnLCAoKSA9PiB7CiAgICBjb25zdCByZXN1bHQgPSBwYXJzZUhhc2hQYXJhbXMoJyNnYXRld2F5PXdzcyUzQSUyRiUyRmFiYy50cnljbG91ZGZsYXJlLmNvbSZ0b2tlbj1teXRva2VuJykKICAgIGV4cGVjdChyZXN1bHQuZ2F0ZXdheVVybCkudG9CZSgnd3NzOi8vYWJjLnRyeWNsb3VkZmxhcmUuY29tJykKICAgIGV4cGVjdChyZXN1bHQudG9rZW4pLnRvQmUoJ215dG9rZW4nKQogIH0pCgogIGl0KCdyZXR1cm5zIG51bGwgdmFsdWVzIHdoZW4gaGFzaCBpcyBlbXB0eScsICgpID0+IHsKICAgIGNvbnN0IHJlc3VsdCA9IHBhcnNlSGFzaFBhcmFtcygnJykKICAgIGV4cGVjdChyZXN1bHQuZ2F0ZXdheVVybCkudG9CZU51bGwoKQogICAgZXhwZWN0KHJlc3VsdC50b2tlbikudG9CZU51bGwoKQogIH0pCgogIGl0KCdoYW5kbGVzIG1pc3NpbmcgdG9rZW4gZ3JhY2VmdWxseScsICgpID0+IHsKICAgIGNvbnN0IHJlc3VsdCA9IHBhcnNlSGFzaFBhcmFtcygnI2dhdGV3YXk9d3NzJTNBJTJGJTJGYWJjLnRyeWNsb3VkZmxhcmUuY29tJykKICAgIGV4cGVjdChyZXN1bHQuZ2F0ZXdheVVybCkudG9CZSgnd3NzOi8vYWJjLnRyeWNsb3VkZmxhcmUuY29tJykKICAgIGV4cGVjdChyZXN1bHQudG9rZW4pLnRvQmVOdWxsKCkKICB9KQp9KQo="}
+import { describe, it, expect } from 'vitest'
+import { parseHashParams } from './url-params'
+
+describe('parseHashParams', () => {
+  it('parses gateway and token from hash', () => {
+    const result = parseHashParams('#gateway=wss%3A%2F%2Fabc.trycloudflare.com&token=mytoken')
+    expect(result.gatewayUrl).toBe('wss://abc.trycloudflare.com')
+    expect(result.token).toBe('mytoken')
+  })
+
+  it('returns null values when hash is empty', () => {
+    const result = parseHashParams('')
+    expect(result.gatewayUrl).toBeNull()
+    expect(result.token).toBeNull()
+  })
+
+  it('handles missing token gracefully', () => {
+    const result = parseHashParams('#gateway=wss%3A%2F%2Fabc.trycloudflare.com')
+    expect(result.gatewayUrl).toBe('wss://abc.trycloudflare.com')
+    expect(result.token).toBeNull()
+  })
+})

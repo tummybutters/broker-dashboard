@@ -1,1 +1,30 @@
-{"data":"ZXhwb3J0IHR5cGUgSGFzaFBhcmFtcyA9IHsKICBnYXRld2F5VXJsOiBzdHJpbmcgfCBudWxsCiAgdG9rZW46IHN0cmluZyB8IG51bGwKfQoKZXhwb3J0IGZ1bmN0aW9uIHBhcnNlSGFzaFBhcmFtcyhoYXNoOiBzdHJpbmcpOiBIYXNoUGFyYW1zIHsKICBjb25zdCBoID0gaGFzaC5zdGFydHNXaXRoKCcjJykgPyBoYXNoLnNsaWNlKDEpIDogaGFzaAogIGlmICghaCkge3JldHVybiB7IGdhdGV3YXlVcmw6IG51bGwsIHRva2VuOiBudWxsIH19CiAgY29uc3QgcGFyYW1zID0gbmV3IFVSTFNlYXJjaFBhcmFtcyhoKQogIHJldHVybiB7CiAgICBnYXRld2F5VXJsOiBwYXJhbXMuZ2V0KCdnYXRld2F5JyksCiAgICB0b2tlbjogcGFyYW1zLmdldCgndG9rZW4nKSwKICB9Cn0KCi8qKiBTdHJpcCBnYXRld2F5ICsgdG9rZW4gZnJvbSB0aGUgVVJMIGhhc2ggd2l0aG91dCB0cmlnZ2VyaW5nIG5hdmlnYXRpb24uICovCmV4cG9ydCBmdW5jdGlvbiBjbGVhckhhc2hQYXJhbXMoKSB7CiAgaWYgKHR5cGVvZiB3aW5kb3cgPT09ICd1bmRlZmluZWQnKSB7cmV0dXJufQogIGNvbnN0IGggPSB3aW5kb3cubG9jYXRpb24uaGFzaC5zbGljZSgxKQogIGlmICghaCkge3JldHVybn0KICBjb25zdCBwYXJhbXMgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKGgpCiAgcGFyYW1zLmRlbGV0ZSgnZ2F0ZXdheScpCiAgcGFyYW1zLmRlbGV0ZSgndG9rZW4nKQogIGNvbnN0IHJlbWFpbmluZyA9IHBhcmFtcy50b1N0cmluZygpCiAgaGlzdG9yeS5yZXBsYWNlU3RhdGUoCiAgICBudWxsLAogICAgJycsCiAgICByZW1haW5pbmcgPyBgIyR7cmVtYWluaW5nfWAgOiB3aW5kb3cubG9jYXRpb24ucGF0aG5hbWUgKyB3aW5kb3cubG9jYXRpb24uc2VhcmNoCiAgKQp9Cg=="}
+export type HashParams = {
+  gatewayUrl: string | null
+  token: string | null
+}
+
+export function parseHashParams(hash: string): HashParams {
+  const h = hash.startsWith('#') ? hash.slice(1) : hash
+  if (!h) {return { gatewayUrl: null, token: null }}
+  const params = new URLSearchParams(h)
+  return {
+    gatewayUrl: params.get('gateway'),
+    token: params.get('token'),
+  }
+}
+
+/** Strip gateway + token from the URL hash without triggering navigation. */
+export function clearHashParams() {
+  if (typeof window === 'undefined') {return}
+  const h = window.location.hash.slice(1)
+  if (!h) {return}
+  const params = new URLSearchParams(h)
+  params.delete('gateway')
+  params.delete('token')
+  const remaining = params.toString()
+  history.replaceState(
+    null,
+    '',
+    remaining ? `#${remaining}` : window.location.pathname + window.location.search
+  )
+}

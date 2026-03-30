@@ -1,1 +1,138 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCB7CiAgY3JlYXRlQ29udGV4dCwKICB1c2VDb250ZXh0LAogIHVzZUVmZmVjdCwKICB1c2VSZWYsCiAgdXNlU3RhdGUsCiAgdXNlQ2FsbGJhY2ssCiAgdHlwZSBSZWFjdE5vZGUsCn0gZnJvbSAncmVhY3QnCmltcG9ydCB7IEdhdGV3YXlDbGllbnQgfSBmcm9tICdAL2xpYi9nYXRld2F5L2NsaWVudCcKaW1wb3J0IHsKICBoYW5kbGVDaGF0RXZlbnQsCiAgbG9hZEhpc3RvcnksCiAgc2VuZE1lc3NhZ2UsCiAgYWJvcnRSdW4sCiAgdHlwZSBDaGF0U3RhdGUsCn0gZnJvbSAnQC9saWIvZ2F0ZXdheS9jaGF0JwppbXBvcnQgdHlwZSB7IENvbm5lY3Rpb25TdGF0dXMsIENoYXRNZXNzYWdlLCBHYXRld2F5RXZlbnRGcmFtZSwgQ2hhdEV2ZW50UGF5bG9hZCB9IGZyb20gJ0AvbGliL2dhdGV3YXkvdHlwZXMnCgp0eXBlIEdhdGV3YXlDb250ZXh0VmFsdWUgPSB7CiAgc3RhdHVzOiBDb25uZWN0aW9uU3RhdHVzCiAgc2Vzc2lvbktleTogc3RyaW5nCiAgbWVzc2FnZXM6IENoYXRNZXNzYWdlW10KICBzdHJlYW06IHN0cmluZyB8IG51bGwKICBzZW5kaW5nOiBib29sZWFuCiAgbG9hZGluZzogYm9vbGVhbgogIGVycm9yOiBzdHJpbmcgfCBudWxsCiAgc2VuZDogKHRleHQ6IHN0cmluZykgPT4gUHJvbWlzZTx2b2lkPgogIGFib3J0OiAoKSA9PiBQcm9taXNlPHZvaWQ+Cn0KCmNvbnN0IEdhdGV3YXlDb250ZXh0ID0gY3JlYXRlQ29udGV4dDxHYXRld2F5Q29udGV4dFZhbHVlIHwgbnVsbD4obnVsbCkKCmV4cG9ydCBmdW5jdGlvbiBHYXRld2F5UHJvdmlkZXIoewogIGNoaWxkcmVuLAogIGdhdGV3YXlVcmwsCiAgdG9rZW4sCiAgc2Vzc2lvbktleSA9ICd3ZWJjaGF0JywKfTogewogIGNoaWxkcmVuOiBSZWFjdE5vZGUKICBnYXRld2F5VXJsOiBzdHJpbmcKICB0b2tlbj86IHN0cmluZwogIHNlc3Npb25LZXk/OiBzdHJpbmcKfSkgewogIGNvbnN0IFtzdGF0dXMsIHNldFN0YXR1c10gPSB1c2VTdGF0ZTxDb25uZWN0aW9uU3RhdHVzPignY29ubmVjdGluZycpCiAgY29uc3QgW190aWNrLCBzZXRUaWNrXSA9IHVzZVN0YXRlKDApCgogIGNvbnN0IGNoYXRSZWYgPSB1c2VSZWY8Q2hhdFN0YXRlPih7CiAgICBzZXNzaW9uS2V5LAogICAgbWVzc2FnZXM6IFtdLAogICAgc3RyZWFtOiBudWxsLAogICAgcnVuSWQ6IG51bGwsCiAgICBzdHJlYW1TdGFydGVkQXQ6IG51bGwsCiAgICBzZW5kaW5nOiBmYWxzZSwKICAgIGxvYWRpbmc6IGZhbHNlLAogICAgZXJyb3I6IG51bGwsCiAgfSkKICBjb25zdCBjbGllbnRSZWYgPSB1c2VSZWY8R2F0ZXdheUNsaWVudCB8IG51bGw+KG51bGwpCgogIGNvbnN0IHJlcmVuZGVyID0gdXNlQ2FsbGJhY2soKCkgPT4gc2V0VGljaygodCkgPT4gdCArIDEpLCBbXSkKCiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIC8vIFJlc2V0IGNoYXQgc3RhdGUgd2hlbiBjb25uZWN0aW9uIHBhcmFtcyBjaGFuZ2UKICAgIGNoYXRSZWYuY3VycmVudCA9IHsKICAgICAgc2Vzc2lvbktleSwKICAgICAgbWVzc2FnZXM6IFtdLAogICAgICBzdHJlYW06IG51bGwsCiAgICAgIHJ1bklkOiBudWxsLAogICAgICBzdHJlYW1TdGFydGVkQXQ6IG51bGwsCiAgICAgIHNlbmRpbmc6IGZhbHNlLAogICAgICBsb2FkaW5nOiBmYWxzZSwKICAgICAgZXJyb3I6IG51bGwsCiAgICB9CgogICAgY29uc3QgY2xpZW50ID0gbmV3IEdhdGV3YXlDbGllbnQoewogICAgICB1cmw6IGdhdGV3YXlVcmwsCiAgICAgIHRva2VuLAogICAgICBvblN0YXR1czogKHMpID0+IHNldFN0YXR1cyhzKSwKICAgICAgb25IZWxsbzogYXN5bmMgKCkgPT4gewogICAgICAgIGF3YWl0IGxvYWRIaXN0b3J5KGNoYXRSZWYuY3VycmVudCwgY2xpZW50KQogICAgICAgIHJlcmVuZGVyKCkKICAgICAgfSwKICAgICAgb25FdmVudDogKGV2dDogR2F0ZXdheUV2ZW50RnJhbWUpID0+IHsKICAgICAgICBpZiAoZXZ0LmV2ZW50ID09PSAnY2hhdCcpIHsKICAgICAgICAgIGhhbmRsZUNoYXRFdmVudChjaGF0UmVmLmN1cnJlbnQsIGV2dC5wYXlsb2FkIGFzIENoYXRFdmVudFBheWxvYWQpCiAgICAgICAgICByZXJlbmRlcigpCiAgICAgICAgfQogICAgICB9LAogICAgfSkKICAgIGNsaWVudFJlZi5jdXJyZW50ID0gY2xpZW50CiAgICBjbGllbnQuc3RhcnQoKQoKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIGNsaWVudC5zdG9wKCkKICAgICAgY2xpZW50UmVmLmN1cnJlbnQgPSBudWxsCiAgICB9CiAgfSwgW2dhdGV3YXlVcmwsIHRva2VuLCBzZXNzaW9uS2V5LCByZXJlbmRlcl0pCgogIGNvbnN0IHNlbmQgPSB1c2VDYWxsYmFjayhhc3luYyAodGV4dDogc3RyaW5nKSA9PiB7CiAgICBjb25zdCBjbGllbnQgPSBjbGllbnRSZWYuY3VycmVudAogICAgaWYgKCFjbGllbnQpIHtyZXR1cm59CiAgICBhd2FpdCBzZW5kTWVzc2FnZShjaGF0UmVmLmN1cnJlbnQsIGNsaWVudCwgdGV4dCkKICAgIHJlcmVuZGVyKCkKICB9LCBbcmVyZW5kZXJdKQoKICBjb25zdCBhYm9ydCA9IHVzZUNhbGxiYWNrKGFzeW5jICgpID0+IHsKICAgIGNvbnN0IGNsaWVudCA9IGNsaWVudFJlZi5jdXJyZW50CiAgICBpZiAoIWNsaWVudCkge3JldHVybn0KICAgIGF3YWl0IGFib3J0UnVuKGNoYXRSZWYuY3VycmVudCwgY2xpZW50KQogIH0sIFtdKQoKICBjb25zdCBzdGF0ZSA9IGNoYXRSZWYuY3VycmVudAoKICByZXR1cm4gKAogICAgPEdhdGV3YXlDb250ZXh0LlByb3ZpZGVyCiAgICAgIHZhbHVlPXt7CiAgICAgICAgc3RhdHVzLAogICAgICAgIHNlc3Npb25LZXksCiAgICAgICAgbWVzc2FnZXM6IHN0YXRlLm1lc3NhZ2VzLAogICAgICAgIHN0cmVhbTogc3RhdGUuc3RyZWFtLAogICAgICAgIHNlbmRpbmc6IHN0YXRlLnNlbmRpbmcsCiAgICAgICAgbG9hZGluZzogc3RhdGUubG9hZGluZywKICAgICAgICBlcnJvcjogc3RhdGUuZXJyb3IsCiAgICAgICAgc2VuZCwKICAgICAgICBhYm9ydCwKICAgICAgfX0KICAgID4KICAgICAge2NoaWxkcmVufQogICAgPC9HYXRld2F5Q29udGV4dC5Qcm92aWRlcj4KICApCn0KCmV4cG9ydCBmdW5jdGlvbiB1c2VHYXRld2F5KCk6IEdhdGV3YXlDb250ZXh0VmFsdWUgewogIGNvbnN0IGN0eCA9IHVzZUNvbnRleHQoR2F0ZXdheUNvbnRleHQpCiAgaWYgKCFjdHgpIHt0aHJvdyBuZXcgRXJyb3IoJ3VzZUdhdGV3YXkgbXVzdCBiZSB1c2VkIGluc2lkZSBHYXRld2F5UHJvdmlkZXInKX0KICByZXR1cm4gY3R4Cn0K"}
+'use client'
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  type ReactNode,
+} from 'react'
+import { GatewayClient } from '@/lib/gateway/client'
+import {
+  handleChatEvent,
+  loadHistory,
+  sendMessage,
+  abortRun,
+  type ChatState,
+} from '@/lib/gateway/chat'
+import type { ConnectionStatus, ChatMessage, GatewayEventFrame, ChatEventPayload } from '@/lib/gateway/types'
+
+type GatewayContextValue = {
+  status: ConnectionStatus
+  sessionKey: string
+  messages: ChatMessage[]
+  stream: string | null
+  sending: boolean
+  loading: boolean
+  error: string | null
+  send: (text: string) => Promise<void>
+  abort: () => Promise<void>
+}
+
+const GatewayContext = createContext<GatewayContextValue | null>(null)
+
+export function GatewayProvider({
+  children,
+  gatewayUrl,
+  token,
+  sessionKey = 'webchat',
+}: {
+  children: ReactNode
+  gatewayUrl: string
+  token?: string
+  sessionKey?: string
+}) {
+  const [status, setStatus] = useState<ConnectionStatus>('connecting')
+  const [_tick, setTick] = useState(0)
+
+  const chatRef = useRef<ChatState>({
+    sessionKey,
+    messages: [],
+    stream: null,
+    runId: null,
+    streamStartedAt: null,
+    sending: false,
+    loading: false,
+    error: null,
+  })
+  const clientRef = useRef<GatewayClient | null>(null)
+
+  const rerender = useCallback(() => setTick((t) => t + 1), [])
+
+  useEffect(() => {
+    // Reset chat state when connection params change
+    chatRef.current = {
+      sessionKey,
+      messages: [],
+      stream: null,
+      runId: null,
+      streamStartedAt: null,
+      sending: false,
+      loading: false,
+      error: null,
+    }
+
+    const client = new GatewayClient({
+      url: gatewayUrl,
+      token,
+      onStatus: (s) => setStatus(s),
+      onHello: async () => {
+        await loadHistory(chatRef.current, client)
+        rerender()
+      },
+      onEvent: (evt: GatewayEventFrame) => {
+        if (evt.event === 'chat') {
+          handleChatEvent(chatRef.current, evt.payload as ChatEventPayload)
+          rerender()
+        }
+      },
+    })
+    clientRef.current = client
+    client.start()
+
+    return () => {
+      client.stop()
+      clientRef.current = null
+    }
+  }, [gatewayUrl, token, sessionKey, rerender])
+
+  const send = useCallback(async (text: string) => {
+    const client = clientRef.current
+    if (!client) {return}
+    await sendMessage(chatRef.current, client, text)
+    rerender()
+  }, [rerender])
+
+  const abort = useCallback(async () => {
+    const client = clientRef.current
+    if (!client) {return}
+    await abortRun(chatRef.current, client)
+  }, [])
+
+  const state = chatRef.current
+
+  return (
+    <GatewayContext.Provider
+      value={{
+        status,
+        sessionKey,
+        messages: state.messages,
+        stream: state.stream,
+        sending: state.sending,
+        loading: state.loading,
+        error: state.error,
+        send,
+        abort,
+      }}
+    >
+      {children}
+    </GatewayContext.Provider>
+  )
+}
+
+export function useGateway(): GatewayContextValue {
+  const ctx = useContext(GatewayContext)
+  if (!ctx) {throw new Error('useGateway must be used inside GatewayProvider')}
+  return ctx
+}

@@ -1,1 +1,3 @@
-{"data":"aW1wb3J0IHsgV29ya3NwYWNlUm9vdCB9IGZyb20gJ0AvY29tcG9uZW50cy9Xb3Jrc3BhY2VSb290JwppbXBvcnQgV29ya2Zsb3dzU2NyZWVuIGZyb20gJ0Avc2NyZWVucy9Xb3JrZmxvd3NTY3JlZW4nCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFdvcmtmbG93c1BhZ2UoKSB7IHJldHVybiA8V29ya3NwYWNlUm9vdD48V29ya2Zsb3dzU2NyZWVuIC8+PC9Xb3Jrc3BhY2VSb290PiB9Cg=="}
+import { WorkspaceRoot } from '@/components/WorkspaceRoot'
+import WorkflowsScreen from '@/screens/WorkflowsScreen'
+export default function WorkflowsPage() { return <WorkspaceRoot><WorkflowsScreen /></WorkspaceRoot> }

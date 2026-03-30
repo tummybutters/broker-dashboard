@@ -1,1 +1,44 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCB7IHVzZUVmZmVjdCwgdXNlUmVmIH0gZnJvbSAncmVhY3QnCmltcG9ydCB7IE1lc3NhZ2VCdWJibGUsIFN0cmVhbUJ1YmJsZSB9IGZyb20gJy4vTWVzc2FnZUJ1YmJsZScKaW1wb3J0IHR5cGUgeyBDaGF0TWVzc2FnZSB9IGZyb20gJ0AvbGliL2dhdGV3YXkvdHlwZXMnCgpleHBvcnQgZnVuY3Rpb24gQ2hhdFRocmVhZCh7IG1lc3NhZ2VzLCBzdHJlYW0sIGxvYWRpbmcgfTogewogIG1lc3NhZ2VzOiBDaGF0TWVzc2FnZVtdCiAgc3RyZWFtOiBzdHJpbmcgfCBudWxsCiAgbG9hZGluZzogYm9vbGVhbgp9KSB7CiAgY29uc3QgYm90dG9tUmVmID0gdXNlUmVmPEhUTUxEaXZFbGVtZW50PihudWxsKQoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgYm90dG9tUmVmLmN1cnJlbnQ/LnNjcm9sbEludG9WaWV3KHsgYmVoYXZpb3I6ICdzbW9vdGgnIH0pCiAgfSwgW21lc3NhZ2VzLmxlbmd0aCwgc3RyZWFtXSkKCiAgaWYgKGxvYWRpbmcpIHsKICAgIHJldHVybiAoCiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zbSIgc3R5bGU9e3sgY29sb3I6ICd2YXIoLS10ZXh0LW11dGVkKScgfX0+TG9hZGluZyBjb252ZXJzYXRpb24uLi48L3A+CiAgICAgIDwvZGl2PgogICAgKQogIH0KCiAgaWYgKG1lc3NhZ2VzLmxlbmd0aCA9PT0gMCAmJiAhc3RyZWFtKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC0yIHB4LTggcmVsYXRpdmUiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJ0ZXh0dXJlLWdyaWQgYWJzb2x1dGUgaW5zZXQtMCBvcGFjaXR5LTQwIHBvaW50ZXItZXZlbnRzLW5vbmUiIC8+CiAgICAgICAgPGgyIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtNjAwIHRleHQtbGciIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dCknIH19Pkdvb2QgdG8gc2VlIHlvdS48L2gyPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zZXJpZiB0ZXh0LWJhc2UiPmhvdyBjYW4gSSBoZWxwIHRvZGF5PzwvcD4KICAgICAgPC9kaXY+CiAgICApCiAgfQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXgtMSBvdmVyZmxvdy15LWF1dG8gcHgtNCBtZDpweC04IHB5LTQiPgogICAgICB7bWVzc2FnZXMubWFwKChtc2csIGkpID0+ICgKICAgICAgICA8TWVzc2FnZUJ1YmJsZSBrZXk9e2l9IG1lc3NhZ2U9e21zZ30gLz4KICAgICAgKSl9CiAgICAgIHtzdHJlYW0gIT09IG51bGwgJiYgPFN0cmVhbUJ1YmJsZSB0ZXh0PXtzdHJlYW19IC8+fQogICAgICA8ZGl2IHJlZj17Ym90dG9tUmVmfSAvPgogICAgPC9kaXY+CiAgKQp9Cg=="}
+'use client'
+import { useEffect, useRef } from 'react'
+import { MessageBubble, StreamBubble } from './MessageBubble'
+import type { ChatMessage } from '@/lib/gateway/types'
+
+export function ChatThread({ messages, stream, loading }: {
+  messages: ChatMessage[]
+  stream: string | null
+  loading: boolean
+}) {
+  const bottomRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages.length, stream])
+
+  if (loading) {
+    return (
+      <div className="flex-1 flex items-center justify-center">
+        <p className="text-sm" style={{ color: 'var(--text-muted)' }}>Loading conversation...</p>
+      </div>
+    )
+  }
+
+  if (messages.length === 0 && !stream) {
+    return (
+      <div className="flex-1 flex flex-col items-center justify-center gap-2 px-8 relative">
+        <div className="texture-grid absolute inset-0 opacity-40 pointer-events-none" />
+        <h2 className="font-sans font-600 text-lg" style={{ color: 'var(--text)' }}>Good to see you.</h2>
+        <p className="text-serif text-base">how can I help today?</p>
+      </div>
+    )
+  }
+
+  return (
+    <div className="flex-1 overflow-y-auto px-4 md:px-8 py-4">
+      {messages.map((msg, i) => (
+        <MessageBubble key={i} message={msg} />
+      ))}
+      {stream !== null && <StreamBubble text={stream} />}
+      <div ref={bottomRef} />
+    </div>
+  )
+}

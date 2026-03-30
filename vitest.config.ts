@@ -1,1 +1,14 @@
-{"data":"aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAndml0ZXN0L2NvbmZpZycKaW1wb3J0IHJlYWN0IGZyb20gJ0B2aXRlanMvcGx1Z2luLXJlYWN0JwppbXBvcnQgcGF0aCBmcm9tICdwYXRoJwoKZXhwb3J0IGRlZmF1bHQgZGVmaW5lQ29uZmlnKHsKICBwbHVnaW5zOiBbcmVhY3QoKV0sCiAgcmVzb2x2ZTogewogICAgYWxpYXM6IHsgJ0AnOiBwYXRoLnJlc29sdmUoX19kaXJuYW1lLCAnLi9zcmMnKSB9LAogIH0sCiAgdGVzdDogewogICAgZW52aXJvbm1lbnQ6ICdqc2RvbScsCiAgICBnbG9iYWxzOiB0cnVlLAogIH0sCn0pCg=="}
+import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react'
+import path from 'path'
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: { '@': path.resolve(__dirname, './src') },
+  },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+  },
+})

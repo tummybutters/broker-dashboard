@@ -1,1 +1,65 @@
-{"data":"aW1wb3J0IHsgZGVzY3JpYmUsIGl0LCBleHBlY3QgfSBmcm9tICd2aXRlc3QnCmltcG9ydCB7IGhhbmRsZUNoYXRFdmVudCwgdHlwZSBDaGF0U3RhdGUgfSBmcm9tICcuL2NoYXQnCgpmdW5jdGlvbiBtYWtlU3RhdGUob3ZlcnJpZGVzOiBQYXJ0aWFsPENoYXRTdGF0ZT4gPSB7fSk6IENoYXRTdGF0ZSB7CiAgcmV0dXJuIHsKICAgIHNlc3Npb25LZXk6ICd0ZXN0LXNlc3Npb24nLAogICAgbWVzc2FnZXM6IFtdLAogICAgc3RyZWFtOiBudWxsLAogICAgcnVuSWQ6IG51bGwsCiAgICBzdHJlYW1TdGFydGVkQXQ6IG51bGwsCiAgICBzZW5kaW5nOiBmYWxzZSwKICAgIGxvYWRpbmc6IGZhbHNlLAogICAgZXJyb3I6IG51bGwsCiAgICAuLi5vdmVycmlkZXMsCiAgfQp9CgpkZXNjcmliZSgnaGFuZGxlQ2hhdEV2ZW50JywgKCkgPT4gewogIGl0KCdhY2N1bXVsYXRlcyBkZWx0YSBzdHJlYW0gdGV4dCcsICgpID0+IHsKICAgIGNvbnN0IHN0YXRlID0gbWFrZVN0YXRlKCkKICAgIGhhbmRsZUNoYXRFdmVudChzdGF0ZSwgewogICAgICBydW5JZDogJ3IxJywKICAgICAgc2Vzc2lvbktleTogJ3Rlc3Qtc2Vzc2lvbicsCiAgICAgIHN0YXRlOiAnZGVsdGEnLAogICAgICBtZXNzYWdlOiB7IHRleHQ6ICdIZWxsbycgfSwKICAgIH0pCiAgICBleHBlY3Qoc3RhdGUuc3RyZWFtKS50b0JlKCdIZWxsbycpCiAgfSkKCiAgaXQoJ2NvbW1pdHMgbWVzc2FnZSB0byBoaXN0b3J5IG9uIGZpbmFsJywgKCkgPT4gewogICAgY29uc3Qgc3RhdGUgPSBtYWtlU3RhdGUoeyBzdHJlYW06ICdIZWxsbyB3b3JsZCcsIHJ1bklkOiAncjEnIH0pCiAgICBoYW5kbGVDaGF0RXZlbnQoc3RhdGUsIHsKICAgICAgcnVuSWQ6ICdyMScsCiAgICAgIHNlc3Npb25LZXk6ICd0ZXN0LXNlc3Npb24nLAogICAgICBzdGF0ZTogJ2ZpbmFsJywKICAgICAgbWVzc2FnZTogeyByb2xlOiAnYXNzaXN0YW50JywgY29udGVudDogW3sgdHlwZTogJ3RleHQnLCB0ZXh0OiAnSGVsbG8gd29ybGQnIH1dIH0sCiAgICB9KQogICAgZXhwZWN0KHN0YXRlLm1lc3NhZ2VzKS50b0hhdmVMZW5ndGgoMSkKICAgIGV4cGVjdChzdGF0ZS5zdHJlYW0pLnRvQmVOdWxsKCkKICAgIGV4cGVjdChzdGF0ZS5ydW5JZCkudG9CZU51bGwoKQogIH0pCgogIGl0KCdpZ25vcmVzIGV2ZW50cyBmb3Igd3Jvbmcgc2Vzc2lvbktleScsICgpID0+IHsKICAgIGNvbnN0IHN0YXRlID0gbWFrZVN0YXRlKCkKICAgIGhhbmRsZUNoYXRFdmVudChzdGF0ZSwgewogICAgICBydW5JZDogJ3IxJywKICAgICAgc2Vzc2lvbktleTogJ290aGVyLXNlc3Npb24nLAogICAgICBzdGF0ZTogJ2RlbHRhJywKICAgICAgbWVzc2FnZTogeyB0ZXh0OiAnWCcgfSwKICAgIH0pCiAgICBleHBlY3Qoc3RhdGUuc3RyZWFtKS50b0JlTnVsbCgpCiAgfSkKCiAgaXQoJ3NldHMgZXJyb3Igb24gZXJyb3Igc3RhdGUgYW5kIGNsZWFycyBzdHJlYW0nLCAoKSA9PiB7CiAgICBjb25zdCBzdGF0ZSA9IG1ha2VTdGF0ZSh7IHJ1bklkOiAncjEnLCBzdHJlYW06ICdwYXJ0aWFsJyB9KQogICAgaGFuZGxlQ2hhdEV2ZW50KHN0YXRlLCB7CiAgICAgIHJ1bklkOiAncjEnLAogICAgICBzZXNzaW9uS2V5OiAndGVzdC1zZXNzaW9uJywKICAgICAgc3RhdGU6ICdlcnJvcicsCiAgICAgIGVycm9yTWVzc2FnZTogJ3RpbWVvdXQnLAogICAgfSkKICAgIGV4cGVjdChzdGF0ZS5lcnJvcikudG9CZSgndGltZW91dCcpCiAgICBleHBlY3Qoc3RhdGUuc3RyZWFtKS50b0JlTnVsbCgpCiAgfSkKfSkK"}
+import { describe, it, expect } from 'vitest'
+import { handleChatEvent, type ChatState } from './chat'
+
+function makeState(overrides: Partial<ChatState> = {}): ChatState {
+  return {
+    sessionKey: 'test-session',
+    messages: [],
+    stream: null,
+    runId: null,
+    streamStartedAt: null,
+    sending: false,
+    loading: false,
+    error: null,
+    ...overrides,
+  }
+}
+
+describe('handleChatEvent', () => {
+  it('accumulates delta stream text', () => {
+    const state = makeState()
+    handleChatEvent(state, {
+      runId: 'r1',
+      sessionKey: 'test-session',
+      state: 'delta',
+      message: { text: 'Hello' },
+    })
+    expect(state.stream).toBe('Hello')
+  })
+
+  it('commits message to history on final', () => {
+    const state = makeState({ stream: 'Hello world', runId: 'r1' })
+    handleChatEvent(state, {
+      runId: 'r1',
+      sessionKey: 'test-session',
+      state: 'final',
+      message: { role: 'assistant', content: [{ type: 'text', text: 'Hello world' }] },
+    })
+    expect(state.messages).toHaveLength(1)
+    expect(state.stream).toBeNull()
+    expect(state.runId).toBeNull()
+  })
+
+  it('ignores events for wrong sessionKey', () => {
+    const state = makeState()
+    handleChatEvent(state, {
+      runId: 'r1',
+      sessionKey: 'other-session',
+      state: 'delta',
+      message: { text: 'X' },
+    })
+    expect(state.stream).toBeNull()
+  })
+
+  it('sets error on error state and clears stream', () => {
+    const state = makeState({ runId: 'r1', stream: 'partial' })
+    handleChatEvent(state, {
+      runId: 'r1',
+      sessionKey: 'test-session',
+      state: 'error',
+      errorMessage: 'timeout',
+    })
+    expect(state.error).toBe('timeout')
+    expect(state.stream).toBeNull()
+  })
+})

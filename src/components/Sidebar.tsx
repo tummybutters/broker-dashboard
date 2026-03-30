@@ -1,1 +1,70 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaycKaW1wb3J0IHsgdXNlUGF0aG5hbWUgfSBmcm9tICduZXh0L25hdmlnYXRpb24nCmltcG9ydCB7IE1lc3NhZ2VTcXVhcmUsIENoZWNrU3F1YXJlLCBTdW4sIFdvcmtmbG93LCBCdWlsZGluZzIgfSBmcm9tICdsdWNpZGUtcmVhY3QnCgpjb25zdCBOQVYgPSBbCiAgeyBsYWJlbDogJ0Fzc2lzdGFudCcsIGhyZWY6ICcvJywgaWNvbjogTWVzc2FnZVNxdWFyZSB9LAogIHsgbGFiZWw6ICdUYXNrcycsIGhyZWY6ICcvdGFza3MnLCBpY29uOiBDaGVja1NxdWFyZSB9LAogIHsgbGFiZWw6ICdUb2RheScsIGhyZWY6ICcvdG9kYXknLCBpY29uOiBTdW4gfSwKICB7IGxhYmVsOiAnV29ya2Zsb3dzJywgaHJlZjogJy93b3JrZmxvd3MnLCBpY29uOiBXb3JrZmxvdyB9LAogIHsgbGFiZWw6ICdCdXNpbmVzcycsIGhyZWY6ICcvYnVzaW5lc3MnLCBpY29uOiBCdWlsZGluZzIgfSwKXSBhcyBjb25zdAoKZXhwb3J0IGZ1bmN0aW9uIFNpZGViYXIoKSB7CiAgY29uc3QgcGF0aG5hbWUgPSB1c2VQYXRobmFtZSgpCgogIHJldHVybiAoCiAgICA8YXNpZGUKICAgICAgY2xhc3NOYW1lPSJoaWRkZW4gbWQ6ZmxleCBmbGV4LWNvbCBoLWZ1bGwgdGV4dHVyZS1zdHJpcGUiCiAgICAgIHN0eWxlPXt7CiAgICAgICAgd2lkdGg6ICd2YXIoLS1xLXNpZGViYXItd2lkdGgpJywKICAgICAgICBib3JkZXJSaWdodDogJzFweCBzb2xpZCB2YXIoLS1xLWJvcmRlciknLAogICAgICAgIGJhY2tncm91bmQ6ICdsaW5lYXItZ3JhZGllbnQoMTgwZGVnLCAjZmJmN2YwIDAlLCAjZjNlYWRiIDEwMCUpJywKICAgICAgICBmbGV4U2hyaW5rOiAwLAogICAgICB9fQogICAgPgogICAgICB7LyogQnJhbmQgKi99CiAgICAgIDxkaXYKICAgICAgICBjbGFzc05hbWU9InB4LTYgcHktNSIKICAgICAgICBzdHlsZT17eyBib3JkZXJCb3R0b206ICcxcHggc29saWQgdmFyKC0tcS1ib3JkZXIpJyB9fQogICAgICA+CiAgICAgICAgPHNwYW4KICAgICAgICAgIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtc2VtaWJvbGQgdGV4dC1zbSB0cmFja2luZy13aWRlc3QgdXBwZXJjYXNlIgogICAgICAgICAgc3R5bGU9e3sgY29sb3I6ICd2YXIoLS1xLXRleHQpJyB9fQogICAgICAgID4KICAgICAgICAgIFFvcnRhbmEKICAgICAgICA8L3NwYW4+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNlcmlmIHRleHQteHMgbXQtMC41Ij55b3VyIHdvcmtzcGFjZTwvcD4KICAgICAgPC9kaXY+CgogICAgICB7LyogTmF2ICovfQogICAgICA8bmF2IGNsYXNzTmFtZT0iZmxleC0xIHB4LTMgcHktNCBzcGFjZS15LTAuNSI+CiAgICAgICAge05BVi5tYXAoKHsgbGFiZWwsIGhyZWYsIGljb246IEljb24gfSkgPT4gewogICAgICAgICAgY29uc3QgYWN0aXZlID0gaHJlZiA9PT0gJy8nID8gcGF0aG5hbWUgPT09ICcvJyA6IHBhdGhuYW1lLnN0YXJ0c1dpdGgoaHJlZikKICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgICAga2V5PXtocmVmfQogICAgICAgICAgICAgIGhyZWY9e2hyZWZ9CiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTMgcHgtMyBweS0yLjUgdGV4dC1zbSBmb250LW1lZGl1bSB0cmFuc2l0aW9uLWNvbG9ycyAkewogICAgICAgICAgICAgICAgYWN0aXZlID8gJ25hdi1pdGVtLWFjdGl2ZScgOiAnaG92ZXI6Ymctd2hpdGUvNDAnCiAgICAgICAgICAgICAgfWB9CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIGNvbG9yOiBhY3RpdmUgPyAndmFyKC0tcS10ZXh0KScgOiAndmFyKC0tcS10ZXh0LXNlY29uZGFyeSknLAogICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNnB4JywKICAgICAgICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICAgICAgICB9fQogICAgICAgICAgICA+CiAgICAgICAgICAgICAgPEljb24KICAgICAgICAgICAgICAgIHNpemU9ezE2fQogICAgICAgICAgICAgICAgc3Ryb2tlV2lkdGg9ezEuNzV9CiAgICAgICAgICAgICAgICBzdHlsZT17eyBjb2xvcjogYWN0aXZlID8gJ3ZhcigtLXEtZ29sZCknIDogJ2N1cnJlbnRDb2xvcicsIGZsZXhTaHJpbms6IDAgfX0KICAgICAgICAgICAgICAvPgogICAgICAgICAgICAgIHtsYWJlbH0KICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgKQogICAgICAgIH0pfQogICAgICA8L25hdj4KICAgIDwvYXNpZGU+CiAgKQp9Cg=="}
+'use client'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { MessageSquare, CheckSquare, Sun, Workflow, Building2 } from 'lucide-react'
+
+const NAV = [
+  { label: 'Assistant', href: '/', icon: MessageSquare },
+  { label: 'Tasks', href: '/tasks', icon: CheckSquare },
+  { label: 'Today', href: '/today', icon: Sun },
+  { label: 'Workflows', href: '/workflows', icon: Workflow },
+  { label: 'Business', href: '/business', icon: Building2 },
+] as const
+
+export function Sidebar() {
+  const pathname = usePathname()
+
+  return (
+    <aside
+      className="hidden md:flex flex-col h-full texture-stripe"
+      style={{
+        width: 'var(--q-sidebar-width)',
+        borderRight: '1px solid var(--q-border)',
+        background: 'linear-gradient(180deg, #fbf7f0 0%, #f3eadb 100%)',
+        flexShrink: 0,
+      }}
+    >
+      {/* Brand */}
+      <div
+        className="px-6 py-5"
+        style={{ borderBottom: '1px solid var(--q-border)' }}
+      >
+        <span
+          className="font-sans font-semibold text-sm tracking-widest uppercase"
+          style={{ color: 'var(--q-text)' }}
+        >
+          Qortana
+        </span>
+        <p className="text-serif text-xs mt-0.5">your workspace</p>
+      </div>
+
+      {/* Nav */}
+      <nav className="flex-1 px-3 py-4 space-y-0.5">
+        {NAV.map(({ label, href, icon: Icon }) => {
+          const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
+          return (
+            <Link
+              key={href}
+              href={href}
+              className={`flex items-center gap-3 px-3 py-2.5 text-sm font-medium transition-colors ${
+                active ? 'nav-item-active' : 'hover:bg-white/40'
+              }`}
+              style={{
+                color: active ? 'var(--q-text)' : 'var(--q-text-secondary)',
+                borderRadius: '6px',
+                display: 'flex',
+              }}
+            >
+              <Icon
+                size={16}
+                strokeWidth={1.75}
+                style={{ color: active ? 'var(--q-gold)' : 'currentColor', flexShrink: 0 }}
+              />
+              {label}
+            </Link>
+          )
+        })}
+      </nav>
+    </aside>
+  )
+}

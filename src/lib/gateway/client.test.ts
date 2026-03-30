@@ -1,1 +1,26 @@
-{"data":"aW1wb3J0IHsgZGVzY3JpYmUsIGl0LCBleHBlY3QgfSBmcm9tICd2aXRlc3QnCmltcG9ydCB7IGNsYXNzaWZ5Q2xvc2VFcnJvciwgaXNOb25SZWNvdmVyYWJsZUVycm9yIH0gZnJvbSAnLi9jbGllbnQnCgpkZXNjcmliZSgnY2xhc3NpZnlDbG9zZUVycm9yJywgKCkgPT4gewogIGl0KCdyZXR1cm5zIGF1dGgtZXJyb3IgZm9yIEFVVEhfVE9LRU5fTUlTU0lORycsICgpID0+IHsKICAgIGV4cGVjdChjbGFzc2lmeUNsb3NlRXJyb3IoeyBjb2RlOiAnQVVUSF9UT0tFTl9NSVNTSU5HJyB9KSkudG9CZSgnYXV0aC1lcnJvcicpCiAgfSkKICBpdCgncmV0dXJucyBwYWlyaW5nIGZvciBQQUlSSU5HX1JFUVVJUkVEJywgKCkgPT4gewogICAgZXhwZWN0KGNsYXNzaWZ5Q2xvc2VFcnJvcih7IGNvZGU6ICdQQUlSSU5HX1JFUVVJUkVEJyB9KSkudG9CZSgncGFpcmluZycpCiAgfSkKICBpdCgncmV0dXJucyByZWNvbm5lY3RpbmcgZm9yIHVua25vd24gZXJyb3JzJywgKCkgPT4gewogICAgZXhwZWN0KGNsYXNzaWZ5Q2xvc2VFcnJvcihudWxsKSkudG9CZSgncmVjb25uZWN0aW5nJykKICB9KQp9KQoKZGVzY3JpYmUoJ2lzTm9uUmVjb3ZlcmFibGVFcnJvcicsICgpID0+IHsKICBpdCgncmV0dXJucyB0cnVlIGZvciBBVVRIX1RPS0VOX01JU1NJTkcnLCAoKSA9PiB7CiAgICBleHBlY3QoaXNOb25SZWNvdmVyYWJsZUVycm9yKHsgY29kZTogJ0FVVEhfVE9LRU5fTUlTU0lORycsIG1lc3NhZ2U6ICcnIH0pKS50b0JlKHRydWUpCiAgfSkKICBpdCgncmV0dXJucyBmYWxzZSBmb3IgUEFJUklOR19SRVFVSVJFRCAoc2hvdWxkIHJldHJ5KScsICgpID0+IHsKICAgIGV4cGVjdChpc05vblJlY292ZXJhYmxlRXJyb3IoeyBjb2RlOiAnUEFJUklOR19SRVFVSVJFRCcsIG1lc3NhZ2U6ICcnIH0pKS50b0JlKGZhbHNlKQogIH0pCiAgaXQoJ3JldHVybnMgZmFsc2UgZm9yIG51bGwnLCAoKSA9PiB7CiAgICBleHBlY3QoaXNOb25SZWNvdmVyYWJsZUVycm9yKG51bGwpKS50b0JlKGZhbHNlKQogIH0pCn0pCg=="}
+import { describe, it, expect } from 'vitest'
+import { classifyCloseError, isNonRecoverableError } from './client'
+
+describe('classifyCloseError', () => {
+  it('returns auth-error for AUTH_TOKEN_MISSING', () => {
+    expect(classifyCloseError({ code: 'AUTH_TOKEN_MISSING' })).toBe('auth-error')
+  })
+  it('returns pairing for PAIRING_REQUIRED', () => {
+    expect(classifyCloseError({ code: 'PAIRING_REQUIRED' })).toBe('pairing')
+  })
+  it('returns reconnecting for unknown errors', () => {
+    expect(classifyCloseError(null)).toBe('reconnecting')
+  })
+})
+
+describe('isNonRecoverableError', () => {
+  it('returns true for AUTH_TOKEN_MISSING', () => {
+    expect(isNonRecoverableError({ code: 'AUTH_TOKEN_MISSING', message: '' })).toBe(true)
+  })
+  it('returns false for PAIRING_REQUIRED (should retry)', () => {
+    expect(isNonRecoverableError({ code: 'PAIRING_REQUIRED', message: '' })).toBe(false)
+  })
+  it('returns false for null', () => {
+    expect(isNonRecoverableError(null)).toBe(false)
+  })
+})

@@ -1,1 +1,43 @@
-{"data":"Ly8gc3JjL2xpYi9nYXRld2F5L2RldmljZS1hdXRoLnRzCmNvbnN0IFNUT1JBR0VfS0VZID0gJ3FvcnRhbmEuYnJva2VyLmRldmljZS5hdXRoLnYxJwoKdHlwZSBUb2tlbkVudHJ5ID0geyB0b2tlbjogc3RyaW5nOyBzY29wZXM6IHN0cmluZ1tdIH0KdHlwZSBTdG9yZSA9IHsgdmVyc2lvbjogMTsgZGV2aWNlSWQ6IHN0cmluZzsgdG9rZW5zOiBSZWNvcmQ8c3RyaW5nLCBUb2tlbkVudHJ5PiB9CgpmdW5jdGlvbiByZWFkU3RvcmUoKTogU3RvcmUgfCBudWxsIHsKICB0cnkgewogICAgY29uc3QgcmF3ID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oU1RPUkFHRV9LRVkpCiAgICBpZiAoIXJhdykge3JldHVybiBudWxsfQogICAgY29uc3QgcyA9IEpTT04ucGFyc2UocmF3KSBhcyBTdG9yZQogICAgaWYgKHM/LnZlcnNpb24gIT09IDEgfHwgIXMuZGV2aWNlSWQpIHtyZXR1cm4gbnVsbH0KICAgIHJldHVybiBzCiAgfSBjYXRjaCB7IHJldHVybiBudWxsIH0KfQoKZnVuY3Rpb24gd3JpdGVTdG9yZShzOiBTdG9yZSkgewogIHRyeSB7IGxvY2FsU3RvcmFnZS5zZXRJdGVtKFNUT1JBR0VfS0VZLCBKU09OLnN0cmluZ2lmeShzKSkgfSBjYXRjaCB7fQp9CgpleHBvcnQgZnVuY3Rpb24gbG9hZERldmljZUF1dGhUb2tlbihwYXJhbXM6IHsgZGV2aWNlSWQ6IHN0cmluZzsgcm9sZTogc3RyaW5nIH0pOiBUb2tlbkVudHJ5IHwgbnVsbCB7CiAgY29uc3QgcyA9IHJlYWRTdG9yZSgpCiAgaWYgKCFzIHx8IHMuZGV2aWNlSWQgIT09IHBhcmFtcy5kZXZpY2VJZCkge3JldHVybiBudWxsfQogIHJldHVybiBzLnRva2Vuc1twYXJhbXMucm9sZV0gPz8gbnVsbAp9CgpleHBvcnQgZnVuY3Rpb24gc3RvcmVEZXZpY2VBdXRoVG9rZW4ocGFyYW1zOiB7CiAgZGV2aWNlSWQ6IHN0cmluZwogIHJvbGU6IHN0cmluZwogIHRva2VuOiBzdHJpbmcKICBzY29wZXM6IHN0cmluZ1tdCn0pIHsKICBjb25zdCBzID0gcmVhZFN0b3JlKCkgPz8geyB2ZXJzaW9uOiAxIGFzIGNvbnN0LCBkZXZpY2VJZDogcGFyYW1zLmRldmljZUlkLCB0b2tlbnM6IHt9IH0KICBzLnRva2Vuc1twYXJhbXMucm9sZV0gPSB7IHRva2VuOiBwYXJhbXMudG9rZW4sIHNjb3BlczogcGFyYW1zLnNjb3BlcyB9CiAgd3JpdGVTdG9yZShzKQp9CgpleHBvcnQgZnVuY3Rpb24gY2xlYXJEZXZpY2VBdXRoVG9rZW4ocGFyYW1zOiB7IGRldmljZUlkOiBzdHJpbmc7IHJvbGU6IHN0cmluZyB9KSB7CiAgY29uc3QgcyA9IHJlYWRTdG9yZSgpCiAgaWYgKCFzKSB7cmV0dXJufQogIGRlbGV0ZSBzLnRva2Vuc1twYXJhbXMucm9sZV0KICB3cml0ZVN0b3JlKHMpCn0K"}
+// src/lib/gateway/device-auth.ts
+const STORAGE_KEY = 'qortana.broker.device.auth.v1'
+
+type TokenEntry = { token: string; scopes: string[] }
+type Store = { version: 1; deviceId: string; tokens: Record<string, TokenEntry> }
+
+function readStore(): Store | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (!raw) {return null}
+    const s = JSON.parse(raw) as Store
+    if (s?.version !== 1 || !s.deviceId) {return null}
+    return s
+  } catch { return null }
+}
+
+function writeStore(s: Store) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(s)) } catch {}
+}
+
+export function loadDeviceAuthToken(params: { deviceId: string; role: string }): TokenEntry | null {
+  const s = readStore()
+  if (!s || s.deviceId !== params.deviceId) {return null}
+  return s.tokens[params.role] ?? null
+}
+
+export function storeDeviceAuthToken(params: {
+  deviceId: string
+  role: string
+  token: string
+  scopes: string[]
+}) {
+  const s = readStore() ?? { version: 1 as const, deviceId: params.deviceId, tokens: {} }
+  s.tokens[params.role] = { token: params.token, scopes: params.scopes }
+  writeStore(s)
+}
+
+export function clearDeviceAuthToken(params: { deviceId: string; role: string }) {
+  const s = readStore()
+  if (!s) {return}
+  delete s.tokens[params.role]
+  writeStore(s)
+}

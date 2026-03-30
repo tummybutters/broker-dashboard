@@ -1,1 +1,30 @@
-{"data":"Y29uc3QgQUNUSU9OUyA9IFsKICB7IGxhYmVsOiAnTmV3IERlYWwnLCBwcm9tcHQ6ICdIZWxwIG1lIHN0YXJ0IGEgbmV3IGRlYWwuJyB9LAogIHsgbGFiZWw6ICdGb2xsb3cgVXAnLCBwcm9tcHQ6ICdXaGljaCBjbGllbnRzIHNob3VsZCBJIGZvbGxvdyB1cCB3aXRoIHRvZGF5PycgfSwKICB7IGxhYmVsOiAnQ2hlY2sgRW1haWxzJywgcHJvbXB0OiAnU3VtbWFyaXplIGFueSBpbXBvcnRhbnQgZW1haWxzIG9yIG1lc3NhZ2VzIEkgbmVlZCB0byByZXZpZXcuJyB9LAogIHsgbGFiZWw6ICdUb2RheScsIHByb21wdDogIldoYXQgYXJlIG15IHByaW9yaXRpZXMgZm9yIHRvZGF5PyIgfSwKXQoKZXhwb3J0IGZ1bmN0aW9uIFF1aWNrQWN0aW9ucyh7IG9uQWN0aW9uIH06IHsgb25BY3Rpb246IChwcm9tcHQ6IHN0cmluZykgPT4gdm9pZCB9KSB7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtd3JhcCBnYXAtMiBweC00IG1kOnB4LTggcGItMiI+CiAgICAgIHtBQ1RJT05TLm1hcCgoeyBsYWJlbCwgcHJvbXB0IH0pID0+ICgKICAgICAgICA8YnV0dG9uCiAgICAgICAgICBrZXk9e2xhYmVsfQogICAgICAgICAgb25DbGljaz17KCkgPT4gb25BY3Rpb24ocHJvbXB0KX0KICAgICAgICAgIGNsYXNzTmFtZT0idGV4dC14cyBmb250LW1lZGl1bSBweC0zIHB5LTEuNSB0cmFuc2l0aW9uLWNvbG9ycyIKICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXItbWlkKScsCiAgICAgICAgICAgIGJvcmRlclJhZGl1czogJzZweCcsCiAgICAgICAgICAgIGNvbG9yOiAndmFyKC0tdGV4dC1zZWNvbmRhcnkpJywKICAgICAgICAgICAgYmFja2dyb3VuZDogJ3JnYmEoMjU1LDI1NSwyNTUsMC41KScsCiAgICAgICAgICB9fQogICAgICAgICAgb25Nb3VzZUVudGVyPXtlID0+IChlLmN1cnJlbnRUYXJnZXQuc3R5bGUuYmFja2dyb3VuZCA9ICdyZ2JhKDI1NSwyNTUsMjU1LDAuODUpJyl9CiAgICAgICAgICBvbk1vdXNlTGVhdmU9e2UgPT4gKGUuY3VycmVudFRhcmdldC5zdHlsZS5iYWNrZ3JvdW5kID0gJ3JnYmEoMjU1LDI1NSwyNTUsMC41KScpfQogICAgICAgID4KICAgICAgICAgIHtsYWJlbH0KICAgICAgICA8L2J1dHRvbj4KICAgICAgKSl9CiAgICA8L2Rpdj4KICApCn0K"}
+const ACTIONS = [
+  { label: 'New Deal', prompt: 'Help me start a new deal.' },
+  { label: 'Follow Up', prompt: 'Which clients should I follow up with today?' },
+  { label: 'Check Emails', prompt: 'Summarize any important emails or messages I need to review.' },
+  { label: 'Today', prompt: "What are my priorities for today?" },
+]
+
+export function QuickActions({ onAction }: { onAction: (prompt: string) => void }) {
+  return (
+    <div className="flex flex-wrap gap-2 px-4 md:px-8 pb-2">
+      {ACTIONS.map(({ label, prompt }) => (
+        <button
+          key={label}
+          onClick={() => onAction(prompt)}
+          className="text-xs font-medium px-3 py-1.5 transition-colors"
+          style={{
+            border: '1px solid var(--border-mid)',
+            borderRadius: '6px',
+            color: 'var(--text-secondary)',
+            background: 'rgba(255,255,255,0.5)',
+          }}
+          onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.85)')}
+          onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.5)')}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  )
+}

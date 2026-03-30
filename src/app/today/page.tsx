@@ -1,1 +1,3 @@
-{"data":"aW1wb3J0IHsgV29ya3NwYWNlUm9vdCB9IGZyb20gJ0AvY29tcG9uZW50cy9Xb3Jrc3BhY2VSb290JwppbXBvcnQgVG9kYXlTY3JlZW4gZnJvbSAnQC9zY3JlZW5zL1RvZGF5U2NyZWVuJwpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBUb2RheVBhZ2UoKSB7IHJldHVybiA8V29ya3NwYWNlUm9vdD48VG9kYXlTY3JlZW4gLz48L1dvcmtzcGFjZVJvb3Q+IH0K"}
+import { WorkspaceRoot } from '@/components/WorkspaceRoot'
+import TodayScreen from '@/screens/TodayScreen'
+export default function TodayPage() { return <WorkspaceRoot><TodayScreen /></WorkspaceRoot> }

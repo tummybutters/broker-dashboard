@@ -1,1 +1,31 @@
-{"data":"ZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gVG9kYXlTY3JlZW4oKSB7CiAgY29uc3Qgc2VjdGlvbnMgPSBbCiAgICB7IGxhYmVsOiAnUHJpb3JpdGllcycsIGl0ZW1zOiBbJ1NlbmQgdXBkYXRlZCBCcm9hZHZvaWNlIHF1b3RlIHRvIE1hcnR1Y2NpJywgJ1JldmlldyBOYXRpb25hbCBSQU0gaW50ZXJuZXQgcHJvcG9zYWwnXSB9LAogICAgeyBsYWJlbDogJ0ZvbGxvdy11cHMnLCBpdGVtczogWydTb3V0aGxhbmQgVGVjaG5vbG9neSDigJQgcGVuZGluZyBkZWNpc2lvbiBzaW5jZSBUdWVzZGF5JywgJ0ZvbnRhbmEgRm91bmRhdGlvbiDigJQgY2hlY2sgc2lnbmF0dXJlIHN0YXR1cyddIH0sCiAgICB7IGxhYmVsOiAnT3BlbiBsb29wcycsIGl0ZW1zOiBbJ09vbWEgY29udHJhY3Qg4oCUIGF3YWl0aW5nIGNvdW50ZXJzaWduJywgJ1NwZWN0cnVtIG9yZGVyIGZvciBGb250YW5hIOKAlCBjb25maXJtIHBvcnRhbCBzdWJtaXNzaW9uJ10gfSwKICAgIHsgbGFiZWw6ICdSZWNvbW1lbmRlZCBuZXh0IGFjdGlvbnMnLCBpdGVtczogWydBc2sgYXNzaXN0YW50IHRvIGRyYWZ0IGEgZm9sbG93LXVwIGVtYWlsIHRvIFNvdXRobGFuZCcsICdSdW4gYSBxdW90ZSBjaGVjayBmb3IgTmF0aW9uYWwgUkFNIFVDYWFTJ10gfSwKICBdCgogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBoLWZ1bGwiPgogICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtNCBtZDpweC04IHB5LTMiIHN0eWxlPXt7IGJvcmRlckJvdHRvbTogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJyB9fT4KICAgICAgICA8aDEgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC02MDAgdGV4dC1zbSIgc3R5bGU9e3sgY29sb3I6ICd2YXIoLS10ZXh0KScgfX0+VG9kYXk8L2gxPgogICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zZXJpZiB0ZXh0LXhzIG10LTAuNSI+eW91ciBkYXkgYXQgYSBnbGFuY2U8L3A+CiAgICAgIDwvZGl2PgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG92ZXJmbG93LXktYXV0byBweC00IG1kOnB4LTggcHktNCBzcGFjZS15LTYiPgogICAgICAgIHtzZWN0aW9ucy5tYXAoKHsgbGFiZWwsIGl0ZW1zIH0pID0+ICgKICAgICAgICAgIDxkaXYga2V5PXtsYWJlbH0+CiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9InRleHQteHMgZm9udC02MDAgdXBwZXJjYXNlIHRyYWNraW5nLXdpZGVzdCBtYi0yIiBzdHlsZT17eyBjb2xvcjogJ3ZhcigtLXRleHQtbXV0ZWQpJyB9fT57bGFiZWx9PC9oMj4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9InNwYWNlLXktMS41Ij4KICAgICAgICAgICAgICB7aXRlbXMubWFwKChpdGVtLCBpKSA9PiAoCiAgICAgICAgICAgICAgICA8ZGl2IGtleT17aX0gY2xhc3NOYW1lPSJweC00IHB5LTIuNSB0ZXh0LXNtIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiAncmdiYSgyNTUsMjU1LDI1NSwwLjU1KScsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgYm9yZGVyUmFkaXVzOiAnOHB4JywgY29sb3I6ICd2YXIoLS10ZXh0KScgfX0+CiAgICAgICAgICAgICAgICAgIHtpdGVtfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKQp9Cg=="}
+export default function TodayScreen() {
+  const sections = [
+    { label: 'Priorities', items: ['Send updated Broadvoice quote to Martucci', 'Review National RAM internet proposal'] },
+    { label: 'Follow-ups', items: ['Southland Technology — pending decision since Tuesday', 'Fontana Foundation — check signature status'] },
+    { label: 'Open loops', items: ['Ooma contract — awaiting countersign', 'Spectrum order for Fontana — confirm portal submission'] },
+    { label: 'Recommended next actions', items: ['Ask assistant to draft a follow-up email to Southland', 'Run a quote check for National RAM UCaaS'] },
+  ]
+
+  return (
+    <div className="flex flex-col h-full">
+      <div className="px-4 md:px-8 py-3" style={{ borderBottom: '1px solid var(--border)' }}>
+        <h1 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>Today</h1>
+        <p className="text-serif text-xs mt-0.5">your day at a glance</p>
+      </div>
+      <div className="flex-1 overflow-y-auto px-4 md:px-8 py-4 space-y-6">
+        {sections.map(({ label, items }) => (
+          <div key={label}>
+            <h2 className="text-xs font-600 uppercase tracking-widest mb-2" style={{ color: 'var(--text-muted)' }}>{label}</h2>
+            <div className="space-y-1.5">
+              {items.map((item, i) => (
+                <div key={i} className="px-4 py-2.5 text-sm" style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px', color: 'var(--text)' }}>
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}

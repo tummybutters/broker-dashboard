@@ -1,1 +1,46 @@
-{"data":"Y29uc3QgV09SS0ZMT1dTID0gWwogIHsgbmFtZTogJ1NlbmQgYSBRdW90ZScsIGRlc2NyaXB0aW9uOiAnRHJhZnQgYW5kIGRlbGl2ZXIgYSBjYXJyaWVyIHF1b3RlIHRvIGEgY2xpZW50LicsIHN0YXR1czogJ3JlYWR5JyBhcyBjb25zdCB9LAogIHsgbmFtZTogJ0ZpbGwgYSBGb3JtJywgZGVzY3JpcHRpb246ICdDb21wbGV0ZSBvcmRlciBvciBjb250cmFjdCBmb3JtcyB2aWEgYnJvd3NlciBhdXRvbWF0aW9uLicsIHN0YXR1czogJ3JlYWR5JyBhcyBjb25zdCB9LAogIHsgbmFtZTogJ0VtYWlsIFRyaWFnZScsIGRlc2NyaXB0aW9uOiAnU3VtbWFyaXplIGFuZCBwcmlvcml0aXplIHVucmVhZCBjbGllbnQgZW1haWxzLicsIHN0YXR1czogJ3JlYWR5JyBhcyBjb25zdCB9LAogIHsgbmFtZTogJ1BvcnRhbCBTdWJtaXNzaW9uJywgZGVzY3JpcHRpb246ICdTdWJtaXQgb3JkZXJzIHRocm91Z2ggY2FycmllciBwb3J0YWxzLicsIHN0YXR1czogJ25lZWRzLWxvZ2luJyBhcyBjb25zdCB9LAogIHsgbmFtZTogJ0NvbW1pc3Npb24gUmVwb3J0JywgZGVzY3JpcHRpb246ICdQdWxsIGFuZCBmb3JtYXQgeW91ciBtb250aGx5IGNvbW1pc3Npb24gZGF0YS4nLCBzdGF0dXM6ICdyZWFkeScgYXMgY29uc3QgfSwKICB7IG5hbWU6ICdTcHJlYWRzaGVldCBVcGRhdGUnLCBkZXNjcmlwdGlvbjogJ1VwZGF0ZSB5b3VyIHF1b3RlIHRyYWNraW5nIHNwcmVhZHNoZWV0LicsIHN0YXR1czogJ2xpbWl0ZWQnIGFzIGNvbnN0IH0sCl0KCmNvbnN0IFNUQVRVU19DT05GSUcgPSB7CiAgcmVhZHk6IHsgbGFiZWw6ICdSZWFkeScsIGNvbG9yOiAncmdiYSgzNCwxOTcsOTQsMC4xMiknLCB0ZXh0OiAnIzE1ODAzZCcgfSwKICAnbmVlZHMtbG9naW4nOiB7IGxhYmVsOiAnTmVlZHMgbG9naW4nLCBjb2xvcjogJ3JnYmEoMjUxLDE5MSwzNiwwLjE1KScsIHRleHQ6ICcjOTI0MDBlJyB9LAogIGJsb2NrZWQ6IHsgbGFiZWw6ICdCbG9ja2VkJywgY29sb3I6ICdyZ2JhKDIzOSw2OCw2OCwwLjEwKScsIHRleHQ6ICcjYjkxYzFjJyB9LAogIGxpbWl0ZWQ6IHsgbGFiZWw6ICdMaW1pdGVkJywgY29sb3I6ICdyZ2JhKDExOCw4OCw0MSwwLjEwKScsIHRleHQ6ICd2YXIoLS10ZXh0LXNlY29uZGFyeSknIH0sCn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFdvcmtmbG93c1NjcmVlbigpIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC1jb2wgaC1mdWxsIj4KICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTQgbWQ6cHgtOCBweS0zIiBzdHlsZT17eyBib3JkZXJCb3R0b206ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScgfX0+CiAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtNjAwIHRleHQtc20iIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dCknIH19PldvcmtmbG93czwvaDE+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNlcmlmIHRleHQteHMgbXQtMC41Ij50aGluZ3MgeW91ciBhc3Npc3RhbnQgY2FuIHJ1bjwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4LTEgb3ZlcmZsb3cteS1hdXRvIHB4LTQgbWQ6cHgtOCBweS00Ij4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBnYXAtMyBtZDpncmlkLWNvbHMtMiI+CiAgICAgICAgICB7V09SS0ZMT1dTLm1hcCgoeyBuYW1lLCBkZXNjcmlwdGlvbiwgc3RhdHVzIH0pID0+IHsKICAgICAgICAgICAgY29uc3QgY2ZnID0gU1RBVFVTX0NPTkZJR1tzdGF0dXNdCiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGRpdiBrZXk9e25hbWV9IGNsYXNzTmFtZT0icHgtNCBweS00IgogICAgICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogJ3JnYmEoMjU1LDI1NSwyNTUsMC41NSknLCBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScsIGJvcmRlclJhZGl1czogJzhweCcgfX0+CiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1zdGFydCBqdXN0aWZ5LWJldHdlZW4gZ2FwLTIgbWItMS41Ij4KICAgICAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtNjAwIHRleHQtc20iIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dCknIH19PntuYW1lfTwvaDM+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyBweC0yIHB5LTAuNSBmb250LW1lZGl1bSBmbGV4LXNocmluay0wIgogICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IGNmZy5jb2xvciwgY29sb3I6IGNmZy50ZXh0LCBib3JkZXJSYWRpdXM6ICc0cHgnIH19PgogICAgICAgICAgICAgICAgICAgIHtjZmcubGFiZWx9CiAgICAgICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXhzIGxlYWRpbmctcmVsYXhlZCIgc3R5bGU9e3sgY29sb3I6ICd2YXIoLS10ZXh0LW11dGVkKScgfX0+e2Rlc2NyaXB0aW9ufTwvcD4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgKQogICAgICAgICAgfSl9CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKQp9Cg=="}
+const WORKFLOWS = [
+  { name: 'Send a Quote', description: 'Draft and deliver a carrier quote to a client.', status: 'ready' as const },
+  { name: 'Fill a Form', description: 'Complete order or contract forms via browser automation.', status: 'ready' as const },
+  { name: 'Email Triage', description: 'Summarize and prioritize unread client emails.', status: 'ready' as const },
+  { name: 'Portal Submission', description: 'Submit orders through carrier portals.', status: 'needs-login' as const },
+  { name: 'Commission Report', description: 'Pull and format your monthly commission data.', status: 'ready' as const },
+  { name: 'Spreadsheet Update', description: 'Update your quote tracking spreadsheet.', status: 'limited' as const },
+]
+
+const STATUS_CONFIG = {
+  ready: { label: 'Ready', color: 'rgba(34,197,94,0.12)', text: '#15803d' },
+  'needs-login': { label: 'Needs login', color: 'rgba(251,191,36,0.15)', text: '#92400e' },
+  blocked: { label: 'Blocked', color: 'rgba(239,68,68,0.10)', text: '#b91c1c' },
+  limited: { label: 'Limited', color: 'rgba(118,88,41,0.10)', text: 'var(--text-secondary)' },
+}
+
+export default function WorkflowsScreen() {
+  return (
+    <div className="flex flex-col h-full">
+      <div className="px-4 md:px-8 py-3" style={{ borderBottom: '1px solid var(--border)' }}>
+        <h1 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>Workflows</h1>
+        <p className="text-serif text-xs mt-0.5">things your assistant can run</p>
+      </div>
+      <div className="flex-1 overflow-y-auto px-4 md:px-8 py-4">
+        <div className="grid gap-3 md:grid-cols-2">
+          {WORKFLOWS.map(({ name, description, status }) => {
+            const cfg = STATUS_CONFIG[status]
+            return (
+              <div key={name} className="px-4 py-4"
+                style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px' }}>
+                <div className="flex items-start justify-between gap-2 mb-1.5">
+                  <h3 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>{name}</h3>
+                  <span className="text-xs px-2 py-0.5 font-medium flex-shrink-0"
+                    style={{ background: cfg.color, color: cfg.text, borderRadius: '4px' }}>
+                    {cfg.label}
+                  </span>
+                </div>
+                <p className="text-xs leading-relaxed" style={{ color: 'var(--text-muted)' }}>{description}</p>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+    </div>
+  )
+}

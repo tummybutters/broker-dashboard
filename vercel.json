@@ -1,1 +1,6 @@
-{"data":"ewogICJidWlsZENvbW1hbmQiOiAibnBtIHJ1biBidWlsZCIsCiAgIm91dHB1dERpcmVjdG9yeSI6ICIubmV4dCIsCiAgImluc3RhbGxDb21tYW5kIjogIm5wbSBpbnN0YWxsIiwKICAiZnJhbWV3b3JrIjogIm5leHRqcyIKfQo="}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "framework": "nextjs"
+}

@@ -1,1 +1,10 @@
-{"data":"aW1wb3J0IHsgV29ya3NwYWNlUm9vdCB9IGZyb20gJ0AvY29tcG9uZW50cy9Xb3Jrc3BhY2VSb290JwppbXBvcnQgQXNzaXN0YW50U2NyZWVuIGZyb20gJ0Avc2NyZWVucy9Bc3Npc3RhbnRTY3JlZW4nCgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lUGFnZSgpIHsKICByZXR1cm4gKAogICAgPFdvcmtzcGFjZVJvb3Q+CiAgICAgIDxBc3Npc3RhbnRTY3JlZW4gLz4KICAgIDwvV29ya3NwYWNlUm9vdD4KICApCn0K"}
+import { WorkspaceRoot } from '@/components/WorkspaceRoot'
+import AssistantScreen from '@/screens/AssistantScreen'
+
+export default function HomePage() {
+  return (
+    <WorkspaceRoot>
+      <AssistantScreen />
+    </WorkspaceRoot>
+  )
+}

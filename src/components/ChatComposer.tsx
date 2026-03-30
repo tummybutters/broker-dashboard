@@ -1,1 +1,74 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCB7IHVzZVN0YXRlLCB1c2VSZWYsIHR5cGUgS2V5Ym9hcmRFdmVudCB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBTZW5kLCBTcXVhcmUgfSBmcm9tICdsdWNpZGUtcmVhY3QnCgpleHBvcnQgZnVuY3Rpb24gQ2hhdENvbXBvc2VyKHsgb25TZW5kLCBvbkFib3J0LCBzZW5kaW5nLCBjb25uZWN0ZWQgfTogewogIG9uU2VuZDogKHRleHQ6IHN0cmluZykgPT4gdm9pZAogIG9uQWJvcnQ6ICgpID0+IHZvaWQKICBzZW5kaW5nOiBib29sZWFuCiAgY29ubmVjdGVkOiBib29sZWFuCn0pIHsKICBjb25zdCBbdmFsdWUsIHNldFZhbHVlXSA9IHVzZVN0YXRlKCcnKQogIGNvbnN0IHRleHRhcmVhUmVmID0gdXNlUmVmPEhUTUxUZXh0QXJlYUVsZW1lbnQ+KG51bGwpCgogIGZ1bmN0aW9uIGhhbmRsZUtleURvd24oZTogS2V5Ym9hcmRFdmVudDxIVE1MVGV4dEFyZWFFbGVtZW50PikgewogICAgaWYgKGUua2V5ID09PSAnRW50ZXInICYmICFlLnNoaWZ0S2V5KSB7CiAgICAgIGUucHJldmVudERlZmF1bHQoKQogICAgICBzdWJtaXQoKQogICAgfQogIH0KCiAgZnVuY3Rpb24gc3VibWl0KCkgewogICAgY29uc3QgdGV4dCA9IHZhbHVlLnRyaW0oKQogICAgaWYgKCF0ZXh0IHx8IHNlbmRpbmcgfHwgIWNvbm5lY3RlZCkge3JldHVybn0KICAgIG9uU2VuZCh0ZXh0KQogICAgc2V0VmFsdWUoJycpCiAgICBpZiAodGV4dGFyZWFSZWYuY3VycmVudCkgewogICAgICB0ZXh0YXJlYVJlZi5jdXJyZW50LnN0eWxlLmhlaWdodCA9ICdhdXRvJwogICAgfQogIH0KCiAgZnVuY3Rpb24gYXV0b1Jlc2l6ZShlbDogSFRNTFRleHRBcmVhRWxlbWVudCkgewogICAgZWwuc3R5bGUuaGVpZ2h0ID0gJ2F1dG8nCiAgICBlbC5zdHlsZS5oZWlnaHQgPSBNYXRoLm1pbihlbC5zY3JvbGxIZWlnaHQsIDE2MCkgKyAncHgnCiAgfQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9InB4LTQgbWQ6cHgtOCBwYi00IHB0LTIiPgogICAgICA8ZGl2CiAgICAgICAgY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWVuZCBnYXAtMiBwLTIiCiAgICAgICAgc3R5bGU9e3sgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlci1taWQpJywgYm9yZGVyUmFkaXVzOiAnOHB4JywgYmFja2dyb3VuZDogJ3JnYmEoMjU1LDI1NSwyNTUsMC43KScgfX0KICAgICAgPgogICAgICAgIDx0ZXh0YXJlYQogICAgICAgICAgcmVmPXt0ZXh0YXJlYVJlZn0KICAgICAgICAgIHZhbHVlPXt2YWx1ZX0KICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHsgc2V0VmFsdWUoZS50YXJnZXQudmFsdWUpOyBhdXRvUmVzaXplKGUudGFyZ2V0KSB9fQogICAgICAgICAgb25LZXlEb3duPXtoYW5kbGVLZXlEb3dufQogICAgICAgICAgcGxhY2Vob2xkZXI9Ik1lc3NhZ2UgeW91ciBhc3Npc3RhbnQuLi4iCiAgICAgICAgICByb3dzPXsxfQogICAgICAgICAgY2xhc3NOYW1lPSJmbGV4LTEgcmVzaXplLW5vbmUgYmctdHJhbnNwYXJlbnQgdGV4dC1zbSBvdXRsaW5lLW5vbmUgbGVhZGluZy1yZWxheGVkIHB5LTEgcHgtMiIKICAgICAgICAgIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dCknLCBmb250RmFtaWx5OiAnSm9zdCwgc2Fucy1zZXJpZicsIG1pbkhlaWdodDogJzM2cHgnLCBtYXhIZWlnaHQ6ICcxNjBweCcgfX0KICAgICAgICAvPgogICAgICAgIHtzZW5kaW5nID8gKAogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICBvbkNsaWNrPXtvbkFib3J0fQogICAgICAgICAgICBjbGFzc05hbWU9InAtMiBmbGV4LXNocmluay0wIHRyYW5zaXRpb24tb3BhY2l0eSBob3ZlcjpvcGFjaXR5LTcwIgogICAgICAgICAgICBzdHlsZT17eyBjb2xvcjogJ3ZhcigtLXRleHQtc2Vjb25kYXJ5KScgfX0KICAgICAgICAgICAgdGl0bGU9IlN0b3AiCiAgICAgICAgICA+CiAgICAgICAgICAgIDxTcXVhcmUgc2l6ZT17MTZ9IGZpbGw9ImN1cnJlbnRDb2xvciIgLz4KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICkgOiAoCiAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgIG9uQ2xpY2s9e3N1Ym1pdH0KICAgICAgICAgICAgZGlzYWJsZWQ9eyF2YWx1ZS50cmltKCkgfHwgIWNvbm5lY3RlZH0KICAgICAgICAgICAgY2xhc3NOYW1lPSJwLTIgZmxleC1zaHJpbmstMCB0cmFuc2l0aW9uLW9wYWNpdHkgZGlzYWJsZWQ6b3BhY2l0eS0zMCIKICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogJ3ZhcigtLXRleHQpJywgY29sb3I6ICcjZmFmNmVmJywgYm9yZGVyUmFkaXVzOiAnNnB4JyB9fQogICAgICAgICAgPgogICAgICAgICAgICA8U2VuZCBzaXplPXsxNn0gLz4KICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICl9CiAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgKQp9Cg=="}
+'use client'
+import { useState, useRef, type KeyboardEvent } from 'react'
+import { Send, Square } from 'lucide-react'
+
+export function ChatComposer({ onSend, onAbort, sending, connected }: {
+  onSend: (text: string) => void
+  onAbort: () => void
+  sending: boolean
+  connected: boolean
+}) {
+  const [value, setValue] = useState('')
+  const textareaRef = useRef<HTMLTextAreaElement>(null)
+
+  function handleKeyDown(e: KeyboardEvent<HTMLTextAreaElement>) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
+      submit()
+    }
+  }
+
+  function submit() {
+    const text = value.trim()
+    if (!text || sending || !connected) {return}
+    onSend(text)
+    setValue('')
+    if (textareaRef.current) {
+      textareaRef.current.style.height = 'auto'
+    }
+  }
+
+  function autoResize(el: HTMLTextAreaElement) {
+    el.style.height = 'auto'
+    el.style.height = Math.min(el.scrollHeight, 160) + 'px'
+  }
+
+  return (
+    <div className="px-4 md:px-8 pb-4 pt-2">
+      <div
+        className="flex items-end gap-2 p-2"
+        style={{ border: '1px solid var(--border-mid)', borderRadius: '8px', background: 'rgba(255,255,255,0.7)' }}
+      >
+        <textarea
+          ref={textareaRef}
+          value={value}
+          onChange={e => { setValue(e.target.value); autoResize(e.target) }}
+          onKeyDown={handleKeyDown}
+          placeholder="Message your assistant..."
+          rows={1}
+          className="flex-1 resize-none bg-transparent text-sm outline-none leading-relaxed py-1 px-2"
+          style={{ color: 'var(--text)', fontFamily: 'Jost, sans-serif', minHeight: '36px', maxHeight: '160px' }}
+        />
+        {sending ? (
+          <button
+            onClick={onAbort}
+            className="p-2 flex-shrink-0 transition-opacity hover:opacity-70"
+            style={{ color: 'var(--text-secondary)' }}
+            title="Stop"
+          >
+            <Square size={16} fill="currentColor" />
+          </button>
+        ) : (
+          <button
+            onClick={submit}
+            disabled={!value.trim() || !connected}
+            className="p-2 flex-shrink-0 transition-opacity disabled:opacity-30"
+            style={{ background: 'var(--text)', color: '#faf6ef', borderRadius: '6px' }}
+          >
+            <Send size={16} />
+          </button>
+        )}
+      </div>
+    </div>
+  )
+}

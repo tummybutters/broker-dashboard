@@ -1,1 +1,89 @@
-{"data":"J3VzZSBjbGllbnQnCmltcG9ydCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnCmltcG9ydCB7IFBsdXMgfSBmcm9tICdsdWNpZGUtcmVhY3QnCgp0eXBlIFRhc2sgPSB7IGlkOiBzdHJpbmc7IHRleHQ6IHN0cmluZzsgc3RhdHVzOiAncXVldWVkJyB8ICdpbi1wcm9ncmVzcycgfCAnd2FpdGluZycgfCAnZG9uZScgfQoKY29uc3QgU1RBVFVTX0xBQkVMUzogUmVjb3JkPFRhc2tbJ3N0YXR1cyddLCBzdHJpbmc+ID0gewogIHF1ZXVlZDogJ1F1ZXVlZCcsCiAgJ2luLXByb2dyZXNzJzogJ0luIFByb2dyZXNzJywKICB3YWl0aW5nOiAnV2FpdGluZyBvbiB5b3UnLAogIGRvbmU6ICdEb25lJywKfQoKY29uc3QgU1RBVFVTX0NPTE9SUzogUmVjb3JkPFRhc2tbJ3N0YXR1cyddLCBzdHJpbmc+ID0gewogIHF1ZXVlZDogJ3JnYmEoMTE4LDg4LDQxLDAuMTApJywKICAnaW4tcHJvZ3Jlc3MnOiAncmdiYSgxODQsMTQ4LDYwLDAuMTUpJywKICB3YWl0aW5nOiAncmdiYSgyNTEsMTkxLDM2LDAuMTUpJywKICBkb25lOiAncmdiYSgzNCwxOTcsOTQsMC4xMiknLAp9CgpleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBUYXNrc1NjcmVlbigpIHsKICBjb25zdCBbdGFza3MsIHNldFRhc2tzXSA9IHVzZVN0YXRlPFRhc2tbXT4oWwogICAgeyBpZDogJzEnLCB0ZXh0OiAnRm9sbG93IHVwIHdpdGggU291dGhsYW5kIFRlY2hub2xvZ3knLCBzdGF0dXM6ICd3YWl0aW5nJyB9LAogICAgeyBpZDogJzInLCB0ZXh0OiAnU2VuZCBCcm9hZHZvaWNlIHF1b3RlIHRvIE1hcnR1Y2NpJywgc3RhdHVzOiAnaW4tcHJvZ3Jlc3MnIH0sCiAgICB7IGlkOiAnMycsIHRleHQ6ICdSZXZpZXcgTmF0aW9uYWwgUkFNIHByb3Bvc2FsJywgc3RhdHVzOiAncXVldWVkJyB9LAogIF0pCiAgY29uc3QgW2FkZGluZywgc2V0QWRkaW5nXSA9IHVzZVN0YXRlKGZhbHNlKQogIGNvbnN0IFtuZXdUZXh0LCBzZXROZXdUZXh0XSA9IHVzZVN0YXRlKCcnKQoKICBmdW5jdGlvbiBhZGRUYXNrKCkgewogICAgaWYgKCFuZXdUZXh0LnRyaW0oKSkge3JldHVybn0KICAgIHNldFRhc2tzKHQgPT4gWy4uLnQsIHsgaWQ6IERhdGUubm93KCkudG9TdHJpbmcoKSwgdGV4dDogbmV3VGV4dC50cmltKCksIHN0YXR1czogJ3F1ZXVlZCcgfV0pCiAgICBzZXROZXdUZXh0KCcnKQogICAgc2V0QWRkaW5nKGZhbHNlKQogIH0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGgtZnVsbCI+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC00IG1kOnB4LTggcHktMyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iIHN0eWxlPXt7IGJvcmRlckJvdHRvbTogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJyB9fT4KICAgICAgICA8ZGl2PgogICAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtNjAwIHRleHQtc20iIHN0eWxlPXt7IGNvbG9yOiAndmFyKC0tdGV4dCknIH19PlRhc2tzPC9oMT4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC1zZXJpZiB0ZXh0LXhzIG10LTAuNSI+d2hhdCBuZWVkcyBkb2luZzwvcD4KICAgICAgICA8L2Rpdj4KICAgICAgICA8YnV0dG9uCiAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRBZGRpbmcodHJ1ZSl9CiAgICAgICAgICBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0xLjUgcHgtMyBweS0xLjUgdGV4dC14cyBmb250LW1lZGl1bSIKICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6ICd2YXIoLS10ZXh0KScsIGNvbG9yOiAnI2ZhZjZlZicsIGJvcmRlclJhZGl1czogJzZweCcgfX0KICAgICAgICA+CiAgICAgICAgICA8UGx1cyBzaXplPXsxM30gLz4gQWRkIFRhc2sKICAgICAgICA8L2J1dHRvbj4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleC0xIG92ZXJmbG93LXktYXV0byBweC00IG1kOnB4LTggcHktNCBzcGFjZS15LTIiPgogICAgICAgIHthZGRpbmcgJiYgKAogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTIgbWItNCI+CiAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgIGF1dG9Gb2N1cwogICAgICAgICAgICAgIHZhbHVlPXtuZXdUZXh0fQogICAgICAgICAgICAgIG9uQ2hhbmdlPXtlID0+IHNldE5ld1RleHQoZS50YXJnZXQudmFsdWUpfQogICAgICAgICAgICAgIG9uS2V5RG93bj17ZSA9PiBlLmtleSA9PT0gJ0VudGVyJyAmJiBhZGRUYXNrKCl9CiAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9IlRhc2sgZGVzY3JpcHRpb24uLi4iCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4LTEgcHgtMyBweS0yIHRleHQtc20gb3V0bGluZS1ub25lIgogICAgICAgICAgICAgIHN0eWxlPXt7IGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXItbWlkKScsIGJvcmRlclJhZGl1czogJzZweCcsIGJhY2tncm91bmQ6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuNyknLCBjb2xvcjogJ3ZhcigtLXRleHQpJyB9fQogICAgICAgICAgICAvPgogICAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e2FkZFRhc2t9IGNsYXNzTmFtZT0icHgtMyBweS0yIHRleHQteHMgZm9udC1tZWRpdW0iIHN0eWxlPXt7IGJhY2tncm91bmQ6ICd2YXIoLS10ZXh0KScsIGNvbG9yOiAnI2ZhZjZlZicsIGJvcmRlclJhZGl1czogJzZweCcgfX0+QWRkPC9idXR0b24+CiAgICAgICAgICAgIDxidXR0b24gb25DbGljaz17KCkgPT4gc2V0QWRkaW5nKGZhbHNlKX0gY2xhc3NOYW1lPSJweC0zIHB5LTIgdGV4dC14cyBmb250LW1lZGl1bSIgc3R5bGU9e3sgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlciknLCBib3JkZXJSYWRpdXM6ICc2cHgnLCBjb2xvcjogJ3ZhcigtLXRleHQtc2Vjb25kYXJ5KScgfX0+Q2FuY2VsPC9idXR0b24+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApfQogICAgICAgIHt0YXNrcy5tYXAodGFzayA9PiAoCiAgICAgICAgICA8ZGl2IGtleT17dGFzay5pZH0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBweC00IHB5LTMiCiAgICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6ICdyZ2JhKDI1NSwyNTUsMjU1LDAuNTUpJywgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlciknLCBib3JkZXJSYWRpdXM6ICc4cHgnIH19PgogICAgICAgICAgICA8aW5wdXQKICAgICAgICAgICAgICB0eXBlPSJjaGVja2JveCIKICAgICAgICAgICAgICBjaGVja2VkPXt0YXNrLnN0YXR1cyA9PT0gJ2RvbmUnfQogICAgICAgICAgICAgIG9uQ2hhbmdlPXsoKSA9PiBzZXRUYXNrcyh0cyA9PiB0cy5tYXAodCA9PiB0LmlkID09PSB0YXNrLmlkID8geyAuLi50LCBzdGF0dXM6IHQuc3RhdHVzID09PSAnZG9uZScgPyAncXVldWVkJyA6ICdkb25lJyB9IDogdCkpfQogICAgICAgICAgICAgIGNsYXNzTmFtZT0iYWNjZW50LWFtYmVyLTcwMCB3LTQgaC00IGZsZXgtc2hyaW5rLTAiCiAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZmxleC0xIHRleHQtc20iIHN0eWxlPXt7IGNvbG9yOiB0YXNrLnN0YXR1cyA9PT0gJ2RvbmUnID8gJ3ZhcigtLXRleHQtbXV0ZWQpJyA6ICd2YXIoLS10ZXh0KScsIHRleHREZWNvcmF0aW9uOiB0YXNrLnN0YXR1cyA9PT0gJ2RvbmUnID8gJ2xpbmUtdGhyb3VnaCcgOiAnbm9uZScgfX0+CiAgICAgICAgICAgICAge3Rhc2sudGV4dH0KICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQteHMgcHgtMiBweS0wLjUgZm9udC1tZWRpdW0iIHN0eWxlPXt7IGJhY2tncm91bmQ6IFNUQVRVU19DT0xPUlNbdGFzay5zdGF0dXNdLCBjb2xvcjogJ3ZhcigtLXRleHQtc2Vjb25kYXJ5KScsIGJvcmRlclJhZGl1czogJzRweCcgfX0+CiAgICAgICAgICAgICAge1NUQVRVU19MQUJFTFNbdGFzay5zdGF0dXNdfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICApKX0KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0K"}
+'use client'
+import { useState } from 'react'
+import { Plus } from 'lucide-react'
+
+type Task = { id: string; text: string; status: 'queued' | 'in-progress' | 'waiting' | 'done' }
+
+const STATUS_LABELS: Record<Task['status'], string> = {
+  queued: 'Queued',
+  'in-progress': 'In Progress',
+  waiting: 'Waiting on you',
+  done: 'Done',
+}
+
+const STATUS_COLORS: Record<Task['status'], string> = {
+  queued: 'rgba(118,88,41,0.10)',
+  'in-progress': 'rgba(184,148,60,0.15)',
+  waiting: 'rgba(251,191,36,0.15)',
+  done: 'rgba(34,197,94,0.12)',
+}
+
+export default function TasksScreen() {
+  const [tasks, setTasks] = useState<Task[]>([
+    { id: '1', text: 'Follow up with Southland Technology', status: 'waiting' },
+    { id: '2', text: 'Send Broadvoice quote to Martucci', status: 'in-progress' },
+    { id: '3', text: 'Review National RAM proposal', status: 'queued' },
+  ])
+  const [adding, setAdding] = useState(false)
+  const [newText, setNewText] = useState('')
+
+  function addTask() {
+    if (!newText.trim()) {return}
+    setTasks(t => [...t, { id: Date.now().toString(), text: newText.trim(), status: 'queued' }])
+    setNewText('')
+    setAdding(false)
+  }
+
+  return (
+    <div className="flex flex-col h-full">
+      <div className="px-4 md:px-8 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid var(--border)' }}>
+        <div>
+          <h1 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>Tasks</h1>
+          <p className="text-serif text-xs mt-0.5">what needs doing</p>
+        </div>
+        <button
+          onClick={() => setAdding(true)}
+          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium"
+          style={{ background: 'var(--text)', color: '#faf6ef', borderRadius: '6px' }}
+        >
+          <Plus size={13} /> Add Task
+        </button>
+      </div>
+
+      <div className="flex-1 overflow-y-auto px-4 md:px-8 py-4 space-y-2">
+        {adding && (
+          <div className="flex gap-2 mb-4">
+            <input
+              autoFocus
+              value={newText}
+              onChange={e => setNewText(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && addTask()}
+              placeholder="Task description..."
+              className="flex-1 px-3 py-2 text-sm outline-none"
+              style={{ border: '1px solid var(--border-mid)', borderRadius: '6px', background: 'rgba(255,255,255,0.7)', color: 'var(--text)' }}
+            />
+            <button onClick={addTask} className="px-3 py-2 text-xs font-medium" style={{ background: 'var(--text)', color: '#faf6ef', borderRadius: '6px' }}>Add</button>
+            <button onClick={() => setAdding(false)} className="px-3 py-2 text-xs font-medium" style={{ border: '1px solid var(--border)', borderRadius: '6px', color: 'var(--text-secondary)' }}>Cancel</button>
+          </div>
+        )}
+        {tasks.map(task => (
+          <div key={task.id} className="flex items-center gap-3 px-4 py-3"
+            style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px' }}>
+            <input
+              type="checkbox"
+              checked={task.status === 'done'}
+              onChange={() => setTasks(ts => ts.map(t => t.id === task.id ? { ...t, status: t.status === 'done' ? 'queued' : 'done' } : t))}
+              className="accent-amber-700 w-4 h-4 flex-shrink-0"
+            />
+            <span className="flex-1 text-sm" style={{ color: task.status === 'done' ? 'var(--text-muted)' : 'var(--text)', textDecoration: task.status === 'done' ? 'line-through' : 'none' }}>
+              {task.text}
+            </span>
+            <span className="text-xs px-2 py-0.5 font-medium" style={{ background: STATUS_COLORS[task.status], color: 'var(--text-secondary)', borderRadius: '4px' }}>
+              {STATUS_LABELS[task.status]}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
