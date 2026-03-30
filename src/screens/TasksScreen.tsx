@@ -1,6 +1,6 @@
 'use client'
-import { useState } from 'react'
-import { Plus } from 'lucide-react'
+import { useGateway } from '@/context/GatewayContext'
+import { buildWorkspaceSummary } from '@/lib/workspace/summary'
 
 type Task = { id: string; text: string; status: 'queued' | 'in-progress' | 'waiting' | 'done' }
 
@@ -19,51 +19,25 @@ const STATUS_COLORS: Record<Task['status'], string> = {
 }
 
 export default function TasksScreen() {
-  const [tasks, setTasks] = useState<Task[]>([
-    { id: '1', text: 'Follow up with Southland Technology', status: 'waiting' },
-    { id: '2', text: 'Send Broadvoice quote to Martucci', status: 'in-progress' },
-    { id: '3', text: 'Review National RAM proposal', status: 'queued' },
-  ])
-  const [adding, setAdding] = useState(false)
-  const [newText, setNewText] = useState('')
-
-  function addTask() {
-    if (!newText.trim()) {return}
-    setTasks(t => [...t, { id: Date.now().toString(), text: newText.trim(), status: 'queued' }])
-    setNewText('')
-    setAdding(false)
-  }
+  const { messages, workspaceFiles, workspaceLoading } = useGateway()
+  const tasks = buildWorkspaceSummary({ messages, files: workspaceFiles }).tasks as Task[]
 
   return (
     <div className="flex flex-col h-full">
-      <div className="px-4 md:px-8 py-3 flex items-center justify-between" style={{ borderBottom: '1px solid var(--border)' }}>
+      <div className="px-4 md:px-8 py-3" style={{ borderBottom: '1px solid var(--border)' }}>
         <div>
           <h1 className="font-sans font-600 text-sm" style={{ color: 'var(--text)' }}>Tasks</h1>
-          <p className="text-serif text-xs mt-0.5">what needs doing</p>
+          <p className="text-serif text-xs mt-0.5">
+            {workspaceLoading ? 'loading live task state...' : 'shared task list from the live tenant'}
+          </p>
         </div>
-        <button
-          onClick={() => setAdding(true)}
-          className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium"
-          style={{ background: 'var(--text)', color: '#faf6ef', borderRadius: '6px' }}
-        >
-          <Plus size={13} /> Add Task
-        </button>
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 md:px-8 py-4 space-y-2">
-        {adding && (
-          <div className="flex gap-2 mb-4">
-            <input
-              autoFocus
-              value={newText}
-              onChange={e => setNewText(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && addTask()}
-              placeholder="Task description..."
-              className="flex-1 px-3 py-2 text-sm outline-none"
-              style={{ border: '1px solid var(--border-mid)', borderRadius: '6px', background: 'rgba(255,255,255,0.7)', color: 'var(--text)' }}
-            />
-            <button onClick={addTask} className="px-3 py-2 text-xs font-medium" style={{ background: 'var(--text)', color: '#faf6ef', borderRadius: '6px' }}>Add</button>
-            <button onClick={() => setAdding(false)} className="px-3 py-2 text-xs font-medium" style={{ border: '1px solid var(--border)', borderRadius: '6px', color: 'var(--text-secondary)' }}>Cancel</button>
+        {tasks.length === 0 && (
+          <div className="px-4 py-3 text-sm"
+            style={{ background: 'rgba(255,255,255,0.55)', border: '1px solid var(--border)', borderRadius: '8px', color: 'var(--text-muted)' }}>
+            No tasks are in the shared tenant task list yet.
           </div>
         )}
         {tasks.map(task => (
@@ -72,7 +46,7 @@ export default function TasksScreen() {
             <input
               type="checkbox"
               checked={task.status === 'done'}
-              onChange={() => setTasks(ts => ts.map(t => t.id === task.id ? { ...t, status: t.status === 'done' ? 'queued' : 'done' } : t))}
+              readOnly
               className="accent-amber-700 w-4 h-4 flex-shrink-0"
             />
             <span className="flex-1 text-sm" style={{ color: task.status === 'done' ? 'var(--text-muted)' : 'var(--text)', textDecoration: task.status === 'done' ? 'line-through' : 'none' }}>
