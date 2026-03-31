@@ -1,7 +1,7 @@
 // src/lib/gateway/device-identity.ts
 const DB_NAME = 'qortana-broker'
 const STORE_NAME = 'device-keys'
-const KEY_ID = 'v1'
+const KEY_ID = 'v2-ed25519'
 
 type StoredKey = {
   deviceId: string
@@ -36,14 +36,14 @@ async function putStored(db: IDBDatabase, value: StoredKey): Promise<void> {
   })
 }
 
-function ab2b64(buf: ArrayBuffer): string {
-  return btoa(String.fromCharCode(...new Uint8Array(buf)))
+function bytesToBase64Url(buf: ArrayBuffer): string {
+  const base64 = btoa(String.fromCharCode(...new Uint8Array(buf)))
+  return base64.replaceAll('+', '-').replaceAll('/', '_').replace(/=+$/g, '')
 }
 
-async function generateDeviceId(publicKey: CryptoKey): Promise<string> {
-  const raw = await crypto.subtle.exportKey('spki', publicKey)
-  const hash = await crypto.subtle.digest('SHA-256', raw)
-  return 'dev_' + ab2b64(hash).replace(/[+/=]/g, '').slice(0, 24)
+async function sha256Hex(buf: ArrayBuffer): Promise<string> {
+  const hash = await crypto.subtle.digest('SHA-256', buf)
+  return Array.from(new Uint8Array(hash)).map((b) => b.toString(16).padStart(2, '0')).join('')
 }
 
 export async function loadOrCreateDeviceIdentity(): Promise<StoredKey> {
@@ -52,13 +52,13 @@ export async function loadOrCreateDeviceIdentity(): Promise<StoredKey> {
   if (stored) {return stored}
 
   const kp = await crypto.subtle.generateKey(
-    { name: 'ECDSA', namedCurve: 'P-256' },
-    false,
+    'Ed25519',
+    true,
     ['sign']
   )
-  const pubRaw = await crypto.subtle.exportKey('spki', kp.publicKey)
-  const publicKey = ab2b64(pubRaw)
-  const deviceId = await generateDeviceId(kp.publicKey)
+  const pubRaw = await crypto.subtle.exportKey('raw', kp.publicKey)
+  const publicKey = bytesToBase64Url(pubRaw)
+  const deviceId = await sha256Hex(pubRaw)
   const identity: StoredKey = { deviceId, publicKey, privateKey: kp.privateKey }
   await putStored(db, identity)
   return identity
@@ -66,27 +66,60 @@ export async function loadOrCreateDeviceIdentity(): Promise<StoredKey> {
 
 export async function signDevicePayload(privateKey: CryptoKey, payload: string): Promise<string> {
   const data = new TextEncoder().encode(payload)
-  const sig = await crypto.subtle.sign({ name: 'ECDSA', hash: 'SHA-256' }, privateKey, data)
-  return ab2b64(sig)
+  const sig = await crypto.subtle.sign('Ed25519', privateKey, data)
+  return bytesToBase64Url(sig)
+}
+
+function normalizeDeviceMetadataForAuth(value: string | undefined): string {
+  return (value ?? '').trim().replace(/[A-Z]/g, (char) => String.fromCharCode(char.charCodeAt(0) + 32))
 }
 
 export function buildDeviceAuthPayload(params: {
   deviceId: string
   clientId: string
+  clientMode: string
   role: string
   scopes: string[]
   signedAtMs: number
   token: string | null
   nonce: string
 }): string {
-  return JSON.stringify({
-    v: 3,
-    deviceId: params.deviceId,
-    clientId: params.clientId,
-    role: params.role,
-    scopes: params.scopes,
-    signedAtMs: params.signedAtMs,
-    token: params.token,
-    nonce: params.nonce,
-  })
+  return [
+    'v2',
+    params.deviceId,
+    params.clientId,
+    params.clientMode,
+    params.role,
+    params.scopes.join(','),
+    String(params.signedAtMs),
+    params.token ?? '',
+    params.nonce,
+  ].join('|')
+}
+
+export function buildDeviceAuthPayloadV3(params: {
+  deviceId: string
+  clientId: string
+  clientMode: string
+  role: string
+  scopes: string[]
+  signedAtMs: number
+  token: string | null
+  nonce: string
+  platform?: string
+  deviceFamily?: string
+}): string {
+  return [
+    'v3',
+    params.deviceId,
+    params.clientId,
+    params.clientMode,
+    params.role,
+    params.scopes.join(','),
+    String(params.signedAtMs),
+    params.token ?? '',
+    params.nonce,
+    normalizeDeviceMetadataForAuth(params.platform),
+    normalizeDeviceMetadataForAuth(params.deviceFamily),
+  ].join('|')
 }

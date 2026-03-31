@@ -5,6 +5,9 @@ describe('classifyCloseError', () => {
   it('returns auth-error for AUTH_TOKEN_MISSING', () => {
     expect(classifyCloseError({ code: 'AUTH_TOKEN_MISSING' })).toBe('auth-error')
   })
+  it('returns auth-error for DEVICE_AUTH_DEVICE_ID_MISMATCH', () => {
+    expect(classifyCloseError({ code: 'DEVICE_AUTH_DEVICE_ID_MISMATCH' })).toBe('auth-error')
+  })
   it('returns pairing for PAIRING_REQUIRED', () => {
     expect(classifyCloseError({ code: 'PAIRING_REQUIRED' })).toBe('pairing')
   })

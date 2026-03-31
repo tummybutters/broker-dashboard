@@ -1,5 +1,5 @@
 import type { GatewayEventFrame, GatewayResponseFrame, GatewayHelloOk, GatewayErrorInfo, ConnectionStatus } from './types'
-import { loadOrCreateDeviceIdentity, signDevicePayload, buildDeviceAuthPayload } from './device-identity'
+import { loadOrCreateDeviceIdentity, signDevicePayload, buildDeviceAuthPayloadV3 } from './device-identity'
 import { loadDeviceAuthToken, storeDeviceAuthToken } from './device-auth'
 
 const CONTROL_UI_CLIENT_ID = 'openclaw-control-ui'
@@ -11,7 +11,14 @@ const NON_RECOVERABLE_CODES = new Set([
   'AUTH_PASSWORD_MISMATCH',
   'AUTH_RATE_LIMITED',
   'CONTROL_UI_DEVICE_IDENTITY_REQUIRED',
+  'CONTROL_UI_ORIGIN_NOT_ALLOWED',
   'DEVICE_IDENTITY_REQUIRED',
+  'DEVICE_AUTH_NONCE_REQUIRED',
+  'DEVICE_AUTH_NONCE_MISMATCH',
+  'DEVICE_AUTH_SIGNATURE_INVALID',
+  'DEVICE_AUTH_SIGNATURE_EXPIRED',
+  'DEVICE_AUTH_DEVICE_ID_MISMATCH',
+  'DEVICE_AUTH_PUBLIC_KEY_INVALID',
 ])
 
 export function isNonRecoverableError(err: GatewayErrorInfo | null): boolean {
@@ -129,19 +136,24 @@ export class GatewayClient {
     const token = this.opts.token?.trim() || undefined
     const role = 'operator'
     const scopes = ['operator.admin', 'operator.approvals', 'operator.pairing']
+    const clientId = CONTROL_UI_CLIENT_ID
+    const clientMode = 'webchat'
+    const platform = typeof navigator !== 'undefined' ? (navigator.platform ?? 'web') : 'web'
 
     if (isSecure) {
       const identity = await loadOrCreateDeviceIdentity()
       const signedAtMs = Date.now()
       const nonce = this.connectNonce ?? ''
-      const payload = buildDeviceAuthPayload({
+      const payload = buildDeviceAuthPayloadV3({
         deviceId: identity.deviceId,
-        clientId: CONTROL_UI_CLIENT_ID,
+        clientId,
+        clientMode,
         role,
         scopes,
         signedAtMs,
         token: token ?? null,
         nonce,
+        platform,
       })
       const signature = await signDevicePayload(identity.privateKey, payload)
       const device = {
@@ -160,10 +172,10 @@ export class GatewayClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: CONTROL_UI_CLIENT_ID,
+          id: clientId,
           version: '1.0.0',
-          platform: typeof navigator !== 'undefined' ? (navigator.platform ?? 'web') : 'web',
-          mode: 'webchat',
+          platform,
+          mode: clientMode,
         },
         role,
         scopes,
@@ -197,10 +209,10 @@ export class GatewayClient {
         minProtocol: 3,
         maxProtocol: 3,
         client: {
-          id: CONTROL_UI_CLIENT_ID,
+          id: clientId,
           version: '1.0.0',
           platform: 'web',
-          mode: 'webchat',
+          mode: clientMode,
         },
         role,
         scopes,
@@ -250,8 +262,12 @@ export class GatewayClient {
       if (res.ok) {
         p.resolve(res.payload)
       } else {
+        const details = res.error?.details
+        const detailCode = typeof details === 'object' && details !== null && 'code' in details && typeof details.code === 'string'
+          ? details.code
+          : null
         p.reject(new GatewayRequestError({
-          code: res.error?.code ?? 'UNAVAILABLE',
+          code: detailCode ?? res.error?.code ?? 'UNAVAILABLE',
           message: res.error?.message ?? 'request failed',
         }))
       }
